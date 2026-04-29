@@ -1,0 +1,193 @@
+\documentclass{article}
+\usepackage[OT4]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[legalpaper, margin=2cm]{geometry}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{svg}
+
+\title{Sprawozdanie z pierwszej połowy projektu\\
+Przedmiotu "Wizualizacja Danych"}
+\author{Zespół 4 - Jan Domański, Maciej Kurzydłowski, Jan Machowski}
+\date{sem. 26L}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+% Proponowana struktura rozdziału
+% 1. Źródło danych
+% 2. Opis zbioru i istotnych pojęć - o czym jest, pojęcia z nim związane, kolumny, czy dane są kateg / liczb/
+% 3. Wizualizacja + krótki opis co pokazuje
+% 4. Wnioski
+
+
+\section{Standarized price-to-income ratio}
+\subsection{Źródło danych}
+\href{https://ec.europa.eu/eurostat/databrowser/view/tipsho60/default/table?lang=en}{Eurostat tipsho60 - Standarized price-to-income ratio - annual data}\\
+\url{https://ec.europa.eu/eurostat/databrowser/view/tipsho60/default/table?lang=en}
+
+\subsection{Opis zbioru i istotnych pojęć}
+\begin{itemize}
+    \item Zbiór przedstawia uśrednione wartości PTI dla poszczególnych krajów;
+    \item Dane zostały zebrane na przestrzeni lat 2000 - 2024;
+    \item Dane pochodzą z 27 krajów członkowskich Unii Europejskiej;
+    \item \textbf{AGDI} - Average Gross Domestic Income - skorygowany dochód do dyspozycji brutto gospodarstwa domowego;
+    \item \textbf{PTI} - Price-to-income, ustandaryzowany stosunek średniej ceny mieszkania do AGDI gospodarstwa domowego;
+    \item \textbf{RoC} - Rate of Change, współczynnik zmiany wartości PTI wzgledem poprzedniego roku (w roku 2000 wartości NaN);
+    \item \textbf{Większość danych z okresu 2000 - 2004 są estymatami} - należy brać te dane na poprawkę;
+    \item Zwiększenie / zmniejszenie indeksu PTI nie oznacza jednoznacznie zwiększenia / zmniejszenia ceny mieszkania 
+    - oznacza że \textbf{stosunek mieszkania wzgledem zarobku się zmienił};
+    \item Indeks PTI dla kraju można interpretować jako \textbf{średnią, względną wartość domu w danym kraju}.
+\end{itemize}
+
+
+\subsection{Wizualizacje zbioru}
+\subsubsection{Statystyka opisowa Price-to-Income}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/1/svg/1.svg}
+    \caption{Statystyka opisowa danych PTI względem kraju.}
+\end{figure}
+
+Wykres przedstawia podstawowe statystyki opisowe wartości PTI względem średniej długoterminowej dla zbioru krajów. 
+Średnia na przestrzeni lat prezentuje się równomiernie, wszystkie kraje znajdują się w zakresie 90\% - 120\% PTI.
+Widać jednak, że odchylenie jednego z państw - Rumunii - dominuje nad pozostałymi. Sugeruje to, że dane dla tego 
+kraju będą bardzo zmienne, co również widać po wartościach miniumalnej i maksymalnej Rumunii.
+
+
+\subsubsection{Indeks Price-to-Income względem kraju}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/1/svg/2.svg}
+    \caption{Wartość indeksu PTI względem kraju na przestrzeni lat względem roku 2015.}
+\end{figure}
+
+Jak wspomniano w opisie, dane przedstawione na wykresie są PTI wzgledem roku 2015 w poszczególnym kraju - stąd kumulacja linii w tym punkcie.
+Dla klarowności, dane podzielono na Europę Wschodnią i Europę Zachodnią. Najbardziej zmienna jest faktycznie Rumunia, uzyskująca szczyt w 2007 roku 
+powyżej 250\% PTI, i stopniowo spadająca od tego momentu.
+
+Na wykresie widać tendencję spadkową indeksów PTI wszystkich krajów na przestrzeni lat 2007 - 2015. Jest to w znacznym stopniu spowodowane
+kryzysem na rynku mieszkaniowym z 2008 roku, zapoczątkowanym w Stanach Zjednoczonych. Jak widać, kryzys nie udeżył krajów Europy tak mocno, 
+jak Stany Zjednoczone, ale wpływ globalnej gospodarki pod koniec lat 10 XXI wieku jest nie do podważenia.
+
+\subsubsection{Price-to-Income w 2024 względem średniej długoterminowej}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/1/svg/4.svg}
+    \caption{Indeks PTI krajów w 2024 roku względem średniej długoterminowej.}
+\end{figure}
+
+Wyrkes ten w intuicyjny sposób przedstawia różnicę najnowszej wartości indeksu PTI krajów Europejskich względem średniej długoterminowej.
+Jak widać, najbardziej wartościowe domy Europejskie można znaleźć w Portugalii, Luksemburgu i Austrii. Warto zauważyć, że podział na Europę Wschodnią 
+oraz Zachodnią nie determinuje tego czy mieszkania są średnio bardziej wartościowe niż w przeciwnej połowie podziału - zarówno w krajach "powyżej 0" 
+oraz "poniżej 0" występują kraje wschodnie i zachodnie.  
+
+\subsubsection{Zmiana Price-to-Income między 2000 a 2024}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/1/svg/7.svg}
+    \caption{Zmiana indeksu PTI krajów między 2000 a 2024 rokiem.}
+\end{figure}
+
+Dzięki powyższej wizualizacji jesteśmy w stanie klarownie określić, czy od roku 2000 (lub pierwszego dostępnego w zbiorze) do roku 2024 (lub ostatniego) 
+średnia wartość mieszkania wzrosła, czy zmalała. Podobnie jak w przypadku poprzedniego wykresu, widzimy podział względnie równy, gdzie najbardziej odstającymi
+krajami są Luksemburg (na plus - wartość wzrosła) oraz Bułgaria (na minus - wartość zmalała).
+
+\subsubsection{Zmiana Price-to-Income między minimum a maksimum}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/1/svg/8.svg}
+    \caption{Zmiana indeksu PTI krajów między najmniejszą a największą dostępną wartością.}
+\end{figure}
+
+Na tym wykresie również dominuje Luksemburg, dwukrotnie przewyżając następny w kolejności kraj - Szwecję. Oczywiście nie oznacza to że Luksemburg ma 
+średnio najbardziej wartościowe mieszkania, tylko że odczuł największą całkowitą różnicę wartości od 2000 do 2024 roku.
+
+\subsubsection{Statystyki opisowe Rate of Change}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/1/svg/6.svg}
+    \caption{Statystyki opisowe wartości indeksu RoC.}
+\end{figure}
+
+RoC jest indeksem, który wskazuje zmianę PTI względem poprzedniego roku. Niedziwnym jest więc, że większość wartości RoC mieści się w przedziale od -10 pp.
+do +10 pp. - aż 90\% wszystkich zmian zamyka się w tym przedziale. Jak wynika ze średniej i mediany, statystycznie jest nieznacznie więcej dodatnich RoC 
+niż ujemnych - średnia RoC wynosi 0.5pp. a mediana 0.3pp. 
+
+Analizujący wykres po prawej stronie, nie trudno zauważyć że w każdym przedziale poza 2007-2012 doświadczono nieujemnych średnich wartości RoC. 
+Oczywiście, większa ujemność wartości z lat 2007-2012 spowodowana jest wyżej wspomnianym kryzysem mieszkanowym. 
+
+
+\subsubsection{Indeks Rate of Change względm kraju}
+
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/1/svg/3.svg}
+    \caption{Wartość indeksu RoC względem kraju na przestrzeni lat.}
+    \label{wykres:1_8}
+\end{figure}
+
+Analizując wykres pokazujący RoC z podziałem na Europę Wschodnią i Zachodnią jesteśmy w stanie stwierdzić, że RoC jest wartością bardziej chaotyczną niż 
+PTI. Natomiast, analogicznie do poprzedniego wykresu, Rumunia przoduje wartościami maksymalnymi RoC a, o dziwo, w roku szczytowym dorównuje jej Polska.
+
+\subsubsection{Heatmap wartości Rate of Change}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/1/svg/5.svg}
+    \caption{Heatmap'a wartości Rate of Change krajów na przestrzeni lat.}
+\end{figure}
+
+Na wykresie typu heatmap klarownie widać jak kraje na przestrzeni lat zmagały się ze zmianami indeksu PTI. Widzimy, że rok 2005 i 2006 miały szczytowe wartości pozytywnych 
+dla niektórych państw (Bułgaria, Litwa, Łotwa, Luksemburg), który niechybnie upadły w w latach 2008-2010. Po tym, mieszanka różnych kolorów odzwierciedla sytuację na 
+Rysunku \ref{wykres:1_8} - chaotyczne ruchy zarówno w kierunku pozytywnym jak i negatywnym.
+
+\subsubsection{Wyrkesy dla Polski}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/1/svg/10.svg}
+    \caption{Wykresy PRI, RoC na przestrzeni lat dla Polski.}
+\end{figure}
+
+Skupiając się wyłącznie na polsce, widać tendencyjny spadek w latach 2008 - 2012 obecny dla pozostałych krajów Europy. Ciekawym jednak jest fakt, iż do aż 2017 roku
+RoC było negatywne - oznacza to, że wartości mieszkań statystycznie malały w porównaniu z latami poprzednimi, a dopiero w 2018 roku zaczęły rosnąć i utrzymały swój 
+wzrost w czasach pandemicznych. Odzwierciedla to również PTI, które "odbija się" w roku 2017 i średnio idzie w górę od tamtego roku, z wyjątkiem 2022 i 2023 
+gdzie wartość znacznie spada, prawdopodobnie z uwagi na wartość inflacji w okresie Pandemii.
+
+\newpage
+\subsection{Wnioski}
+\begin{enumerate}
+    \item Na przełomie lat 2008-2015, w większości krajów Europy indeks PTI drastycznie spadł, po czym powoli wzrastał;
+    \item 85\% wartości Rate of Change na przestrzeni wszystkich lat znajduje się w przedziale <-10 pp; 10pp>. Sugeruje to, że gospodarka mieszkaniowa jest, średnio, stabilna.
+    \item Specjalnym przypadkiem jest Rumunia, w której PTI i RoC są bardzo zmienne i odstające od pozostałych krajów.
+\end{enumerate}
+
+
+\newpage
+\section{Noclegi i miejsca do spania dla turystów w Europie}
+\subsection{Źródło danych}
+% \href{}{}\\
+% \url{}
+
+\subsection{Opis zbioru i istotnych pojęć}
+\begin{itemize}
+    \item
+\end{itemize}
+
+
+\subsection{Wizualizacje zbioru}
+
+
+\subsection{Wnioski}
+
+\newpage
+\section{Nie-dominujące wyznania religijne w Polsce}
+\subsection{Źródło danych}
+% \href{}{}\\
+% \url{}
+
+\subsection{Opis zbioru i istotnych pojęć}
+\begin{itemize}
+    \item
+\end{itemize}
+
+
+\subsection{Wizualizacje zbioru}
+
+\subsection{Wnioski}
+
+\end{document}
