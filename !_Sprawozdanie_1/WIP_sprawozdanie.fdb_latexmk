@@ -1,10 +1,10 @@
 # Fdb version 4
-["pdflatex"] 1777803466.99324 "c:/Users/janma/Desktop/NEWD_26/!_Sprawozdanie_1/WIP_sprawozdanie.tex" "WIP_sprawozdanie.pdf" "WIP_sprawozdanie" 1777803468.64697 0
-  "WIP_sprawozdanie.aux" 1777803468 9511 8b7ff6caf7d793069876af8b2e235026 "pdflatex"
-  "WIP_sprawozdanie.out" 1777803468 9626 44a175a76f5404e2c23bdc1ae2f132ba "pdflatex"
-  "WIP_sprawozdanie.tex" 1777803466 15182 d46398081538737e0b30e556cdeb6c29 ""
-  "WIP_sprawozdanie.toc" 1777803468 3944 9864ad19250ab4cbe09a2ef643c39a57 "pdflatex"
-  "c:/Users/janma/Desktop/NEWD_26/!_Sprawozdanie_1/WIP_sprawozdanie.tex" 1777803466 15182 d46398081538737e0b30e556cdeb6c29 ""
+["pdflatex"] 1777807093.46013 "c:/Users/janma/Desktop/NEWD_26/!_Sprawozdanie_1/WIP_sprawozdanie.tex" "WIP_sprawozdanie.pdf" "WIP_sprawozdanie" 1777807096.73592 0
+  "WIP_sprawozdanie.aux" 1777807096 9555 ba105092df8d56ba93ee6cf96560cd22 "pdflatex"
+  "WIP_sprawozdanie.out" 1777807096 9334 cbd5a5c6b23ace410ff2138e7a652579 "pdflatex"
+  "WIP_sprawozdanie.tex" 1777807092 17033 45a07a176e60fa8bbf73d0362cdcce88 ""
+  "WIP_sprawozdanie.toc" 1777807096 3823 51538c4822d8b281e63d3b985cf48c88 "pdflatex"
+  "c:/Users/janma/Desktop/NEWD_26/!_Sprawozdanie_1/WIP_sprawozdanie.tex" 1777807092 17033 45a07a176e60fa8bbf73d0362cdcce88 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1765447945 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/pl/plrm.enc" 1765456954 1944 1845592c00bbe510359fd6887a83ff72 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/pl/pltt.enc" 1765456954 1971 0a4e750f2a9cb8345529a19560d48a96 ""
@@ -137,6 +137,7 @@
   "phts/1/svg/1.8.svg" 1777798594 63812 146b77181a321429d3be59aeec21965e ""
   "phts/2/svg/2.1.svg" 1777799302 73578 7d6dc5be6d53b1335527b1f1dd51ebba ""
   "phts/2/svg/2.10.svg" 1777799317 167882 6fec14b090c5ce1a91d0bf3b31702bdf ""
+  "phts/2/svg/2.11.svg" 1777806970 173123 279f93af950561d20f4fe42da8ac6fb1 ""
   "phts/2/svg/2.2.svg" 1777799304 74218 25be6491cb3d3973c20fa03617817699 ""
   "phts/2/svg/2.3.svg" 1777799306 121561 20d7573f300987d424047d9dd674947e ""
   "phts/2/svg/2.4.svg" 1777799307 143307 d90f9efc283e5c76736f34a907281dbe ""
@@ -166,6 +167,8 @@
   "svg-inkscape/1.8_svg-tex.pdf_tex" 1777800851 2075 465bd3c1d3388c3277ec8de8eeef1c9b ""
   "svg-inkscape/2.10_svg-tex.pdf" 1777801370 104593 647a166cb354bbc31aea6f0dc1a57af4 ""
   "svg-inkscape/2.10_svg-tex.pdf_tex" 1777801370 2077 1ba78ae0e243653223880b31b6b6f2c4 ""
+  "svg-inkscape/2.11_svg-tex.pdf" 1777806999 118608 a24830a71611a35ae4e34a556c111967 ""
+  "svg-inkscape/2.11_svg-tex.pdf_tex" 1777806999 2068 4008c10e15af2c6e7f7bda9329b0d9c2 ""
   "svg-inkscape/2.1_svg-tex.pdf" 1777801016 47878 5a21b467e728c040375d69e72f838884 ""
   "svg-inkscape/2.1_svg-tex.pdf_tex" 1777801016 2075 feb479aeea02b05e9948ad2edc93bfcd ""
   "svg-inkscape/2.2_svg-tex.pdf" 1777801018 48009 d1130b172dd3d6cc9910057c0c60cd68 ""
