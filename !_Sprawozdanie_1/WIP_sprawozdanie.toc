@@ -17,9 +17,20 @@
 \contentsline {subsection}{\numberline {2.1}Źródło danych}{8}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Opis zbioru i istotnych pojęć}{8}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Wizualizacje zbioru}{8}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Wnioski}{8}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Nie-dominujące wyznania religijne w Polsce}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Źródło danych}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Opis zbioru i istotnych pojęć}{9}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Wizualizacje zbioru}{9}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Wnioski}{9}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.1}Kraje z największą liczbą placówek noclegowych}{8}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Kraje z największą liczbą miejsc do spania}{9}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Średnia liczba miejsc do spania na placówkę turystyczną}{9}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Zmienność liczby placówek noclegowych na przestrzeni lat}{10}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Indeks wzrostu liczby placówek turystycznych na przestrzeni lat}{10}{subsubsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}Liczba placówek turystycznych w wybranych krajach, z podziałem na stopień urbanizacji}{11}{subsubsection.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.7}Liczba placówek turystycznych w wybranych krajach, z podziałem na dostęp do morza}{11}{subsubsection.2.3.7}%
+\contentsline {subsubsection}{\numberline {2.3.8}Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na województwa}{12}{subsubsection.2.3.8}%
+\contentsline {subsubsection}{\numberline {2.3.9}NUTS2 - podział na jednostki geograficzne}{12}{subsubsection.2.3.9}%
+\contentsline {subsubsection}{\numberline {2.3.10}Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na stopień urbanizacji oraz dostęp do morza}{13}{subsubsection.2.3.10}%
+\contentsline {subsubsection}{\numberline {2.3.11}Dodatkowe wizualizacje dla Polski}{13}{subsubsection.2.3.11}%
+\contentsline {subsection}{\numberline {2.4}Wnioski}{13}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Nie-dominujące wyznania religijne w Polsce}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Źródło danych}{14}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Opis zbioru i istotnych pojęć}{14}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Wizualizacje zbioru}{14}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Wnioski}{14}{subsection.3.4}%
