@@ -5,8 +5,66 @@
 \usepackage{mathtools}
 \usepackage{float}
 \usepackage{hyperref}
-\usepackage{svg}
+\usepackage{placeins}
+\usepackage{chngcntr}
 \usepackage{graphicx}
+
+
+\newif\ifszybkakompilacja
+\szybkakompilacjatrue
+% \szybkakompilacjatrue
+
+\newcommand{\raportimg}[1]{%
+    \centering
+    \ifszybkakompilacja
+        \fbox{%
+            \parbox[c][0.24\textheight][c]{0.78\textwidth}{%
+                \centering
+                \texttt{#1}\\[0.4em]
+                \small miejsce na wykres
+            }%
+        }%
+    \else
+        \includegraphics[width=0.78\textwidth,height=0.32\textheight,keepaspectratio]{#1}%
+    \fi
+}
+
+
+% ============================================================
+% TRYB WYKRESÓW Z SEKCJI 6
+% ============================================================
+% Jeśli Overleaf Free łapie timeout, zostaw:
+% \pokazsekcjaszescfalse
+%
+% Wtedy sekcja 6 pokazuje ramki z nazwami plików.
+% Po zmniejszeniu PNG do 100--120 DPI możesz zmienić na:
+% \pokazsekcjaszesctrue
+% ============================================================
+
+\newif\ifpokazsekcjaszesc
+\pokazsekcjaszesctrue
+% \pokazsekcjaszesctrue
+
+\newcommand{\wykrespngwniosek}[4]{%
+\begin{figure}[H]
+    \centering
+    \ifpokazsekcjaszesc
+        \includegraphics[width=0.72\textwidth,height=0.24\textheight,keepaspectratio]{#1}%
+    \else
+        \fbox{%
+            \parbox[c][0.20\textheight][c]{0.72\textwidth}{%
+                \centering
+                \texttt{#1}\\[0.4em]
+                \small miejsce na wykres
+            }%
+        }%
+    \fi
+    \caption{#2}
+    \label{fig:#3}
+\end{figure}
+\noindent\textbf{Wniosek:} #4
+\par\vspace{0.2cm}
+}
 
 \title{Sprawozdanie z pierwszej połowy projektu\\
 Przedmiotu "Wizualizacja Danych"}
@@ -18,21 +76,10 @@ Przedmiotu "Wizualizacja Danych"}
 \tableofcontents
 \newpage
 
-% Proponowana struktura rozdziału
-% 1. Źródło danych
-% 2. Opis zbioru i istotnych pojęć - o czym jest, pojęcia z nim związane, kolumny, czy dane są kateg / liczb/
-% 3. Wizualizacja + krótki opis co pokazuje
-% 4. Wnioski
-
-
-% \subsubsection{}
-% \begin{figure}[H]
-%     \includegraphics[width=\textwidth]{phts/}
-%     \caption{}
-% \end{figure}
-
-
+% ============================================================
 \section{Standarized price-to-income ratio}
+% ============================================================
+
 \subsection{Źródło danych}
 \href{https://ec.europa.eu/eurostat/databrowser/view/tipsho60/default/table?lang=en}{Eurostat tipsho60 - Standarized price-to-income ratio - annual data}\\
 \url{https://ec.europa.eu/eurostat/databrowser/view/tipsho60/default/table?lang=en}
@@ -40,256 +87,251 @@ Przedmiotu "Wizualizacja Danych"}
 \subsection{Opis zbioru i istotnych pojęć}
 \begin{itemize}
     \item Zbiór przedstawia uśrednione wartości PTI dla poszczególnych krajów;
-    \item Dane zostały zebrane na przestrzeni lat 2000 - 2024;
+    \item Dane zostały zebrane na przestrzeni lat 2000--2024;
     \item Dane pochodzą z 27 krajów członkowskich Unii Europejskiej;
     \item \textbf{AGDI} - Average Gross Domestic Income - skorygowany dochód do dyspozycji brutto gospodarstwa domowego;
     \item \textbf{PTI} - Price-to-income, ustandaryzowany stosunek średniej ceny mieszkania do AGDI gospodarstwa domowego;
-    \item \textbf{RoC} - Rate of Change, współczynnik zmiany wartości PTI wzgledem poprzedniego roku (w roku 2000 wartości NaN);
-    \item \textbf{Większość danych z okresu 2000 - 2004 są estymatami} - należy brać te dane na poprawkę;
-    \item Zwiększenie / zmniejszenie indeksu PTI nie oznacza jednoznacznie zwiększenia / zmniejszenia ceny mieszkania 
-    - oznacza że \textbf{stosunek mieszkania wzgledem zarobku się zmienił};
-    \item Indeks PTI dla kraju można interpretować jako \textbf{średnią, względną wartość domu w danym kraju}.
+    \item \textbf{RoC} - Rate of Change, współczynnik zmiany wartości PTI względem poprzedniego roku;
+    \item Większość danych z okresu 2000--2004 jest estymatami, dlatego należy interpretować je ostrożnie;
+    \item Zwiększenie lub zmniejszenie indeksu PTI nie oznacza jednoznacznie zmiany ceny mieszkania, lecz zmianę relacji ceny mieszkania do dochodu;
+    \item Indeks PTI można interpretować jako średnią względną wartość domu w danym kraju.
 \end{itemize}
 
-
 \subsection{Wizualizacje zbioru}
+
 \subsubsection{Statystyka opisowa Price-to-Income}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/1/svg/1.1}
+    \raportimg{phts/1/png/1.1.png}
     \caption{Statystyka opisowa danych PTI względem kraju.}
 \end{figure}
 
-Wykres przedstawia podstawowe statystyki opisowe wartości PTI względem średniej długoterminowej dla zbioru krajów. 
-Średnia na przestrzeni lat prezentuje się równomiernie, wszystkie kraje znajdują się w zakresie 90\% - 120\% PTI.
-Widać jednak, że odchylenie jednego z państw - Rumunii - dominuje nad pozostałymi. Sugeruje to, że dane dla tego 
-kraju będą bardzo zmienne, co również widać po wartościach miniumalnej i maksymalnej Rumunii.
-
+Wykres przedstawia podstawowe statystyki opisowe wartości PTI względem średniej długoterminowej dla zbioru krajów.
+Średnia na przestrzeni lat prezentuje się stosunkowo równomiernie, a większość krajów znajduje się w zakresie około 90\%--120\% PTI.
+Widać jednak, że odchylenie jednego z państw -- Rumunii -- dominuje nad pozostałymi.
+Sugeruje to, że dane dla tego kraju są szczególnie zmienne, co również widać po wartościach minimalnych i maksymalnych.
 
 \subsubsection{Indeks Price-to-Income względem kraju}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/1/svg/1.2}
+    \raportimg{phts/1/png/1.2.png}
     \caption{Wartość indeksu PTI względem kraju na przestrzeni lat względem roku 2015.}
 \end{figure}
 
-Jak wspomniano w opisie, dane przedstawione na wykresie są PTI wzgledem roku 2015 w poszczególnym kraju - stąd kumulacja linii w tym punkcie.
-Dla klarowności, dane podzielono na Europę Wschodnią i Europę Zachodnią. Najbardziej zmienna jest faktycznie Rumunia, uzyskująca szczyt w 2007 roku 
-powyżej 250\% PTI, i stopniowo spadająca od tego momentu.
-
-Na wykresie widać tendencję spadkową indeksów PTI wszystkich krajów na przestrzeni lat 2007 - 2015. Jest to w znacznym stopniu spowodowane
-kryzysem na rynku mieszkaniowym z 2008 roku, zapoczątkowanym w Stanach Zjednoczonych. Jak widać, kryzys nie udeżył krajów Europy tak mocno, 
-jak Stany Zjednoczone, ale wpływ globalnej gospodarki pod koniec lat 10 XXI wieku jest nie do podważenia.
+Dane przedstawione na wykresie są wartościami PTI względem roku 2015 dla poszczególnych krajów, stąd kumulacja linii w tym punkcie.
+Dla klarowności dane podzielono na Europę Wschodnią i Europę Zachodnią.
+Najbardziej zmienna jest Rumunia, uzyskująca szczyt w 2007 roku powyżej 250\% PTI, a następnie stopniowo spadająca.
+Na wykresie widać także tendencję spadkową indeksów PTI wielu krajów w latach 2007--2015, co można wiązać z kryzysem na rynku mieszkaniowym po 2008 roku.
 
 \subsubsection{Price-to-Income w 2024 względem średniej długoterminowej}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/1/svg/1.4}
+    \raportimg{phts/1/png/1.4.png}
     \caption{Indeks PTI krajów w 2024 roku względem średniej długoterminowej.}
 \end{figure}
 
-Wyrkes ten w intuicyjny sposób przedstawia różnicę najnowszej wartości indeksu PTI krajów Europejskich względem średniej długoterminowej.
-Jak widać, najbardziej wartościowe domy Europejskie można znaleźć w Portugalii, Luksemburgu i Austrii. Warto zauważyć, że podział na Europę Wschodnią 
-oraz Zachodnią nie determinuje tego czy mieszkania są średnio bardziej wartościowe niż w przeciwnej połowie podziału - zarówno w krajach "powyżej 0" 
-oraz "poniżej 0" występują kraje wschodnie i zachodnie.  
+Wykres przedstawia różnicę najnowszej wartości indeksu PTI krajów europejskich względem średniej długoterminowej.
+Najwyższe dodatnie odchylenia widoczne są między innymi dla Portugalii, Luksemburga i Austrii.
+Warto zauważyć, że podział na Europę Wschodnią oraz Zachodnią nie determinuje jednoznacznie tego, czy mieszkania są relatywnie bardziej wartościowe względem dochodu.
 
 \subsubsection{Zmiana Price-to-Income między 2000 a 2024}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/1/svg/1.7}
+    \raportimg{phts/1/png/1.7.png}
     \caption{Zmiana indeksu PTI krajów między 2000 a 2024 rokiem.}
 \end{figure}
 
-Dzięki powyższej wizualizacji jesteśmy w stanie klarownie określić, czy od roku 2000 (lub pierwszego dostępnego w zbiorze) do roku 2024 (lub ostatniego) 
-średnia wartość mieszkania wzrosła, czy zmalała. Podobnie jak w przypadku poprzedniego wykresu, widzimy podział względnie równy, gdzie najbardziej odstającymi
-krajami są Luksemburg (na plus - wartość wzrosła) oraz Bułgaria (na minus - wartość zmalała).
+Wizualizacja pozwala określić, czy od roku 2000 do roku 2024 średnia względna wartość mieszkania wzrosła, czy zmalała.
+Najbardziej odstającymi krajami są Luksemburg, gdzie wartość wzrosła, oraz Bułgaria, gdzie wartość zmalała.
 
 \subsubsection{Zmiana Price-to-Income między minimum a maksimum}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/1/svg/1.8}
+    \raportimg{phts/1/png/1.8.png}
     \caption{Zmiana indeksu PTI krajów między najmniejszą a największą dostępną wartością.}
 \end{figure}
 
-Na tym wykresie również dominuje Luksemburg, dwukrotnie przewyżając następny w kolejności kraj - Szwecję. Oczywiście nie oznacza to że Luksemburg ma 
-średnio najbardziej wartościowe mieszkania, tylko że odczuł największą całkowitą różnicę wartości od 2000 do 2024 roku.
+Na tym wykresie również dominuje Luksemburg, wyraźnie przewyższając pozostałe kraje.
+Nie oznacza to jednak, że Luksemburg ma średnio najbardziej wartościowe mieszkania, lecz że doświadczył największej różnicy wartości indeksu w analizowanym okresie.
 
 \subsubsection{Statystyki opisowe Rate of Change}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/1/svg/1.6}
+    \raportimg{phts/1/png/1.6.png}
     \caption{Statystyki opisowe wartości indeksu RoC.}
 \end{figure}
 
-RoC jest indeksem, który wskazuje zmianę PTI względem poprzedniego roku. Niedziwnym jest więc, że większość wartości RoC mieści się w przedziale od -10 pp.
-do +10 pp. - aż 90\% wszystkich zmian zamyka się w tym przedziale. Jak wynika ze średniej i mediany, statystycznie jest nieznacznie więcej dodatnich RoC 
-niż ujemnych - średnia RoC wynosi 0.5pp. a mediana 0.3pp. 
+RoC wskazuje zmianę PTI względem poprzedniego roku.
+Większość wartości RoC mieści się w przedziale od -10 pp. do +10 pp.
+Średnia i mediana wskazują na niewielką przewagę dodatnich zmian.
+W przedziale 2007--2012 widoczne są ujemne średnie wartości RoC, co można wiązać z kryzysem mieszkaniowym.
 
-Analizujący wykres po prawej stronie, nie trudno zauważyć że w każdym przedziale poza 2007-2012 doświadczono nieujemnych średnich wartości RoC. 
-Oczywiście, większa ujemność wartości z lat 2007-2012 spowodowana jest wyżej wspomnianym kryzysem mieszkanowym. 
-
-
-\subsubsection{Indeks Rate of Change względm kraju}
+\subsubsection{Indeks Rate of Change względem kraju}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/1/svg/1.3}
+    \raportimg{phts/1/png/1.3.png}
     \caption{Wartość indeksu RoC względem kraju na przestrzeni lat.}
     \label{wykres:1_8}
 \end{figure}
 
-Analizując wykres pokazujący RoC z podziałem na Europę Wschodnią i Zachodnią jesteśmy w stanie stwierdzić, że RoC jest wartością bardziej chaotyczną niż 
-PTI. Natomiast, analogicznie do poprzedniego wykresu, Rumunia przoduje wartościami maksymalnymi RoC a, o dziwo, w roku szczytowym dorównuje jej Polska.
+RoC jest bardziej chaotyczną miarą niż sam PTI, ponieważ pokazuje zmiany rok do roku.
+Rumunia ponownie wyróżnia się wartościami maksymalnymi, a w jednym z okresów wysokie wartości osiąga również Polska.
 
 \subsubsection{Heatmap wartości Rate of Change}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/1/svg/1.5}
-    \caption{Heatmap'a wartości Rate of Change krajów na przestrzeni lat.}
+    \raportimg{phts/1/png/1.5.png}
+    \caption{Heatmapa wartości Rate of Change krajów na przestrzeni lat.}
 \end{figure}
 
-Na wykresie typu heatmap klarownie widać jak kraje na przestrzeni lat zmagały się ze zmianami indeksu PTI. Widzimy, że rok 2005 i 2006 miały szczytowe wartości pozytywnych 
-dla niektórych państw (Bułgaria, Litwa, Łotwa, Luksemburg), który niechybnie upadły w w latach 2008-2010. Po tym, mieszanka różnych kolorów odzwierciedla sytuację na 
-Rysunku \ref{wykres:1_8} - chaotyczne ruchy zarówno w kierunku pozytywnym jak i negatywnym.
+Heatmapa pokazuje, jak kraje zmagały się ze zmianami indeksu PTI w czasie.
+W latach 2005--2006 część krajów osiągała wysokie dodatnie wartości, które następnie spadały w latach 2008--2010.
+Późniejszy okres charakteryzuje się bardziej mieszanymi zmianami, widocznymi również na wykresie Rate of Change.
 
-\subsubsection{Wyrkesy dla Polski}
+\subsubsection{Wykresy dla Polski}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/1/svg/1.10}
-    \caption{Wykresy PRI, RoC na przestrzeni lat dla Polski.}
+    \raportimg{phts/1/png/1.10.png}
+    \caption{Wykresy PTI i RoC na przestrzeni lat dla Polski.}
 \end{figure}
 
-Skupiając się wyłącznie na polsce, widać tendencyjny spadek w latach 2008 - 2012 obecny dla pozostałych krajów Europy. Ciekawym jednak jest fakt, iż do aż 2017 roku
-RoC było negatywne - oznacza to, że wartości mieszkań statystycznie malały w porównaniu z latami poprzednimi, a dopiero w 2018 roku zaczęły rosnąć i utrzymały swój 
-wzrost w czasach pandemicznych. Odzwierciedla to również PTI, które "odbija się" w roku 2017 i średnio idzie w górę od tamtego roku, z wyjątkiem 2022 i 2023 
-gdzie wartość znacznie spada, prawdopodobnie z uwagi na wartość inflacji w okresie Pandemii.
+W przypadku Polski widać spadek w latach 2008--2012, obecny również w wielu innych krajach Europy.
+RoC pozostawało ujemne aż do 2017 roku, co oznacza, że wartości mieszkań względem dochodu statystycznie malały.
+Od 2018 roku widoczny jest ponowny wzrost, utrzymujący się również w okresie pandemicznym, z wyjątkiem lat 2022 i 2023.
 
-\newpage
 \subsection{Wnioski}
 \begin{enumerate}
-    \item Na przełomie lat 2008-2015, w większości krajów Europy indeks PTI drastycznie spadł, po czym powoli wzrastał;
-    \item 85\% wartości Rate of Change na przestrzeni wszystkich lat znajduje się w przedziale <-10 pp; 10pp>. Sugeruje to, że gospodarka mieszkaniowa jest, średnio, stabilna.
+    \item W latach 2008--2015 w większości krajów Europy indeks PTI spadł, po czym stopniowo wzrastał.
+    \item Większość wartości Rate of Change mieści się w relatywnie wąskim przedziale, co sugeruje umiarkowaną stabilność rynku mieszkaniowego.
     \item Specjalnym przypadkiem jest Rumunia, w której PTI i RoC są bardzo zmienne i odstające od pozostałych krajów.
 \end{enumerate}
 
-
+% ============================================================
 \newpage
 \section{Noclegi i miejsca do spania dla turystów w Europie}
+% ============================================================
+
 \subsection{Źródło danych}
 \href{https://ec.europa.eu/eurostat/databrowser/view/tour_cap_nuts2dc__custom_12660565/default/table}
-{Eurostat\ tour\_cap\_nuts2dc - Establishments and Bed-places in Tourist Accommodation by Urbanisation \& Coastal type} \\
+{Eurostat tour\_cap\_nuts2dc - Establishments and Bed-places in Tourist Accommodation by Urbanisation \& Coastal type}\\
 \url{https://ec.europa.eu/eurostat/databrowser/view/tour_cap_nuts2dc__custom_12660565/default/table}
 
 \subsection{Opis zbioru i istotnych pojęć}
 \begin{itemize}
-    \item Dane zostały zbierane na przestrzeni lat 2012 - 2024;
+    \item Dane zostały zbierane na przestrzeni lat 2012--2024;
     \item Dane pochodzą z 27 krajów członkowskich Unii Europejskiej;
-    \item Granulacja danych występuje względem państw, województw (NUTS2), miast/przedmieść/wsi, miejsc przybrzeżnych/nieprzybrzeżnych;
-    \item Dane dla niektórych krajów, zwłaszcza we wczesnych latach, są estymatami.
-    \item \textbf{Placówka noclegowa / turystyczna} - ośrodek, który przyjmuje i kwateruje turystów z możliwością snu. 
-            Wchodzą w to hotele, hostele, pola kempingowe i rekreacyjne, domki turystyczne i inne;
-    \item \textbf{Miejsce do spania} - pełnoprawne, odpowiednie miejsce do odpoczynku nocnego dla jednej osoby.
-            Wchodzą w to m.in. łóżko, rozkładana kanapa. Nie wchodzą w to m.in. nierozkładany fotel.
+    \item Granulacja danych występuje względem państw, regionów NUTS2, stopnia urbanizacji oraz dostępu do morza;
+    \item Dane dla niektórych krajów, zwłaszcza we wczesnych latach, są estymatami;
+    \item \textbf{Placówka noclegowa / turystyczna} - ośrodek, który przyjmuje i kwateruje turystów z możliwością snu;
+    \item \textbf{Miejsce do spania} - odpowiednie miejsce do odpoczynku nocnego dla jednej osoby.
 \end{itemize}
-
 
 \subsection{Wizualizacje zbioru}
 
 \subsubsection{Kraje z największą liczbą placówek noclegowych}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.1}
+    \raportimg{phts/2/png/2.1.png}
     \caption{20 państw Europy z największą liczbą placówek noclegowych w 2024 roku.}
 \end{figure}
-Na powyższym wykresie pokazane są kraje z największą liczbą placówek noclegowych w najnowszym dostępnym roku - 2024.
-Jak widać, znaczną dominację sprawują Włochy mające ok. 265 000 zarejestrowanych placówek turystycznych na terenie państwa.
-Jest to dwukrotnie więcej niż drugie w kolejności państwo - Chorwacja. Nie oznacza to jednak, że Włochy są w stanie
-przenocować największą liczbę osób. Czy tak faktycznie jest zobaczymy na następnych wykresach.
 
+Największą liczbą placówek noclegowych wyróżniają się Włochy, które znacząco przewyższają kolejne państwa.
+Duża liczba placówek nie musi jednak oznaczać największej liczby dostępnych miejsc do spania, ponieważ placówki mogą mieć różną skalę działalności.
 
 \subsubsection{Kraje z największą liczbą miejsc do spania}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.2}
+    \raportimg{phts/2/png/2.2.png}
     \caption{20 państw Europy z największą liczbą miejsc do spania w 2024 roku.}
 \end{figure}
-Podobnie jak na poprzednim wykresie, Włochy zajęły pierwsze miejsce w liczbie miejsc do spania w całym kraju.
-Zaskakująca sytuacja wydarzyła się na kolejnych miejscach - Chorwacja, która była druga względem liczby placówek turystycznych,
-spadła na 7 miejsce. Pokazuje to oczywisty, ale istotny fakt: \textbf{nie każda placówka turystyczna ma taką samą liczbę 
-miejsc do spania.} Jak widać, w Chorwacji jest wiele placówek które mają niedużą liczbę miejsc do spania, 
-a przykładowo we Francji jest sytuacja odwrotna - mniej placówek, ale wysoka liczba miejsc do spania (np. hotele).
 
+Włochy zajmują pierwsze miejsce również pod względem liczby miejsc do spania.
+Chorwacja, mimo wysokiej liczby placówek, znajduje się niżej w rankingu miejsc do spania.
+Pokazuje to, że nie każda placówka turystyczna ma taką samą liczbę łóżek.
 
 \subsubsection{Średnia liczba miejsc do spania na placówkę turystyczną}
-Zależność przedstawioną w ramach opisach wyższego wykresu przedstawia następujący wykres:
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.7}
+    \raportimg{phts/2/png/2.7.png}
     \caption{Średnia liczba miejsc do spania na placówkę turystyczną.}
 \end{figure}
-Niespodziewanym wynikiem jest Szwecja, która wyszła na czoło rankingu w perspektywie stosunku miejsc do spania 
-do liczb placówek turystycznych. Sugeruje to jedno - Szwecja ma relatywnie mało placówek noclegowych, które mają relatywnie 
-dużo miejsc do spania - hotele, hostele i tym podobne.
-Włochy, kraj dotychczas dominujący, znajduje się na 16 miejscu. Można z tego wysnuć oczywisty wniosek: 
-we Włoszech jest wiele małych placówek, które akceptują niewielką liczbę osób na noc.
 
-Ciekawym jest fakt, że "przełęcz" między krajami dominującymi na dwóch poprzednich wykresach, a aktualnym, jest znacznie 
-zmniejszona - wartości odstające są dominujące tylko i wyłącznie w specyficznych perspektywach. 
-Dodatkowo, patrząc na pozostałe kraje w rankingu, klarownie widać iż kształt figury stworzonej przez ich słupki jest
-analogiczny na wspomnianych trzech wykresach. Potwierdza to wcześniej nawiązaną hipotezę. 
-
+Wykres pokazuje relację liczby miejsc do spania do liczby placówek.
+Kraje z wysoką średnią mają relatywnie duże obiekty noclegowe, natomiast kraje z niską średnią mają więcej mniejszych placówek.
+Włochy, mimo dominacji w liczbie placówek i miejsc, nie znajdują się na szczycie tej klasyfikacji.
 
 \subsubsection{Zmienność liczby placówek noclegowych na przestrzeni lat}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.3}
-    \caption{Wyrkes zmienności liczby placówek noclegowych na przestrzeni lat.}
+    \raportimg{phts/2/png/2.3.png}
+    \caption{Wykres zmienności liczby placówek noclegowych na przestrzeni lat.}
 \end{figure}
-Z uwagi na dominację dwóch państw Europy w perspektywie liczby placówek noclegowych, tj. Włoch i Chorwacji, 
-pozostałe kraje wyglądają jakby miały relatywnie stałą liczbę placówek. Jest to zła koncepcja - zmiany działy się, 
-i były względnie znaczące dla danych krajów, jednak są przykryte skalą państw dominujących. Poniższy wykres przedstawia 
-te zależności bez obecności Włoch i Chorwacji:
-\begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.11}
-    \caption{Wyrkes zmienności liczby placówek noclegowych na przestrzeni lat - bez Włoch i Chorwacji.}
-\end{figure}
-Jak widać, zmiany nie wyglądają tak samo nieznacznie - widać przykładowo, że liczba hoteli stopniowo spada w Niemczech, 
-rośnie w Hiszpanii oraz że w Grecji miała znaczny spadek na początku pandemi Koronawirusa.
 
+Dominacja Włoch i Chorwacji sprawia, że zmiany w pozostałych krajach są mniej widoczne.
+Dlatego dodatkowo zastosowano wariant wykresu bez tych dwóch państw.
+
+\begin{figure}[H]
+    \raportimg{phts/2/png/2.11.png}
+    \caption{Wykres zmienności liczby placówek noclegowych na przestrzeni lat -- bez Włoch i Chorwacji.}
+\end{figure}
+
+Po wyłączeniu Włoch i Chorwacji lepiej widać zmiany w pozostałych krajach, m.in. spadki i wzrosty liczby placówek w wybranych państwach.
 
 \subsubsection{Indeks wzrostu liczby placówek turystycznych na przestrzeni lat}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.4}
+    \raportimg{phts/2/png/2.4.png}
     \caption{Wykres zmienności indeksu wzrostu liczby placówek turystycznych na przestrzeni lat.}
 \end{figure}
 
+Indeks wzrostu pozwala porównywać dynamikę zmian niezależnie od początkowej liczby placówek.
+Dzięki temu kraje o mniejszej liczbie obiektów również mogą być porównywane z krajami większymi.
+
 \subsubsection{Liczba placówek turystycznych w wybranych krajach, z podziałem na stopień urbanizacji}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.5}
+    \raportimg{phts/2/png/2.5.png}
     \caption{Liczba placówek turystycznych w wybranych krajach, z podziałem na stopień urbanizacji.}
 \end{figure}
 
+Wykres pokazuje, czy placówki koncentrują się przede wszystkim w miastach, na przedmieściach czy na obszarach wiejskich.
+Pozwala to zauważyć różnice w charakterze turystyki w poszczególnych krajach.
+
 \subsubsection{Liczba placówek turystycznych w wybranych krajach, z podziałem na dostęp do morza}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.6}
+    \raportimg{phts/2/png/2.6.png}
     \caption{Liczba placówek turystycznych w wybranych krajach, z podziałem na dostęp do morza.}
 \end{figure}
 
+Dostęp do morza jest ważnym czynnikiem dla wielu państw turystycznych.
+Wykres pokazuje, w jakim stopniu baza noclegowa jest skoncentrowana na obszarach przybrzeżnych.
+
 \subsubsection{Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na województwa}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.8}
+    \raportimg{phts/2/png/2.8.png}
     \caption{Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na województwa.}
 \end{figure}
 
-\begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.nuts2}
-    \caption{NUTS2 - podział Polski na wybrane jednostki geograficzne, z wyodrębnieniem jednostki 'warszawska stołeczna'.}
-\end{figure}
+Wykres przedstawia zróżnicowanie bazy noclegowej w Polsce.
+Największe wartości powinny pojawiać się w regionach silnie turystycznych oraz dużych ośrodkach miejskich.
 
+\begin{figure}[H]
+    \raportimg{phts/2/png/2.nuts2.png}
+    \caption{NUTS2 -- podział Polski na wybrane jednostki geograficzne.}
+\end{figure}
 
 \subsubsection{Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na stopień urbanizacji oraz dostęp do morza}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.9}
+    \raportimg{phts/2/png/2.9.png}
     \caption{Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na stopień urbanizacji oraz dostęp do morza.}
 \end{figure}
 
+Wizualizacja pokazuje, jak w Polsce baza noclegowa rozkłada się względem urbanizacji oraz położenia przybrzeżnego.
+
 \subsubsection{Dodatkowe wizualizacje dla Polski}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.10}
+    \raportimg{phts/2/png/2.10.png}
     \caption{Dodatkowe wizualizacje dla Polski.}
 \end{figure}
 
-
 \subsection{Wnioski}
+\begin{enumerate}
+    \item Włochy dominują pod względem liczby placówek noclegowych oraz liczby miejsc do spania.
+    \item Liczba placówek nie przekłada się bezpośrednio na liczbę miejsc do spania, ponieważ placówki różnią się wielkością.
+    \item Analiza z wyłączeniem krajów dominujących pozwala lepiej zauważyć zmiany w pozostałych państwach.
+    \item Dostęp do morza oraz stopień urbanizacji są istotnymi czynnikami różnicującymi rozmieszczenie bazy noclegowej.
+\end{enumerate}
 
+% ============================================================
 \newpage
 \section{Nie-dominujące wyznania religijne w Polsce}
+% ============================================================
+
 \subsection{Źródło danych}
 % \href{}{}\\
 % \url{}
@@ -299,17 +341,18 @@ rośnie w Hiszpanii oraz że w Grecji miała znaczny spadek na początku pandemi
     \item
 \end{itemize}
 
-
 \subsection{Wizualizacje zbioru}
 
 \subsection{Wnioski}
 
-
+% ============================================================
 \newpage
 \section{Kwartalny dług publiczny}
+% ============================================================
+
 \subsection{Źródło danych}
 \href{https://ec.europa.eu/eurostat/databrowser/view/gov_10q_ggdebt/default/table?lang=en}
-{Eurostat gov\_10q\_ggdebt - Quarterly government debt} \\
+{Eurostat gov\_10q\_ggdebt - Quarterly government debt}\\
 \url{https://ec.europa.eu/eurostat/databrowser/view/gov_10q_ggdebt/default/table?lang=en}
 
 \subsection{Opis zbioru i istotnych pojęć}
@@ -317,148 +360,104 @@ rośnie w Hiszpanii oraz że w Grecji miała znaczny spadek na początku pandemi
     \item Zbiór przedstawia kwartalne dane dotyczące długu sektora instytucji rządowych i samorządowych;
     \item Dane zostały zebrane na przestrzeni lat 2012--2025;
     \item Dane pochodzą z krajów członkowskich Unii Europejskiej;
-    \item Zbiór analizowany w prezentacji pochodzi z Eurostatu i ma oznaczenie \textbf{gov\_10q\_ggdebt\_\_custom\_20309646};
+    \item Zbiór analizowany w prezentacji pochodzi z Eurostatu i ma oznaczenie \texttt{gov\_10q\_ggdebt};
     \item Ostatnia aktualizacja danych w wykorzystanym zbiorze miała miejsce 22/01/2026;
-    \item \textbf{Dług publiczny} - zadłużenie sektora instytucji rządowych i samorządowych, wynikające m.in. z emisji obligacji, zaciągniętych pożyczek oraz innych zobowiązań finansowych państwa;
-    \item \textbf{Indeks długu} - wartość długu przeliczona względem pierwszej dostępnej obserwacji, gdzie pierwszy kwartał przyjmuje wartość 100;
+    \item \textbf{Dług publiczny} - zadłużenie sektora instytucji rządowych i samorządowych;
+    \item \textbf{Indeks długu} - wartość długu przeliczona względem pierwszej dostępnej obserwacji;
     \item \textbf{Dynamika r/r} - procentowa zmiana wartości długu względem analogicznego kwartału poprzedniego roku;
-    \item \textbf{Odchylenie standardowe dynamiki r/r} - prosta miara niestabilności zmian zadłużenia w czasie;
-    \item Przeliczenie wartości długu na indeks umożliwia porównywanie krajów niezależnie od ich waluty, wielkości gospodarki oraz bezwzględnego poziomu zadłużenia.
+    \item \textbf{Odchylenie standardowe dynamiki r/r} - miara niestabilności zmian zadłużenia w czasie.
 \end{itemize}
-
 
 \subsection{Wizualizacje zbioru}
 
 \subsubsection{Indeks długu publicznego dla 8 krajów o największym wzroście}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/4/png/4.1.png}
+    \raportimg{phts/4/png/4.1.png}
     \caption{Dług publiczny: indeks 2012-Q1 = 100 dla 8 krajów o największym wzroście.}
 \end{figure}
 
 Wykres przedstawia kraje, w których indeks długu publicznego wzrósł najmocniej względem początku analizowanego okresu.
-Najbardziej wyróżnia się Estonia, której indeks w ostatnich latach osiąga wartości bliskie 700, co oznacza kilkukrotny wzrost względem 2012-Q1.
-Silny wzrost widoczny jest również w Rumunii oraz Bułgarii, szczególnie po roku 2020.
-
-Na wykresie wyraźnie widać, że dla większości państw tempo wzrostu zadłużenia przyspieszyło po okresie pandemicznym.
-Nie oznacza to jednak, że państwa te mają największy dług nominalnie, tylko że ich dług wzrósł najbardziej względem własnego poziomu początkowego.
-
+Najbardziej wyróżnia się Estonia, a silny wzrost widoczny jest również w Rumunii oraz Bułgarii, szczególnie po roku 2020.
 
 \subsubsection{Skumulowana zmiana długu od początku próby}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/4/png/4.2.png}
+    \raportimg{phts/4/png/4.2.png}
     \caption{Skumulowana zmiana długu publicznego od początku próby.}
 \end{figure}
 
-Wykres przedstawia skumulowaną zmianę długu publicznego od początku badanego okresu.
 Najsilniejszy wzrost odnotowano w Estonii, gdzie skumulowana zmiana wyniosła około 586\%.
 Wysokie wartości występują również w Rumunii oraz Bułgarii.
-
-Polska znajduje się w grupie krajów z wyraźnym wzrostem długu, jednak nie osiąga wartości tak wysokich jak Estonia czy Rumunia.
-Wizualizacja potwierdza obserwacje z wykresu indeksowego: kraje Europy Środkowo-Wschodniej należą do państw o największym względnym wzroście długu publicznego w analizowanym okresie.
-
+Polska znajduje się w grupie krajów z wyraźnym wzrostem długu, jednak nie osiąga wartości tak wysokich jak kraje dominujące.
 
 \subsubsection{Indeks długu publicznego dla wybranych dużych gospodarek}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/4/png/4.3.png}
+    \raportimg{phts/4/png/4.3.png}
     \caption{Dług publiczny: indeks 2012-Q1 = 100 dla wybranych dużych gospodarek.}
 \end{figure}
 
-Wykres porównuje indeks długu publicznego dla wybranych dużych gospodarek europejskich: Niemiec, Hiszpanii, Francji, Włoch oraz Polski.
+Wykres porównuje indeks długu publicznego dla Niemiec, Hiszpanii, Francji, Włoch oraz Polski.
 Największy wzrost w tej grupie widoczny jest dla Polski, szczególnie po roku 2020.
-Hiszpania również osiąga wysokie wartości indeksu, ale jej wzrost był bardziej stopniowy.
-
-Niemcy wyróżniają się najniższą wartością indeksu w tej grupie.
-Ich dług publiczny przez dużą część analizowanego okresu pozostawał blisko poziomu początkowego, a wyraźniejszy wzrost pojawił się dopiero po 2020 roku.
-W porównaniu z pozostałymi dużymi gospodarkami Polska cechuje się więc szczególnie mocnym wzrostem długu względem początku próby.
-
 
 \subsubsection{Dynamika długu rok do roku dla krajów o najsilniejszych bieżących zmianach}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/4/png/4.4.png}
-    \caption{Dynamika długu rok do roku - 5 krajów o najsilniejszych bieżących zmianach.}
+    \raportimg{phts/4/png/4.4.png}
+    \caption{Dynamika długu rok do roku -- 5 krajów o najsilniejszych bieżących zmianach.}
 \end{figure}
 
-Wizualizacja pokazuje dynamikę długu publicznego rok do roku dla pięciu krajów o najsilniejszych bieżących zmianach.
-Najbardziej gwałtowne wahania widoczne są dla Bułgarii, która w niektórych okresach osiągała bardzo wysokie dodatnie wartości dynamiki.
-Wyraźne skoki można zauważyć również dla Rumunii, Polski, Litwy oraz Luksemburga.
-
-Na wykresie dobrze widać, że dynamika długu jest znacznie bardziej chaotyczna niż sam indeks długu.
-Wartość indeksu może rosnąć stosunkowo płynnie, natomiast dynamika rok do roku pokazuje krótkookresowe przyspieszenia i spowolnienia zmian zadłużenia.
-
+Dynamika długu jest bardziej chaotyczna niż sam indeks długu.
+Widać krótkookresowe przyspieszenia i spowolnienia zmian zadłużenia.
 
 \subsubsection{Najwyższa zmienność dynamiki długu rok do roku}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/4/png/4.5.png}
-    \caption{Najwyższa zmienność dynamiki długu publicznego rok do roku - top 10 krajów.}
+    \raportimg{phts/4/png/4.5.png}
+    \caption{Najwyższa zmienność dynamiki długu publicznego rok do roku -- top 10 krajów.}
 \end{figure}
 
-Wykres przedstawia kraje o największym odchyleniu standardowym dynamiki długu rok do roku.
 Największą zmienność wykazuje Estonia, co oznacza, że tempo zmian jej długu publicznego było najmniej stabilne spośród analizowanych państw.
-Wysoka zmienność widoczna jest również dla Bułgarii oraz Słowenii.
-
-Odchylenie standardowe nie pokazuje samego poziomu długu, lecz niestabilność jego zmian.
-Kraj może mieć relatywnie niski poziom długu nominalnego, ale jednocześnie bardzo dynamiczne i nieregularne zmiany względem poprzednich lat.
-
 
 \subsubsection{Heatmap indeksu długu publicznego}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/4/png/4.6.png}
-    \caption{Heatmapa indeksu długu publicznego względem 2012-Q1, kraje posortowane według ostatniego kwartału.}
+    \raportimg{phts/4/png/4.6.png}
+    \caption{Heatmapa indeksu długu publicznego względem 2012-Q1.}
 \end{figure}
 
 Heatmapa przedstawia przebieg indeksu długu publicznego dla wszystkich analizowanych krajów.
-Kolory pozwalają szybko zauważyć, które kraje przez większość okresu utrzymywały się blisko punktu startowego, a które weszły na wyraźnie wyższe poziomy zadłużenia.
-
-Najsilniejsze wartości widoczne są w górnej części wykresu, m.in. dla Estonii, Rumunii i Bułgarii.
-W ich przypadku kolory stają się coraz jaśniejsze w końcowej części szeregu, co oznacza wzrost indeksu długu.
-Z kolei kraje znajdujące się niżej na wykresie, takie jak Dania, Irlandia czy Holandia, zachowują bardziej stabilny poziom indeksu.
-
+Kolory pozwalają szybko zauważyć, które kraje utrzymywały się blisko punktu startowego, a które weszły na wyraźnie wyższe poziomy zadłużenia.
 
 \subsubsection{Ostatni kwartał względem średniej z całego okresu}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/4/png/4.7.png}
-    \caption{Ostatni kwartał względem średniej z całego okresu - top 10 krajów.}
+    \raportimg{phts/4/png/4.7.png}
+    \caption{Ostatni kwartał względem średniej z całego okresu -- top 10 krajów.}
 \end{figure}
 
-Wykres pokazuje, o ile ostatnia dostępna wartość indeksu długu różni się od średniej wartości indeksu dla danego kraju z całego badanego okresu.
 Największe dodatnie odchylenie występuje w Rumunii, Estonii oraz Bułgarii.
 Oznacza to, że obecny poziom zadłużenia tych państw jest wyraźnie wyższy niż ich przeciętny poziom z lat 2012--2025.
 
-Taka wizualizacja pozwala szybko wskazać kraje, które znajdują się obecnie na relatywnie wysokiej ścieżce zadłużenia.
-Warto zauważyć, że w zestawieniu znajduje się również Polska, co oznacza, że ostatni poziom długu publicznego jest znacząco wyższy od średniej z całego okresu.
-
-
 \subsubsection{Średni indeks długu w grupach krajów}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/4/png/4.8.png}
+    \raportimg{phts/4/png/4.8.png}
     \caption{Średni indeks długu publicznego w grupach krajów.}
 \end{figure}
 
-Na potrzeby analizy kraje zostały podzielone na trzy orientacyjne grupy: Europę Północno-Zachodnią, Europę Południową oraz Europę Środkowo-Wschodnią.
-Wizualizacja pokazuje średnią wartość indeksu długu w każdej z tych grup.
-
 Największy wzrost średniego indeksu widoczny jest w grupie państw Europy Środkowo-Wschodniej.
-Do około 2020 roku różnice między grupami były zauważalne, ale nie aż tak duże. Po 2020 roku krzywa dla Europy Środkowo-Wschodniej zaczyna rosnąć znacznie szybciej.
-Sugeruje to, że w tej grupie krajów dług publiczny wzrastał relatywnie mocniej niż w Europie Południowej oraz Północno-Zachodniej.
-
+Po 2020 roku krzywa dla tej grupy zaczyna rosnąć znacznie szybciej.
 
 \subsection{Wnioski}
 \begin{enumerate}
-    \item Najsilniejszy wzrost nominalnego długu od początku próby odnotowano w Estonii, gdzie skumulowana zmiana wyniosła około 586.3\%.
-    \item Największą zmienność dynamiki rok do roku miała Estonia, co oznacza, że jej zadłużenie zmieniało się najbardziej nieregularnie.
-    \item Najbardziej stabilny przebieg dynamiki rok do roku występował we Włoszech.
-    \item Najwyższa ostatnia dynamika rok do roku wystąpiła w Bułgarii i wyniosła około 27.7\%.
-    \item Najsłabsza ostatnia dynamika rok do roku wystąpiła na Cyprze i wyniosła około -5.0\%.
-    \item Po 2020 roku w wielu krajach widoczne jest przyspieszenie wzrostu długu publicznego, szczególnie w państwach Europy Środkowo-Wschodniej.
+    \item Najsilniejszy wzrost nominalnego długu od początku próby odnotowano w Estonii.
+    \item Największą zmienność dynamiki rok do roku miała Estonia.
+    \item Po 2020 roku w wielu krajach widoczne jest przyspieszenie wzrostu długu publicznego.
     \item Polska, w porównaniu z wybranymi dużymi gospodarkami europejskimi, charakteryzuje się jednym z mocniejszych wzrostów indeksu długu względem 2012-Q1.
 \end{enumerate}
 
-
+% ============================================================
 \newpage
 \section{Misje kosmiczne}
+% ============================================================
+
 \subsection{Źródło danych}
 \href{https://www.kaggle.com/datasets/agirlcoding/all-space-missions-from-1957}
-{Kaggle - All Space Missions From 1957} \\
+{Kaggle - All Space Missions From 1957}\\
 \url{https://www.kaggle.com/datasets/agirlcoding/all-space-missions-from-1957}
 
 \subsection{Opis zbioru i istotnych pojęć}
@@ -466,184 +465,237 @@ Sugeruje to, że w tej grupie krajów dług publiczny wzrastał relatywnie mocni
     \item Zbiór przedstawia globalne misje kosmiczne realizowane przez różne kraje, firmy oraz organizacje;
     \item Dane obejmują okres od 1957 do 2020 roku;
     \item Ostatnia aktualizacja wykorzystanego zbioru miała miejsce 13/08/2020;
-    \item Dane kosztowe są dostępne tylko dla części misji, dlatego analiza kosztów opiera się na podzbiorze danych;
+    \item Dane kosztowe są dostępne tylko dla części misji;
     \item Dekada 2020 nie jest pełna, dlatego została pominięta w analizie dekad;
     \item \textbf{Misja kosmiczna} - pojedyncze przedsięwzięcie związane ze startem rakiety lub pojazdu kosmicznego;
-    \item \textbf{Status misji} - końcowy wynik misji, np. sukces, porażka, częściowa porażka lub porażka przedstartowa;
-    \item \textbf{Skuteczność misji} - odsetek misji zakończonych sukcesem względem wszystkich misji w danej grupie;
-    \item \textbf{Lokalizacja startu} - państwo lub obszar, z którego przeprowadzono start misji;
-    \item \textbf{Firma / organizacja} - podmiot odpowiedzialny za przeprowadzenie misji, np. agencja kosmiczna, firma prywatna lub organizacja państwowa.
+    \item \textbf{Status misji} - końcowy wynik misji;
+    \item \textbf{Skuteczność misji} - odsetek misji zakończonych sukcesem względem wszystkich misji w danej grupie.
 \end{itemize}
-
 
 \subsection{Wizualizacje zbioru}
 
 \subsubsection{Liczba misji kosmicznych w czasie}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/5/png/5.1.png}
+    \raportimg{phts/5/png/5.1.png}
     \caption{Liczba misji kosmicznych w czasie.}
 \end{figure}
 
-Wykres przedstawia liczbę misji kosmicznych w poszczególnych latach oraz pięcioletnią średnią kroczącą.
 Największa aktywność widoczna jest w okresie zimnej wojny, szczególnie od drugiej połowy lat 60. do końca lat 70.
-W tym czasie liczba misji w wielu latach przekraczała 100 rocznie.
-
-Po zakończeniu najbardziej intensywnego okresu rywalizacji kosmicznej liczba misji wyraźnie spadła i przez długi czas utrzymywała się na niższym poziomie.
-Ponowny wzrost aktywności widoczny jest w drugiej połowie lat 2010., co można wiązać z rozwojem nowych technologii, większą rolą firm prywatnych oraz wzrostem zainteresowania komercyjnymi startami kosmicznymi.
-
+Ponowny wzrost aktywności widoczny jest w drugiej połowie lat 2010.
 
 \subsubsection{Liczba misji kosmicznych według dekad}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/5/png/5.2.png}
+    \raportimg{phts/5/png/5.2.png}
     \caption{Liczba misji kosmicznych według dekad.}
 \end{figure}
 
-Na wykresie pokazano łączną liczbę misji kosmicznych w poszczególnych dekadach.
-Najwięcej misji przeprowadzono w latach 70., gdzie liczba startów wyniosła 983.
-Bardzo wysoka aktywność widoczna jest również w latach 60., z liczbą 752 misji.
-
-Po latach 70. nastąpił spadek liczby misji, szczególnie widoczny w dekadzie 2000.
-W latach 2010. liczba misji ponownie wzrosła do 657, co pokazuje odbudowę aktywności sektora kosmicznego.
-Dekada 2020 nie została tutaj uwzględniona, ponieważ w zbiorze nie jest kompletna.
-
+Najwięcej misji przeprowadzono w latach 70.
+Po tym okresie nastąpił spadek liczby misji, a w latach 2010. ponowny wzrost aktywności sektora kosmicznego.
 
 \subsubsection{Top 10 krajów według liczby misji}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/5/png/5.3.png}
+    \raportimg{phts/5/png/5.3.png}
     \caption{Top 10 krajów według liczby misji kosmicznych według lokalizacji startu.}
 \end{figure}
 
-Wizualizacja przedstawia kraje i lokalizacje startu z największą liczbą misji kosmicznych.
-Najwięcej misji przeprowadzono z Rosji oraz Stanów Zjednoczonych - odpowiednio 1354 i 1325.
-Są to zdecydowanie dominujące lokalizacje w całym zbiorze.
-
-Na trzecim miejscu znajduje się Kazachstan z 679 misjami, co wynika głównie z historycznego i strategicznego znaczenia kosmodromu Bajkonur.
-Pozostałe kraje, takie jak Francja, Chiny, Japonia czy Indie, mają znacznie mniejszą liczbę startów, ale nadal stanowią istotną część globalnej aktywności kosmicznej.
-
+Najwięcej misji przeprowadzono z Rosji oraz Stanów Zjednoczonych.
+Na trzecim miejscu znajduje się Kazachstan, głównie ze względu na kosmodrom Bajkonur.
 
 \subsubsection{Top 10 firm i organizacji według liczby misji}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/5/png/5.4.png}
+    \raportimg{phts/5/png/5.4.png}
     \caption{Top 10 firm i organizacji według liczby misji kosmicznych.}
 \end{figure}
 
-Wykres przedstawia organizacje i firmy, które przeprowadziły największą liczbę misji kosmicznych.
-Zdecydowanie dominuje RVSN USSR z 1717 misjami, czyli z wynikiem wielokrotnie większym niż kolejne organizacje w zestawieniu.
-Tak duża przewaga dobrze pokazuje skalę radzieckiej aktywności kosmicznej w analizowanym okresie.
-
-Na kolejnych miejscach znajdują się m.in. Arianespace, General Dynamics, CASC oraz NASA.
-Ich wyniki są znacznie niższe niż RVSN USSR, ale pokazują zróżnicowanie podmiotów odpowiedzialnych za misje: od organizacji państwowych, przez agencje kosmiczne, po przedsiębiorstwa komercyjne.
-
+Dominuje RVSN USSR, co pokazuje skalę radzieckiej aktywności kosmicznej w analizowanym okresie.
 
 \subsubsection{Aktywność top 5 firm w czasie}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/5/png/5.5.png}
+    \raportimg{phts/5/png/5.5.png}
     \caption{Aktywność top 5 firm i organizacji w czasie.}
 \end{figure}
 
-Wykres pokazuje, jak zmieniała się aktywność pięciu najważniejszych organizacji w czasie.
-Najbardziej charakterystyczny jest przebieg RVSN USSR, które osiągało bardzo wysoką liczbę misji w latach 60. i 70., a następnie jego aktywność gwałtownie spadła.
-Widać więc silną koncentrację radzieckiej aktywności kosmicznej w określonym okresie historycznym.
-
-W późniejszych latach większą rolę zaczęły odgrywać inne organizacje, takie jak Arianespace, NASA oraz CASC.
-Szczególnie widoczny jest wzrost aktywności CASC w końcowej części szeregu czasowego, co wskazuje na rosnące znaczenie Chin w sektorze kosmicznym.
-
+Najbardziej charakterystyczny jest przebieg RVSN USSR, które osiągało bardzo wysoką liczbę misji w latach 60. i 70.
+Szczególnie widoczny jest również wzrost aktywności CASC w końcowej części szeregu czasowego, co wskazuje na rosnące znaczenie Chin w sektorze kosmicznym.
 
 \subsubsection{Sezonowość startów kosmicznych według miesięcy}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/5/png/5.6.png}
+    \raportimg{phts/5/png/5.6.png}
     \caption{Sezonowość startów kosmicznych według miesięcy.}
 \end{figure}
 
-Wykres przedstawia liczbę misji kosmicznych w podziale na miesiące.
 Najwięcej startów odnotowano w grudniu, a wysokie wartości widoczne są również w czerwcu i październiku.
-Najmniejsza liczba misji przypada natomiast na styczeń.
-
-Taki rozkład może sugerować istnienie sezonowości w planowaniu startów, jednak różnice między miesiącami nie powinny być interpretowane wyłącznie jako efekt warunków pogodowych.
-Na liczbę misji wpływają również harmonogramy techniczne, budżetowe, polityczne oraz organizacyjne.
-
+Najmniejsza liczba misji przypada na styczeń.
 
 \subsubsection{Rozkład wyników misji}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/5/png/5.7.png}
+    \raportimg{phts/5/png/5.7.png}
     \caption{Rozkład wyników misji kosmicznych.}
 \end{figure}
 
-Wizualizacja pokazuje, jak często misje kończyły się poszczególnymi statusami.
-Zdecydowana większość misji zakończyła się sukcesem - 3794 przypadki, czyli około 90.38\% wszystkich misji.
-Porażki stanowią znacznie mniejszą część zbioru: 300 misji, czyli około 7.15\%.
-
-Częściowe porażki oraz porażki przedstartowe pojawiają się bardzo rzadko.
-Oznacza to, że mimo wysokiego poziomu trudności technicznej misji kosmicznych, większość zarejestrowanych startów zakończyła się powodzeniem.
-
+Zdecydowana większość misji zakończyła się sukcesem.
+Porażki, częściowe porażki oraz porażki przedstartowe stanowią znacznie mniejszą część zbioru.
 
 \subsubsection{Skuteczność misji w czasie}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/5/png/5.8.png}
+    \raportimg{phts/5/png/5.8.png}
     \caption{Skuteczność misji kosmicznych w czasie.}
 \end{figure}
 
-Wykres przedstawia roczną skuteczność misji oraz pięcioletnią średnią kroczącą.
-Na początku ery kosmicznej skuteczność była znacznie bardziej niestabilna, co jest naturalne dla okresu intensywnych eksperymentów i rozwoju nowych technologii.
-W późniejszych latach skuteczność ustabilizowała się na wysokim poziomie.
-
-Od lat 70. skuteczność misji najczęściej oscyluje w okolicach 90\% lub więcej.
-Pokazuje to duży postęp technologiczny oraz coraz większą przewidywalność i dojrzałość systemów wykorzystywanych w lotach kosmicznych.
-
+Na początku ery kosmicznej skuteczność była bardziej niestabilna.
+W późniejszych latach ustabilizowała się na wysokim poziomie, najczęściej w okolicach 90\% lub więcej.
 
 \subsubsection{Skuteczność misji kosmicznych według dekad}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/5/png/5.9.png}
+    \raportimg{phts/5/png/5.9.png}
     \caption{Skuteczność misji kosmicznych według dekad.}
 \end{figure}
 
-Wykres pokazuje skuteczność misji kosmicznych w kolejnych dekadach.
-W latach 50. skuteczność wynosiła jedynie 35.6\%, co dobrze pokazuje eksperymentalny charakter pierwszych misji kosmicznych.
-Już w latach 60. skuteczność wzrosła jednak do 81.0\%.
-
-Od lat 70. skuteczność utrzymuje się na bardzo wysokim poziomie, najczęściej powyżej 90\%.
-Najwyższa wartość widoczna jest dla lat 2010., gdzie skuteczność wynosi 94.5\%.
-Oznacza to, że wraz z rozwojem technologii i doświadczenia operacyjnego ryzyko niepowodzenia misji znacząco się zmniejszyło.
-
+Skuteczność misji wzrosła znacząco od lat 50. do kolejnych dekad.
+Od lat 70. utrzymuje się na bardzo wysokim poziomie.
 
 \subsubsection{Skuteczność misji w top 10 krajów}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/5/png/5.10.png}
+    \raportimg{phts/5/png/5.10.png}
     \caption{Skuteczność misji w top 10 krajów według lokalizacji startu.}
 \end{figure}
 
-Wykres przedstawia skuteczność misji dla dziesięciu najważniejszych lokalizacji startu.
-Najwyższą skuteczność osiąga Kenia, gdzie wszystkie 9 misji zakończyło się sukcesem.
-Należy jednak pamiętać, że w tym przypadku liczba misji jest bardzo mała, więc wynik 100\% trzeba interpretować ostrożnie.
-
-Wśród krajów z dużą liczbą misji bardzo wysoką skuteczność osiągają Francja, Rosja, Japonia oraz Chiny.
-Rosja i USA mają bardzo duże liczby misji, a jednocześnie utrzymują skuteczność na poziomie odpowiednio około 93.6\% i 88.7\%.
-Pokazuje to, że duża skala aktywności nie musi oznaczać niskiej skuteczności.
-
+Wśród krajów z dużą liczbą misji wysoką skuteczność osiągają m.in. Francja, Rosja, Japonia oraz Chiny.
+Wyniki krajów z bardzo małą liczbą misji należy interpretować ostrożnie.
 
 \subsubsection{Koszt misji kosmicznych w czasie}
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{phts/5/png/5.11.png}
+    \raportimg{phts/5/png/5.11.png}
     \caption{Koszt misji kosmicznych w czasie.}
 \end{figure}
 
-Wykres przedstawia pięcioletni trend kosztu misji kosmicznych w milionach dolarów.
-Widoczna jest ogólna tendencja spadkowa - od wartości przekraczających 400 mln USD na początku analizowanego okresu kosztowego do znacznie niższych wartości w latach 2010.
-Sugeruje to, że wraz z rozwojem technologii i zwiększeniem doświadczenia operacyjnego koszty misji stopniowo malały.
-
-Trzeba jednak pamiętać, że dane kosztowe są dostępne tylko dla części misji.
-W związku z tym wykres nie opisuje wszystkich startów kosmicznych, lecz jedynie te, dla których w zbiorze podano informację o koszcie.
-
+Widoczna jest ogólna tendencja spadkowa kosztów misji.
+Należy jednak pamiętać, że dane kosztowe są dostępne tylko dla części obserwacji.
 
 \subsection{Wnioski}
 \begin{enumerate}
-    \item Największa liczba misji kosmicznych przypadła na lata 60. i 70., czyli okres intensywnej rywalizacji kosmicznej.
-    \item Najwięcej startów przeprowadzono z Rosji oraz Stanów Zjednoczonych, które zdecydowanie dominują pod względem liczby misji.
-    \item Najaktywniejszą organizacją w całym zbiorze było RVSN USSR, znacznie przewyższające pozostałe firmy i agencje.
-    \item Skuteczność misji kosmicznych wzrosła z 35.6\% w latach 50. do ponad 90\% w kolejnych dekadach.
-    \item Większość misji zakończyła się sukcesem - 3794 przypadki, czyli około 90.38\% całego zbioru.
-    \item W ostatnich latach widoczny jest ponowny wzrost liczby misji, co może wskazywać na rozwój sektora prywatnego i wzrost znaczenia nowych państw w eksploracji kosmosu.
-    \item Koszt misji kosmicznych w czasie wykazuje ogólną tendencję spadkową, jednak analiza kosztów dotyczy tylko części obserwacji.
+    \item Największa liczba misji kosmicznych przypadła na lata 60. i 70.
+    \item Najwięcej startów przeprowadzono z Rosji oraz Stanów Zjednoczonych.
+    \item Najaktywniejszą organizacją w całym zbiorze było RVSN USSR.
+    \item Skuteczność misji kosmicznych wzrosła wraz z rozwojem technologii.
+    \item W ostatnich latach widoczny jest ponowny wzrost liczby misji.
+    \item Koszt misji kosmicznych wykazuje tendencję spadkową, ale analiza kosztów dotyczy tylko części obserwacji.
+\end{enumerate}
+
+% ============================================================
+\newpage
+\section{Temperatura i opady w wybranych miastach Europy (R)}
+
+\subsection{Źródło danych}
+Dane wykorzystane w tej części projektu pochodzą z czterech plików CSV przygotowanych dla wybranych miast europejskich: Warszawy, Paryża, Dublina oraz Lizbony.
+
+\begin{itemize}
+    \item \texttt{warsaw.csv} -- dane dla Warszawy;
+    \item \texttt{paris.csv} -- dane dla Paryża;
+    \item \texttt{dublin.csv} -- dane dla Dublina;
+    \item \texttt{lisbona.csv} -- dane dla Lizbony.
+\end{itemize}
+
+\subsection{Opis zbioru i istotnych pojęć}
+\begin{itemize}
+    \item Zbiór przedstawia miesięczne dane klimatyczne dla czterech miast: Warszawy, Paryża, Dublina i Lizbony;
+    \item Dane obejmują różne zakresy czasowe w zależności od miasta: Warszawa od 2007-12 do 2026-03, Paryż od 2003-03 do 2026-03, Dublin od 2000-01 do 2026-03 oraz Lizbona od 2000-01 do 2026-03;
+    \item Każda obserwacja odpowiada jednemu miesiącowi w danym mieście;
+    \item \textbf{Temperatura} oznacza średnią miesięczną temperaturę powietrza wyrażoną w stopniach Celsjusza;
+    \item \textbf{Opady} oznaczają miesięczny poziom opadów wyrażony w milimetrach;
+    \item \textbf{Pora roku} została wyznaczona na podstawie miesiąca: wiosna obejmuje marzec, kwiecień i maj; lato czerwiec, lipiec i sierpień; jesień wrzesień, październik i listopad; zima grudzień, styczeń i luty;
+    \item \textbf{Średnia krocząca 12-miesięczna} pozwala wygładzić miesięczne wahania temperatury i lepiej pokazać długookresowy trend;
+    \item \textbf{Anomalia temperatury} oznacza różnicę między rzeczywistą temperaturą w danym miesiącu a średnią temperaturą typową dla tego samego miesiąca w całym analizowanym okresie;
+    \item \textbf{Trend odporny} na wykresie zależności temperatury i opadów został zastosowany po to, aby pojedyncze skrajne obserwacje opadowe nie zniekształcały nadmiernie linii trendu.
+\end{itemize}
+
+\subsection{Wizualizacje zbioru}
+
+\subsubsection{Warszawa}
+
+\wykrespngwniosek{phts/6/png/6.1.png}{Warszawa: temperatura miesięczna i trend.}{wykres-6-1}{Warszawa ma bardzo wyraźną sezonowość temperatur: zimą wartości spadają często w okolice zera lub poniżej, a latem regularnie przekraczają 20\textdegree C. Linia średniej kroczącej pokazuje stopniowy wzrost temperatur w późniejszej części szeregu czasowego.}
+
+\wykrespngwniosek{phts/6/png/6.2.png}{Warszawa: średnia roczna temperatura.}{wykres-6-2}{W kolejnych latach coraz częściej pojawiają się wartości powyżej średniej długookresowej. Widoczny jest ogólny wzrost średniej rocznej temperatury, choć pojedyncze niepełne lata na początku i końcu szeregu należy interpretować ostrożnie.}
+
+\wykrespngwniosek{phts/6/png/6.3.png}{Warszawa: anomalie temperatury.}{wykres-6-3}{W pierwszej części szeregu częściej występują miesiące chłodniejsze od normy, natomiast w późniejszym okresie częściej pojawiają się dodatnie anomalie. Sugeruje to przesunięcie w stronę cieplejszych miesięcy względem typowych wartości sezonowych.}
+
+\wykrespngwniosek{phts/6/png/6.4.png}{Warszawa: typowy przebieg temperatur w roku.}{wykres-6-4}{Roczny cykl temperatur jest bardzo silny: najniższe wartości przypadają na styczeń i luty, a najwyższe na lipiec i sierpień. Taki przebieg wskazuje na bardziej kontynentalny charakter klimatu Warszawy.}
+
+\wykrespngwniosek{phts/6/png/6.5.png}{Warszawa: rozkład temperatur w porach roku.}{wykres-6-5}{Największy kontrast występuje między zimą i latem. Rozkład zimowy obejmuje wartości ujemne, natomiast lato jest wyraźnie przesunięte ku wysokim temperaturom, co potwierdza dużą amplitudę sezonową.}
+
+\wykrespngwniosek{phts/6/png/6.6.png}{Warszawa: średnie opady miesięczne.}{wykres-6-6}{Najwyższe średnie opady przypadają na okres letni, szczególnie na lipiec. Oznacza to, że w Warszawie cieplejsza część roku jest jednocześnie okresem większych opadów.}
+
+\wykrespngwniosek{phts/6/png/6.7.png}{Warszawa: suma opadów w latach.}{wykres-6-7}{Roczne sumy opadów są mocno zróżnicowane. Pojawiają się zarówno lata wyraźnie wilgotniejsze od średniej, jak i lata suche, co wskazuje na dużą zmienność opadów między latami.}
+
+\wykrespngwniosek{phts/6/png/6.8.png}{Warszawa: temperatura a opady.}{wykres-6-8}{Widoczna jest dodatnia zależność między temperaturą a opadami, ale wynika ona głównie z sezonowości. Latem temperatury są wysokie i jednocześnie częściej występują większe opady. Pojedyncze bardzo wysokie opady nie powinny być usuwane, lecz wymagają ostrożnej interpretacji.}
+
+\FloatBarrier
+\subsubsection{Paryż}
+
+\wykrespngwniosek{phts/6/png/6.9.png}{Paryż: temperatura miesięczna i trend.}{wykres-6-9}{Paryż ma wyraźną sezonowość temperatur, ale łagodniejszą niż Warszawa. Trend jest mniej jednoznaczny, a wahania miesięczne są umiarkowane.}
+
+\wykrespngwniosek{phts/6/png/6.10.png}{Paryż: średnia roczna temperatura.}{wykres-6-10}{Średnie roczne temperatury oscylują wokół średniej długookresowej. W ostatnich latach częściej pojawiają się wartości powyżej średniej, jednak zmiany nie są tak wyraźne jak w Warszawie.}
+
+\wykrespngwniosek{phts/6/png/6.11.png}{Paryż: anomalie temperatury.}{wykres-6-11}{Anomalie pokazują okresy zarówno chłodniejsze, jak i cieplejsze od normy miesięcznej. W końcowej części szeregu widoczna jest większa liczba dodatnich anomalii, co może wskazywać na częstsze miesiące cieplejsze niż typowo.}
+
+\wykrespngwniosek{phts/6/png/6.12.png}{Paryż: typowy przebieg temperatur w roku.}{wykres-6-12}{Najcieplejsze miesiące to lipiec i sierpień, a najchłodniejsze styczeń i luty. Roczny przebieg temperatur jest regularny, ale różnice między zimą i latem są mniejsze niż w Warszawie.}
+
+\wykrespngwniosek{phts/6/png/6.13.png}{Paryż: rozkład temperatur w porach roku.}{wykres-6-13}{Rozkłady sezonowe są dobrze rozdzielone, ale zima jest łagodniejsza niż w Warszawie. Lato osiąga wysokie temperatury, natomiast wiosna i jesień stanowią wyraźne okresy przejściowe.}
+
+\wykrespngwniosek{phts/6/png/6.14.png}{Paryż: średnie opady miesięczne.}{wykres-6-14}{Opady w Paryżu są dość równomiernie rozłożone w ciągu roku. Nie występuje tak silnie zaznaczona pora sucha jak w Lizbonie ani tak wyraźne letnie maksimum jak w Warszawie.}
+
+\wykrespngwniosek{phts/6/png/6.15.png}{Paryż: suma opadów w latach.}{wykres-6-15}{Roczne sumy opadów zmieniają się między latami, ale większość wartości pozostaje w umiarkowanym zakresie. Pojedyncze lata wilgotniejsze od średniej wyróżniają się, lecz nie dominują całego szeregu.}
+
+\wykrespngwniosek{phts/6/png/6.16.png}{Paryż: temperatura a opady.}{wykres-6-16}{Zależność między temperaturą i opadami jest słaba. Punkty są rozproszone, a linia trendu ma niewielkie nachylenie, co oznacza, że w Paryżu sama temperatura nie wyjaśnia dobrze poziomu miesięcznych opadów.}
+
+\FloatBarrier
+\subsubsection{Dublin}
+
+\wykrespngwniosek{phts/6/png/6.17.png}{Dublin: temperatura miesięczna i trend.}{wykres-6-17}{Dublin ma najmniejszą sezonowość temperatur spośród analizowanych miast. Temperatury są stosunkowo łagodne przez cały rok, a linia trendu pozostaje dość stabilna.}
+
+\wykrespngwniosek{phts/6/png/6.18.png}{Dublin: średnia roczna temperatura.}{wykres-6-18}{Średnie roczne temperatury są skupione blisko średniej długookresowej. Oznacza to relatywnie stabilny przebieg temperatur w czasie, choć ostatnie pełne lata częściej przekraczają średnią.}
+
+\wykrespngwniosek{phts/6/png/6.19.png}{Dublin: anomalie temperatury.}{wykres-6-19}{Anomalie temperatury są przeważnie mniejsze niż w Warszawie, co potwierdza bardziej stabilny charakter klimatu. W końcowej części szeregu widocznych jest więcej dodatnich odchyleń od normy miesięcznej.}
+
+\wykrespngwniosek{phts/6/png/6.20.png}{Dublin: typowy przebieg temperatur w roku.}{wykres-6-20}{Różnica między zimą i latem jest stosunkowo niewielka. Najcieplejszy okres przypada na lipiec i sierpień, ale wartości letnie są niższe niż w pozostałych analizowanych miastach.}
+
+\wykrespngwniosek{phts/6/png/6.21.png}{Dublin: rozkład temperatur w porach roku.}{wykres-6-21}{Rozkłady temperatur w porach roku są do siebie bardziej zbliżone niż w Warszawie czy Paryżu. Zima jest łagodna, a lato umiarkowanie ciepłe, co wskazuje na silny wpływ klimatu oceanicznego.}
+
+\wykrespngwniosek{phts/6/png/6.22.png}{Dublin: średnie opady miesięczne.}{wykres-6-22}{Opady utrzymują się na wysokim poziomie przez większość roku. Największe wartości przypadają na jesień, zwłaszcza październik i listopad.}
+
+\wykrespngwniosek{phts/6/png/6.23.png}{Dublin: suma opadów w latach.}{wykres-6-23}{Roczne sumy opadów są dość wysokie, ale niektóre lata wyraźnie odbiegają od średniej. Ogólnie Dublin pozostaje miastem wilgotnym w porównaniu z Warszawą i Paryżem.}
+
+\wykrespngwniosek{phts/6/png/6.24.png}{Dublin: temperatura a opady.}{wykres-6-24}{Związek między temperaturą i opadami jest bardzo słaby. Opady występują w różnych zakresach temperatur, co oznacza, że w Dublinie wilgotność nie jest ograniczona tylko do jednej pory roku.}
+
+\FloatBarrier
+\subsubsection{Lizbona}
+
+\wykrespngwniosek{phts/6/png/6.25.png}{Lizbona: temperatura miesięczna i trend.}{wykres-6-25}{Lizbona jest najcieplejszym z analizowanych miast. Temperatury pozostają wysokie przez cały rok, a zimy są łagodne. Trend wskazuje na utrzymywanie się wysokich temperatur w ostatnich latach.}
+
+\wykrespngwniosek{phts/6/png/6.26.png}{Lizbona: średnia roczna temperatura.}{wykres-6-26}{Średnie roczne temperatury są najwyższe spośród czterech miast. W wielu latach wartości przekraczają średnią długookresową, choć niepełne lata na początku i końcu szeregu należy traktować ostrożnie.}
+
+\wykrespngwniosek{phts/6/png/6.27.png}{Lizbona: anomalie temperatury.}{wykres-6-27}{Anomalie wskazują, że w późniejszej części szeregu częściej pojawiają się miesiące cieplejsze od normy. Jednocześnie występują pojedyncze silne ujemne anomalie, które pokazują, że nawet w ciepłym klimacie możliwe są chłodniejsze epizody.}
+
+\wykrespngwniosek{phts/6/png/6.28.png}{Lizbona: typowy przebieg temperatur w roku.}{wykres-6-28}{Roczny przebieg temperatur pokazuje bardzo łagodne zimy oraz gorące lato. Najwyższe wartości przypadają na lipiec i sierpień, a nawet zimą średnie temperatury pozostają stosunkowo wysokie.}
+
+\wykrespngwniosek{phts/6/png/6.29.png}{Lizbona: rozkład temperatur w porach roku.}{wykres-6-29}{Wszystkie pory roku są cieplejsze niż w pozostałych miastach. Szczególnie wysoko położony jest rozkład letni, natomiast zima nadal pozostaje łagodna.}
+
+\wykrespngwniosek{phts/6/png/6.30.png}{Lizbona: średnie opady miesięczne.}{wykres-6-30}{Rozkład opadów jest bardzo nierównomierny. Lato jest prawie suche, zwłaszcza lipiec i sierpień, natomiast największe opady występują jesienią i zimą.}
+
+\wykrespngwniosek{phts/6/png/6.31.png}{Lizbona: suma opadów w latach.}{wykres-6-31}{Roczne sumy opadów są bardzo zmienne. Występują zarówno lata wyjątkowo suche, jak i bardzo wilgotne, co jest typowe dla klimatu śródziemnomorskiego.}
+
+\wykrespngwniosek{phts/6/png/6.32.png}{Lizbona: temperatura a opady.}{wykres-6-32}{Widoczna jest wyraźna zależność ujemna: cieplejsze miesiące są zwykle bardziej suche, a chłodniejsze miesiące częściej wiążą się z większymi opadami. Jest to typowy wzorzec klimatu śródziemnomorskiego.}
+
+\FloatBarrier
+\subsection{Wnioski ogólne}
+\begin{enumerate}
+    \item Spośród analizowanych miast najwyższe temperatury występują w Lizbonie, natomiast największa sezonowość temperatur widoczna jest w Warszawie.
+    \item Dublin ma najbardziej wyrównany przebieg temperatur w ciągu roku, co potwierdza wpływ klimatu oceanicznego.
+    \item Paryż zajmuje pozycję pośrednią między klimatem bardziej kontynentalnym a oceanicznym.
+    \item Lizbona charakteryzuje się wyraźnie suchym latem i większymi opadami w chłodniejszej części roku.
+    \item Analiza anomalii temperatury pozwala lepiej wychwycić miesiące nietypowo ciepłe i chłodne niż bezpośrednia analiza samych temperatur.
+    \item Zależność temperatury i opadów jest częściowo kształtowana przez sezonowość i różni się między miastami.
+    \item Ujęcie oddzielnych wykresów dla każdego miasta poprawia czytelność analizy i pozwala zachować pełną numerację rysunków od 6.1 do 6.32.
 \end{enumerate}
 
 \end{document}
