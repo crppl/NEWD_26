@@ -1,0 +1,98 @@
+\babel@toc {polish}{}\relax 
+\contentsline {section}{\numberline {1}Standarized price-to-income ratio (MATLAB)}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Źródło danych}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Opis zbioru i istotnych pojęć}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Wizualizacje zbioru}{4}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Statystyka opisowa Price-to-Income}{4}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Indeks Price-to-Income względem kraju}{5}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Price-to-Income w 2024 względem średniej długoterminowej}{5}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}Zmiana Price-to-Income między 2000 a 2024}{6}{subsubsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.5}Zmiana Price-to-Income między minimum a maksimum}{6}{subsubsection.1.3.5}%
+\contentsline {subsubsection}{\numberline {1.3.6}Statystyki opisowe Rate of Change}{7}{subsubsection.1.3.6}%
+\contentsline {subsubsection}{\numberline {1.3.7}Indeks Rate of Change względm kraju}{7}{subsubsection.1.3.7}%
+\contentsline {subsubsection}{\numberline {1.3.8}Heatmap wartości Rate of Change}{8}{subsubsection.1.3.8}%
+\contentsline {subsubsection}{\numberline {1.3.9}Wyrkesy dla Polski}{8}{subsubsection.1.3.9}%
+\contentsline {subsection}{\numberline {1.4}Wnioski}{9}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Noclegi i miejsca do spania dla turystów w Europie (MATLAB)}{10}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Źródło danych}{10}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Opis zbioru i istotnych pojęć}{10}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Wizualizacje zbioru}{10}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Kraje z największą liczbą placówek noclegowych}{10}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Kraje z największą liczbą miejsc do spania}{11}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Średnia liczba miejsc do spania na placówkę turystyczną}{11}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Zmienność liczby placówek noclegowych na przestrzeni lat}{12}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Indeks wzrostu liczby placówek turystycznych na przestrzeni lat}{13}{subsubsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}Liczba placówek turystycznych w wybranych krajach, z podziałem na stopień urbanizacji}{13}{subsubsection.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.7}Liczba placówek turystycznych w wybranych krajach, z podziałem na dostęp do morza}{14}{subsubsection.2.3.7}%
+\contentsline {subsubsection}{\numberline {2.3.8}Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na województwa}{14}{subsubsection.2.3.8}%
+\contentsline {subsubsection}{\numberline {2.3.9}Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na stopień urbanizacji oraz dostęp do morza}{16}{subsubsection.2.3.9}%
+\contentsline {subsubsection}{\numberline {2.3.10}Dodatkowe wizualizacje dla Polski}{16}{subsubsection.2.3.10}%
+\contentsline {subsection}{\numberline {2.4}Wnioski}{17}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Niedominujące wyznania religijne w PRL i wczesnej III Rzeczypospolitej (MATLAB)}{18}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Źródło danych}{18}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Opis zbioru i istotnych pojęć}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Wizualizacje zbioru}{18}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}PAKP - Liczba duchownych i miejsc modlitwy}{18}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}PAKP - Liczba duchownych a liczba parafii}{19}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Kościoły Starokatolickie - liczba duchownych}{19}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Kościół Polskokatolicki - liczba duchownych i miejsc modlitwy}{20}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}Kościół Katolicki Mariawitów - liczba duchownych i wiernych}{21}{subsubsection.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.6}Największe wyznania protestanckie - liczba członków}{21}{subsubsection.3.3.6}%
+\contentsline {subsubsection}{\numberline {3.3.7}Kościół Adwentystów D.S. - liczba członków}{22}{subsubsection.3.3.7}%
+\contentsline {subsubsection}{\numberline {3.3.8}Kościół Chrześcijan Baptystów - analiza wielu wskaźników}{22}{subsubsection.3.3.8}%
+\contentsline {subsubsection}{\numberline {3.3.9}Kościół Ewangelicko-Augsburski - liczba duchownych i miejsc modlitwy}{23}{subsubsection.3.3.9}%
+\contentsline {subsubsection}{\numberline {3.3.10}Dynamika liczby członków w czterech wybranych wyznaniach protestanckich}{24}{subsubsection.3.3.10}%
+\contentsline {subsubsection}{\numberline {3.3.11}Muzułmański Związek Religijny - liczba członków i miejsc modlitwy}{24}{subsubsection.3.3.11}%
+\contentsline {subsubsection}{\numberline {3.3.12}Związek Gmin Wyznaniowych Żydowskich - liczba członków i miejsc modlitwy}{25}{subsubsection.3.3.12}%
+\contentsline {subsubsection}{\numberline {3.3.13}Liczba obiektów kultu w wybranych wyznaniach w roku 1998}{25}{subsubsection.3.3.13}%
+\contentsline {subsubsection}{\numberline {3.3.14}Wskaźnik obsadzenia duchownych na obiekt kultu w wybranych wyznaniach religijnych w roku 1998}{26}{subsubsection.3.3.14}%
+\contentsline {subsubsection}{\numberline {3.3.15}Wskaźnik członków przypadających na jednego duchownego w roku 1998}{27}{subsubsection.3.3.15}%
+\contentsline {subsection}{\numberline {3.4}Wnioski}{27}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Kwartalny dług publiczny (MATLAB)}{28}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Źródło danych}{28}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Opis zbioru i istotnych pojęć}{28}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Wizualizacje zbioru}{29}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Indeks długu publicznego dla 8 krajów o największym wzroście}{29}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Skumulowana zmiana długu od początku próby}{30}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Indeks długu publicznego dla wybranych dużych gospodarek}{31}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Dynamika długu rok do roku dla krajów o najsilniejszych bieżących zmianach}{32}{subsubsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.5}Najwyższa zmienność dynamiki długu rok do roku}{33}{subsubsection.4.3.5}%
+\contentsline {subsubsection}{\numberline {4.3.6}Heatmap indeksu długu publicznego}{34}{subsubsection.4.3.6}%
+\contentsline {subsubsection}{\numberline {4.3.7}Ostatni kwartał względem średniej z całego okresu}{35}{subsubsection.4.3.7}%
+\contentsline {subsubsection}{\numberline {4.3.8}Średni indeks długu w grupach krajów}{36}{subsubsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.4}Wnioski}{36}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Misje kosmiczne (MATLAB)}{37}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Źródło danych}{37}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Opis zbioru i istotnych pojęć}{37}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Wizualizacje zbioru}{37}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Liczba misji kosmicznych w czasie}{37}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Liczba misji kosmicznych według dekad}{38}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Top 10 krajów według liczby misji}{39}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Top 10 firm i organizacji według liczby misji}{39}{subsubsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.5}Aktywność top 5 firm w czasie}{40}{subsubsection.5.3.5}%
+\contentsline {subsubsection}{\numberline {5.3.6}Sezonowość startów kosmicznych według miesięcy}{41}{subsubsection.5.3.6}%
+\contentsline {subsubsection}{\numberline {5.3.7}Rozkład wyników misji}{41}{subsubsection.5.3.7}%
+\contentsline {subsubsection}{\numberline {5.3.8}Skuteczność misji w czasie}{42}{subsubsection.5.3.8}%
+\contentsline {subsubsection}{\numberline {5.3.9}Skuteczność misji kosmicznych według dekad}{42}{subsubsection.5.3.9}%
+\contentsline {subsubsection}{\numberline {5.3.10}Skuteczność misji w top 10 krajów}{43}{subsubsection.5.3.10}%
+\contentsline {subsubsection}{\numberline {5.3.11}Koszt misji kosmicznych w czasie}{44}{subsubsection.5.3.11}%
+\contentsline {subsection}{\numberline {5.4}Wnioski}{44}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Studenci wg płci oraz podgrup kierunków (Python)}{45}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Źródło danych}{45}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Opis zbioru i istotnych pojęć}{45}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Wizualizacje zbioru}{45}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Liczba studentów w Polsce}{45}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Najpopularniejsze kierunki studiów}{46}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Najmniej popularne kierunki studiów}{47}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}Studenci w województwach}{49}{subsubsection.6.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.5}Kierunek w stosunku do województw}{51}{subsubsection.6.3.5}%
+\contentsline {subsection}{\numberline {6.4}Wnioski}{51}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Temperatura i opady w wybranych miastach Europy (R)}{52}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Źródło danych}{52}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Opis zbioru i istotnych pojęć}{52}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Wizualizacje zbioru}{52}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Warszawa}{52}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Paryż}{56}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Dublin}{59}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.4}Lizbona}{62}{subsubsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.4}Wnioski ogólne}{65}{subsection.7.4}%
