@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.11)  3 MAY 2026 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.4)  5 MAY 2026 14:35
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/janma/Desktop/NEWD_26/!_Sprawozdanie_1/WIP_sprawozdanie.tex
-(c:/Users/janma/Desktop/NEWD_26/!_Sprawozdanie_1/WIP_sprawozdanie.tex
+**c:/Users/papro/Documents/wizualizacja/sprawozdanie/NEWD_26/!_Sprawozdanie_1/WIP_sprawozdanie.tex
+(c:/Users/papro/Documents/wizualizacja/sprawozdanie/NEWD_26/!_Sprawozdanie_1/WIP_sprawozdanie.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-14>
-(c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2025-12-24>
+(C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(c:/texlive/2025/texmf-dist/tex/latex/base/size10.clo
+(C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -23,45 +23,54 @@ File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (c:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
- (c:/texlive/2025/texmf-dist/tex/latex/base/ot4enc.def
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/base\ot4enc.def
 File: ot4enc.def 2025/07/18 v2.1d Standard LaTeX file
 Now handling font encoding OT4 ...
 ... no UTF-8 mapping file for font encoding OT4
 )
 LaTeX Font Info:    Trying to load font information for OT4+cmr on input line 116.
- (c:/texlive/2025/texmf-dist/tex/latex/polski/ot4cmr.fd
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmr.fd
 File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)) (c:/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/11/23 v25.16 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+)) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count283
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2050.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2052.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2054.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2055.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2056.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2058.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2083.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
 \U@D=\dimen149
-\l@unhyphenated=\language90
- (c:/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
+\l@unhyphenated=\language79
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count284
- (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/pl/babel-polish.tex)
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4196.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/pl\babel-polish.tex)
 Package babel Info: Importing font and identification data for polish
-(babel)             from babel-pl.ini. Reported on input line 4298.
- (c:/texlive/2025/texmf-dist/tex/generic/babel-polish/polish.ldf
+(babel)             from babel-pl.ini. Reported on input line 4320.
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/babel-polish\polish.ldf
 Language: polish 2022/03/12 1.3 Babel support for Polish
 Package babel Info: Making " an active character on input line 101.
-)) (c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+)) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-) (c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count285
@@ -76,9 +85,9 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen156
 \Gm@layoutvoffset=\dimen157
 \Gm@dimlist=\toks18
-) (c:/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
- (c:/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count288
 \calc@Bcount=\count289
@@ -90,23 +99,23 @@ LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count290
 \calc@Cskip=\skip53
-) (c:/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
-) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip54
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+(C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen160
-)) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen161
-) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count291
@@ -168,61 +177,61 @@ LaTeX Info: Redefining \] on input line 2951.
 \l_MT_below_shortintertext_sep=\dimen175
 \xmathstrut@box=\box55
 \xmathstrut@dim=\dimen176
-) (c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count304
 \float@exts=\toks24
 \float@box=\box56
 \@float@everytoks=\toks25
 \@floatcapt=\box57
-) (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
- (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (c:/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (c:/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (c:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (c:/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (c:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (c:/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
+)) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (c:/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
- (c:/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (c:/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (c:/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count305
-) (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count306
-) (c:/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen177
 \Hy@linkcounter=\count307
 \Hy@pagecounter=\count308
- (c:/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (c:/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count309
- (c:/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -235,15 +244,15 @@ Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count310
- (c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen178
- (c:/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (c:/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count311
@@ -261,70 +270,62 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 \c@Hfootnote=\count314
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count315
 \c@bookmark@seq@number=\count316
- (c:/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (c:/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip58
-) (c:/texlive/2025/texmf-dist/tex/latex/svg/svg.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/svg\svg.sty
 Package: svg 2020/11/26 v2.02k (include SVG pictures)
- (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2025/12/01 v3.49 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2025/12/01 v3.49 KOMA-Script package (file load hooks)
- (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
-Package: scrlfile-hook 2025/12/01 v3.49 KOMA-Script package (using LaTeX hooks)
- (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrlogo.sty
-Package: scrlogo 2025/12/01 v3.49 KOMA-Script package (logo)
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
+Package: scrbase 2026/02/02 v3.49.2 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.sty
+Package: scrlfile 2026/02/02 v3.49.2 KOMA-Script package (file load hooks)
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-hook.sty
+Package: scrlfile-hook 2026/02/02 v3.49.2 KOMA-Script package (using LaTeX hooks)
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+Package: scrlogo 2026/02/02 v3.49.2 KOMA-Script package (logo)
 )))
 Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
 Already applied: [0000/00/00] Usage of raw or classic option list on input line 370.
-) (c:/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-) (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen181
 \Gin@req@width=\dimen182
-) (c:/texlive/2025/texmf-dist/tex/latex/tools/shellesc.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 75.
-) (c:/texlive/2025/texmf-dist/tex/latex/ifplatform/ifplatform.sty
-Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
- (c:/texlive/2025/texmf-dist/tex/generic/catchfile/catchfile.sty
-Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
- (c:/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)) (c:/texlive/2025/texmf-dist/tex/generic/iftex/ifluatex.sty
-Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-))
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
 \c@svg@param@lastpage=\count317
 \svg@box=\box58
 \c@svg@param@currpage=\count318
-) (c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -334,26 +335,26 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (c:/texlive/2025/texmf-dist/tex/latex/transparent/transparent.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent.sty
 Package: transparent 2025-06-23 v1.6 Transparency with color stacks
- (c:/texlive/2025/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent-nometadata.sty
 Package: transparent-nometadata 2025-06-23 v1.6 Transparency via pdfTeX's color stack (HO)
- (c:/texlive/2025/texmf-dist/tex/latex/auxhook/auxhook.sty
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-))) (c:/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+))) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks26
 \pgfutil@tempdima=\dimen183
 \pgfutil@tempdimb=\dimen184
-) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
 \pgfutil@abb=\box59
-) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
-)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+)) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
- (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks27
 \pgfkeys@temptoks=\toks28
- (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks29
 ))
 \pgf@x=\dimen185
@@ -376,49 +377,55 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \t@pgf@tokb=\toks31
 \t@pgf@tokc=\toks32
 \pgf@sys@id@count=\count323
- (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
- (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
-))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+))) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@smallbuffer@items=\count324
 \pgfsyssoftpath@bigbuffer@items=\count325
-) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+)) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/chngcntr\chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count326
-) (./WIP_sprawozdanie.aux
+) (WIP_sprawozdanie.aux
 Package babel Info: 'polish' activates 'polish' shorthands.
 (babel)             Reported on input line 9.
 )
 \openout1 = `WIP_sprawozdanie.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -454,12 +461,12 @@ LaTeX Font Info:    ... okay on input line 15.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 15.
-(./WIP_sprawozdanie.out) (./WIP_sprawozdanie.out)
+Package hyperref Info: Link coloring OFF on input line 44.
+(WIP_sprawozdanie.out) (WIP_sprawozdanie.out)
 \@outlinefile=\write4
 \openout4 = `WIP_sprawozdanie.out'.
 
- (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count327
 \scratchdimen=\dimen195
@@ -472,237 +479,570 @@ Package hyperref Info: Link coloring OFF on input line 15.
 \MPnumerator=\count331
 \makeMPintoPDFobject=\count332
 \everyMPtoPDFconversion=\toks34
-) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) (./WIP_sprawozdanie.toc)
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)) (WIP_sprawozdanie.toc [1
+
+{C:/Users/papro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/papro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc}])
 \tf@toc=\write5
 \openout5 = `WIP_sprawozdanie.toc'.
 
- [1
-
-{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/pl/plrm.enc}]
-LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 37.
- (c:/texlive/2025/texmf-dist/tex/latex/polski/ot4cmtt.fd
+ [2]
+LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 69.
+ (C:\Users\papro\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-Package svg Info: Last page of `./svg-inkscape/1.1_svg-tex.pdf' is 1 on input line 57.
- (./svg-inkscape/1.1_svg-tex.pdf_tex
-<./svg-inkscape/1.1_svg-tex.pdf, id=193, page=1, 413.3844pt x 205.72859pt>
+Package svg Info: Last page of `./svg-inkscape/1.1_svg-tex.pdf' is 1 on input line 89.
+ (svg-inkscape/1.1_svg-tex.pdf_tex
+<./svg-inkscape/1.1_svg-tex.pdf, id=435, page=1, 413.3844pt x 205.72859pt>
 File: ./svg-inkscape/1.1_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/1.1_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/1.1_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 249.07988pt.
 )
-Package svg Info: Last page of `./svg-inkscape/1.2_svg-tex.pdf' is 1 on input line 69.
- (./svg-inkscape/1.2_svg-tex.pdf_tex
-<./svg-inkscape/1.2_svg-tex.pdf, id=195, page=1, 408.08463pt x 203.0787pt>
+Package svg Info: Last page of `./svg-inkscape/1.2_svg-tex.pdf' is 1 on input line 101.
+ (svg-inkscape/1.2_svg-tex.pdf_tex
+<./svg-inkscape/1.2_svg-tex.pdf, id=437, page=1, 408.08463pt x 203.0787pt>
 File: ./svg-inkscape/1.2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/1.2_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/1.2_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 249.0726pt.
-) [2{c:/texlive/2025/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./svg-inkscape/1.1_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/1.4_svg-tex.pdf' is 1 on input line 83.
- (./svg-inkscape/1.4_svg-tex.pdf_tex
-<./svg-inkscape/1.4_svg-tex.pdf, id=210, page=1, 396.03963pt x 205.24681pt>
+) [3{C:/Users/papro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/pltt.enc} <./svg-inkscape/1.1_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/1.4_svg-tex.pdf' is 1 on input line 115.
+ (svg-inkscape/1.4_svg-tex.pdf_tex
+<./svg-inkscape/1.4_svg-tex.pdf, id=452, page=1, 396.03963pt x 205.24681pt>
 File: ./svg-inkscape/1.4_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/1.4_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/1.4_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.37962pt.
 )
-Package svg Info: Last page of `./svg-inkscape/1.7_svg-tex.pdf' is 1 on input line 94.
- (./svg-inkscape/1.7_svg-tex.pdf_tex
-<./svg-inkscape/1.7_svg-tex.pdf, id=212, page=1, 388.81259pt x 201.63329pt>
+Package svg Info: Last page of `./svg-inkscape/1.7_svg-tex.pdf' is 1 on input line 126.
+ (svg-inkscape/1.7_svg-tex.pdf_tex
+<./svg-inkscape/1.7_svg-tex.pdf, id=454, page=1, 388.81259pt x 201.63329pt>
 File: ./svg-inkscape/1.7_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/1.7_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/1.7_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.56343pt.
-) [3 <./svg-inkscape/1.2_svg-tex.pdf> <./svg-inkscape/1.4_svg-tex.pdf
+) [4 <./svg-inkscape/1.2_svg-tex.pdf> <./svg-inkscape/1.4_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/1.4_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./svg-inkscape/1.4_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/1.8_svg-tex.pdf' is 1 on input line 104.
- (./svg-inkscape/1.8_svg-tex.pdf_tex
-<./svg-inkscape/1.8_svg-tex.pdf, id=231, page=1, 387.36719pt x 200.6697pt>
+Package svg Info: Last page of `./svg-inkscape/1.8_svg-tex.pdf' is 1 on input line 136.
+ (svg-inkscape/1.8_svg-tex.pdf_tex
+<./svg-inkscape/1.8_svg-tex.pdf, id=473, page=1, 387.36719pt x 200.6697pt>
 File: ./svg-inkscape/1.8_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/1.8_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/1.8_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.28139pt.
 )
-Package svg Info: Last page of `./svg-inkscape/1.6_svg-tex.pdf' is 1 on input line 113.
- (./svg-inkscape/1.6_svg-tex.pdf_tex
-<./svg-inkscape/1.6_svg-tex.pdf, id=233, page=1, 373.87682pt x 193.6836pt>
+Package svg Info: Last page of `./svg-inkscape/1.6_svg-tex.pdf' is 1 on input line 145.
+ (svg-inkscape/1.6_svg-tex.pdf_tex
+<./svg-inkscape/1.6_svg-tex.pdf, id=475, page=1, 373.87682pt x 193.6836pt>
 File: ./svg-inkscape/1.6_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/1.6_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/1.6_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.27162pt.
-) [4 <./svg-inkscape/1.7_svg-tex.pdf> <./svg-inkscape/1.8_svg-tex.pdf
+) [5 <./svg-inkscape/1.7_svg-tex.pdf> <./svg-inkscape/1.8_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/1.8_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./svg-inkscape/1.8_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/1.3_svg-tex.pdf' is 1 on input line 129.
- (./svg-inkscape/1.3_svg-tex.pdf_tex
-<./svg-inkscape/1.3_svg-tex.pdf, id=252, page=1, 405.6756pt x 201.8742pt>
+Package svg Info: Last page of `./svg-inkscape/1.3_svg-tex.pdf' is 1 on input line 159.
+ (svg-inkscape/1.3_svg-tex.pdf_tex
+<./svg-inkscape/1.3_svg-tex.pdf, id=494, page=1, 405.6756pt x 201.8742pt>
 File: ./svg-inkscape/1.3_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/1.3_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/1.3_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 249.06155pt.
 )
-Package svg Info: Last page of `./svg-inkscape/1.5_svg-tex.pdf' is 1 on input line 139.
- (./svg-inkscape/1.5_svg-tex.pdf_tex
-<./svg-inkscape/1.5_svg-tex.pdf, id=254, page=1, 398.44862pt x 206.4513pt>
+Package svg Info: Last page of `./svg-inkscape/1.5_svg-tex.pdf' is 1 on input line 169.
+ (svg-inkscape/1.5_svg-tex.pdf_tex
+<./svg-inkscape/1.5_svg-tex.pdf, id=496, page=1, 398.44862pt x 206.4513pt>
 File: ./svg-inkscape/1.5_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/1.5_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/1.5_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.32353pt.
-) [5 <./svg-inkscape/1.6_svg-tex.pdf> <./svg-inkscape/1.3_svg-tex.pdf
+) [6 <./svg-inkscape/1.6_svg-tex.pdf> <./svg-inkscape/1.3_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/1.3_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./svg-inkscape/1.3_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/1.10_svg-tex.pdf' is 1 on input line 149.
- (./svg-inkscape/1.10_svg-tex.pdf_tex
-<./svg-inkscape/1.10_svg-tex.pdf, id=274, page=1, 384.47641pt x 199.2243pt>
+Package svg Info: Last page of `./svg-inkscape/1.10_svg-tex.pdf' is 1 on input line 179.
+ (svg-inkscape/1.10_svg-tex.pdf_tex
+<./svg-inkscape/1.10_svg-tex.pdf, id=516, page=1, 384.47641pt x 199.2243pt>
 File: ./svg-inkscape/1.10_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/1.10_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/1.10_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.3381pt.
-) [6 <./svg-inkscape/1.5_svg-tex.pdf> <./svg-inkscape/1.10_svg-tex.pdf
+) [7 <./svg-inkscape/1.5_svg-tex.pdf> <./svg-inkscape/1.10_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/1.10_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [7]
-Package svg Info: Last page of `./svg-inkscape/2.1_svg-tex.pdf' is 1 on input line 191.
- (./svg-inkscape/2.1_svg-tex.pdf_tex
-<./svg-inkscape/2.1_svg-tex.pdf, id=303, page=1, 400.37581pt x 207.4149pt>
+pdfTeX warning: pdflatex (file ./svg-inkscape/1.10_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [8]
+Package svg Info: Last page of `./svg-inkscape/2.1_svg-tex.pdf' is 1 on input line 224.
+ (svg-inkscape/2.1_svg-tex.pdf_tex
+<./svg-inkscape/2.1_svg-tex.pdf, id=545, page=1, 400.37581pt x 207.4149pt>
 File: ./svg-inkscape/2.1_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.1_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.1_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.29329pt.
 )
-Package svg Info: Last page of `./svg-inkscape/2.2_svg-tex.pdf' is 1 on input line 202.
- (./svg-inkscape/2.2_svg-tex.pdf_tex
-<./svg-inkscape/2.2_svg-tex.pdf, id=305, page=1, 379.1766pt x 196.3335pt>
+Package svg Info: Last page of `./svg-inkscape/2.2_svg-tex.pdf' is 1 on input line 235.
+ (svg-inkscape/2.2_svg-tex.pdf_tex
+<./svg-inkscape/2.2_svg-tex.pdf, id=547, page=1, 379.1766pt x 196.3335pt>
 File: ./svg-inkscape/2.2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.2_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.2_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.158pt.
-) [8 <./svg-inkscape/2.1_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/2.7_svg-tex.pdf' is 1 on input line 215.
- (./svg-inkscape/2.7_svg-tex.pdf_tex
-<./svg-inkscape/2.7_svg-tex.pdf, id=320, page=1, 398.93037pt x 206.6922pt>
+) [9 <./svg-inkscape/2.1_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/2.7_svg-tex.pdf' is 1 on input line 248.
+ (svg-inkscape/2.7_svg-tex.pdf_tex
+<./svg-inkscape/2.7_svg-tex.pdf, id=561, page=1, 398.93037pt x 206.6922pt>
 File: ./svg-inkscape/2.7_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.7_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.7_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.32336pt.
 )
-Package svg Info: Last page of `./svg-inkscape/2.3_svg-tex.pdf' is 1 on input line 232.
- (./svg-inkscape/2.3_svg-tex.pdf_tex
-<./svg-inkscape/2.3_svg-tex.pdf, id=322, page=1, 415.0707pt x 214.8828pt>
+Package svg Info: Last page of `./svg-inkscape/2.3_svg-tex.pdf' is 1 on input line 265.
+ (svg-inkscape/2.3_svg-tex.pdf_tex
+<./svg-inkscape/2.3_svg-tex.pdf, id=563, page=1, 415.0707pt x 214.8828pt>
 File: ./svg-inkscape/2.3_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.3_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.3_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.10402pt.
-) [9 <./svg-inkscape/2.2_svg-tex.pdf> <./svg-inkscape/2.7_svg-tex.pdf
+) [10 <./svg-inkscape/2.2_svg-tex.pdf> <./svg-inkscape/2.7_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.7_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./svg-inkscape/2.7_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/2.11_svg-tex.pdf' is 1 on input line 240.
- (./svg-inkscape/2.11_svg-tex.pdf_tex
-<./svg-inkscape/2.11_svg-tex.pdf, id=341, page=1, 481.8pt x 249.8133pt>
+Package svg Info: Last page of `./svg-inkscape/2.11_svg-tex.pdf' is 1 on input line 273.
+ (svg-inkscape/2.11_svg-tex.pdf_tex
+<./svg-inkscape/2.11_svg-tex.pdf, id=582, page=1, 481.8pt x 249.8133pt>
 File: ./svg-inkscape/2.11_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.11_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.11_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.50998pt.
 )
-Package svg Info: Last page of `./svg-inkscape/2.4_svg-tex.pdf' is 1 on input line 249.
- (./svg-inkscape/2.4_svg-tex.pdf_tex
-<./svg-inkscape/2.4_svg-tex.pdf, id=343, page=1, 367.1316pt x 190.311pt>
+Package svg Info: Last page of `./svg-inkscape/2.4_svg-tex.pdf' is 1 on input line 282.
+ (svg-inkscape/2.4_svg-tex.pdf_tex
+<./svg-inkscape/2.4_svg-tex.pdf, id=584, page=1, 367.1316pt x 190.311pt>
 File: ./svg-inkscape/2.4_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.4_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.4_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.44095pt.
-) [10 <./svg-inkscape/2.3_svg-tex.pdf> <./svg-inkscape/2.11_svg-tex.pdf
+) [11 <./svg-inkscape/2.3_svg-tex.pdf> <./svg-inkscape/2.11_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.11_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./svg-inkscape/2.11_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/2.5_svg-tex.pdf' is 1 on input line 255.
- (./svg-inkscape/2.5_svg-tex.pdf_tex
-<./svg-inkscape/2.5_svg-tex.pdf, id=362, page=1, 395.55782pt x 205.0059pt>
+Package svg Info: Last page of `./svg-inkscape/2.5_svg-tex.pdf' is 1 on input line 288.
+ (svg-inkscape/2.5_svg-tex.pdf_tex
+<./svg-inkscape/2.5_svg-tex.pdf, id=603, page=1, 395.55782pt x 205.0059pt>
 File: ./svg-inkscape/2.5_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.5_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.5_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.4005pt.
 )
-Package svg Info: Last page of `./svg-inkscape/2.6_svg-tex.pdf' is 1 on input line 261.
- (./svg-inkscape/2.6_svg-tex.pdf_tex
-<./svg-inkscape/2.6_svg-tex.pdf, id=364, page=1, 397.00319pt x 205.72859pt>
+Package svg Info: Last page of `./svg-inkscape/2.6_svg-tex.pdf' is 1 on input line 294.
+ (svg-inkscape/2.6_svg-tex.pdf_tex
+<./svg-inkscape/2.6_svg-tex.pdf, id=605, page=1, 397.00319pt x 205.72859pt>
 File: ./svg-inkscape/2.6_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.6_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.6_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.35121pt.
-) [11 <./svg-inkscape/2.4_svg-tex.pdf> <./svg-inkscape/2.5_svg-tex.pdf
+) [12 <./svg-inkscape/2.4_svg-tex.pdf> <./svg-inkscape/2.5_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.5_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./svg-inkscape/2.5_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/2.8_svg-tex.pdf' is 1 on input line 267.
- (./svg-inkscape/2.8_svg-tex.pdf_tex
-<./svg-inkscape/2.8_svg-tex.pdf, id=383, page=1, 360.1455pt x 186.6975pt>
+Package svg Info: Last page of `./svg-inkscape/2.8_svg-tex.pdf' is 1 on input line 300.
+ (svg-inkscape/2.8_svg-tex.pdf_tex
+<./svg-inkscape/2.8_svg-tex.pdf, id=624, page=1, 360.1455pt x 186.6975pt>
 File: ./svg-inkscape/2.8_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.8_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.8_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.46033pt.
 )
-Package svg Info: Last page of `./svg-inkscape/2.nuts2_svg-tex.pdf' is 1 on input line 272.
- (./svg-inkscape/2.nuts2_svg-tex.pdf_tex
-<./svg-inkscape/2.nuts2_svg-tex.pdf, id=385, page=1, 135.1449pt x 126.4725pt>
+Package svg Info: Last page of `./svg-inkscape/2.nuts2_svg-tex.pdf' is 1 on input line 305.
+ (svg-inkscape/2.nuts2_svg-tex.pdf_tex
+<./svg-inkscape/2.nuts2_svg-tex.pdf, id=626, page=1, 135.1449pt x 126.4725pt>
 File: ./svg-inkscape/2.nuts2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.nuts2_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.nuts2_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 468.43492pt.
-) [12 <./svg-inkscape/2.6_svg-tex.pdf> <./svg-inkscape/2.8_svg-tex.pdf
+) [13 <./svg-inkscape/2.6_svg-tex.pdf> <./svg-inkscape/2.8_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.8_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./svg-inkscape/2.8_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/2.9_svg-tex.pdf' is 1 on input line 279.
- (./svg-inkscape/2.9_svg-tex.pdf_tex
-<./svg-inkscape/2.9_svg-tex.pdf, id=404, page=1, 445.665pt x 230.7822pt>
+Package svg Info: Last page of `./svg-inkscape/2.9_svg-tex.pdf' is 1 on input line 312.
+ (svg-inkscape/2.9_svg-tex.pdf_tex
+<./svg-inkscape/2.9_svg-tex.pdf, id=646, page=1, 445.665pt x 230.7822pt>
 File: ./svg-inkscape/2.9_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.9_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.9_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.17154pt.
 )
-Package svg Info: Last page of `./svg-inkscape/2.10_svg-tex.pdf' is 1 on input line 285.
- (./svg-inkscape/2.10_svg-tex.pdf_tex
-<./svg-inkscape/2.10_svg-tex.pdf, id=406, page=1, 428.3202pt x 221.86891pt>
+Package svg Info: Last page of `./svg-inkscape/2.10_svg-tex.pdf' is 1 on input line 318.
+ (svg-inkscape/2.10_svg-tex.pdf_tex
+<./svg-inkscape/2.10_svg-tex.pdf, id=648, page=1, 428.3202pt x 221.86891pt>
 File: ./svg-inkscape/2.10_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.10_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.10_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 259.25041pt.
-) [13 <./svg-inkscape/2.nuts2_svg-tex.pdf> <./svg-inkscape/2.9_svg-tex.pdf
+) [14 <./svg-inkscape/2.nuts2_svg-tex.pdf> <./svg-inkscape/2.9_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.9_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [14 <./svg-inkscape/2.10_svg-tex.pdf>] [15] (./WIP_sprawozdanie.aux)
+pdfTeX warning: pdflatex (file ./svg-inkscape/2.9_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [15 <./svg-inkscape/2.10_svg-tex.pdf>] [16]
+Overfull \hbox (0.61974pt too wide) in paragraph at lines 360--361
+[]\OT4/cmr/m/n/10 Zbiór ana-li-zo-wany w pre-zen-ta-cji po-cho-dzi z Eu-ro-statu i ma ozna-cze-nie \OT4/cmr/bx/n/10 gov[]10q[]ggdebt[][]custom[]20309646\OT4/cmr/m/n/10 ; 
+ []
+
+<phts/4/png/4.1.png, id=681, 457.71pt x 355.3275pt>
+File: phts/4/png/4.1.png Graphic file (type png)
+<use phts/4/png/4.1.png>
+Package pdftex.def Info: phts/4/png/4.1.png  used on input line 374.
+(pdftex.def)             Requested size: 500.484pt x 388.55173pt.
+[17 <./phts/4/png/4.1.png>]
+<phts/4/png/4.2.png, id=689, 610.28pt x 443.6575pt>
+File: phts/4/png/4.2.png Graphic file (type png)
+<use phts/4/png/4.2.png>
+Package pdftex.def Info: phts/4/png/4.2.png  used on input line 388.
+(pdftex.def)             Requested size: 500.484pt x 363.85565pt.
+<phts/4/png/4.3.png, id=690, 596.2275pt x 493.845pt>
+File: phts/4/png/4.3.png Graphic file (type png)
+<use phts/4/png/4.3.png>
+Package pdftex.def Info: phts/4/png/4.3.png  used on input line 402.
+(pdftex.def)             Requested size: 500.484pt x 414.54062pt.
+ [18 <./phts/4/png/4.2.png>]
+<phts/4/png/4.4.png, id=697, 576.1525pt x 447.6725pt>
+File: phts/4/png/4.4.png Graphic file (type png)
+<use phts/4/png/4.4.png>
+Package pdftex.def Info: phts/4/png/4.4.png  used on input line 417.
+(pdftex.def)             Requested size: 500.484pt x 388.8913pt.
+ [19 <./phts/4/png/4.3.png>]
+<phts/4/png/4.5.png, id=705, 543.02875pt x 424.58624pt>
+File: phts/4/png/4.5.png Graphic file (type png)
+<use phts/4/png/4.5.png>
+Package pdftex.def Info: phts/4/png/4.5.png  used on input line 431.
+(pdftex.def)             Requested size: 500.484pt x 391.33673pt.
+ [20 <./phts/4/png/4.4.png>]
+<phts/4/png/4.6.png, id=712, 489.83pt x 382.42876pt>
+File: phts/4/png/4.6.png Graphic file (type png)
+<use phts/4/png/4.6.png>
+Package pdftex.def Info: phts/4/png/4.6.png  used on input line 445.
+(pdftex.def)             Requested size: 500.484pt x 390.7549pt.
+ [21 <./phts/4/png/4.5.png>]
+<phts/4/png/4.7.png, id=719, 548.0475pt x 406.51875pt>
+File: phts/4/png/4.7.png Graphic file (type png)
+<use phts/4/png/4.7.png>
+Package pdftex.def Info: phts/4/png/4.7.png  used on input line 459.
+(pdftex.def)             Requested size: 500.484pt x 371.24767pt.
+ [22 <./phts/4/png/4.6.png>]
+<phts/4/png/4.8.png, id=726, 551.05875pt x 406.51875pt>
+File: phts/4/png/4.8.png Graphic file (type png)
+<use phts/4/png/4.8.png>
+Package pdftex.def Info: phts/4/png/4.8.png  used on input line 473.
+(pdftex.def)             Requested size: 500.484pt x 369.2255pt.
+ [23 <./phts/4/png/4.7.png>] [24 <./phts/4/png/4.8.png>]
+<phts/5/png/5.1.png, id=748, 901.3675pt x 519.9425pt>
+File: phts/5/png/5.1.png Graphic file (type png)
+<use phts/5/png/5.1.png>
+Package pdftex.def Info: phts/5/png/5.1.png  used on input line 526.
+(pdftex.def)             Requested size: 500.484pt x 288.69844pt.
+<phts/5/png/5.2.png, id=749, 853.1875pt x 511.9125pt>
+File: phts/5/png/5.2.png Graphic file (type png)
+<use phts/5/png/5.2.png>
+Package pdftex.def Info: phts/5/png/5.2.png  used on input line 540.
+(pdftex.def)             Requested size: 500.484pt x 300.2995pt.
+ [25 <./phts/5/png/5.1.png>]
+<phts/5/png/5.3.png, id=757, 899.36pt x 519.9425pt>
+File: phts/5/png/5.3.png Graphic file (type png)
+<use phts/5/png/5.3.png>
+Package pdftex.def Info: phts/5/png/5.3.png  used on input line 555.
+(pdftex.def)             Requested size: 500.484pt x 289.34106pt.
+<phts/5/png/5.4.png, id=758, 897.3525pt x 517.935pt>
+File: phts/5/png/5.4.png Graphic file (type png)
+<use phts/5/png/5.4.png>
+Package pdftex.def Info: phts/5/png/5.4.png  used on input line 569.
+(pdftex.def)             Requested size: 500.484pt x 288.87196pt.
+ [26 <./phts/5/png/5.2.png> <./phts/5/png/5.3.png>]
+<phts/5/png/5.5.png, id=767, 867.24pt x 499.8675pt>
+File: phts/5/png/5.5.png Graphic file (type png)
+<use phts/5/png/5.5.png>
+Package pdftex.def Info: phts/5/png/5.5.png  used on input line 583.
+(pdftex.def)             Requested size: 500.484pt x 288.47415pt.
+<phts/5/png/5.6.png, id=768, 883.3pt x 511.9125pt>
+File: phts/5/png/5.6.png Graphic file (type png)
+<use phts/5/png/5.6.png>
+Package pdftex.def Info: phts/5/png/5.6.png  used on input line 597.
+(pdftex.def)             Requested size: 500.484pt x 290.05127pt.
+ [27 <./phts/5/png/5.4.png> <./phts/5/png/5.5.png>]
+<phts/5/png/5.7.png, id=777, 893.3375pt x 511.9125pt>
+File: phts/5/png/5.7.png Graphic file (type png)
+<use phts/5/png/5.7.png>
+Package pdftex.def Info: phts/5/png/5.7.png  used on input line 611.
+(pdftex.def)             Requested size: 500.484pt x 286.79402pt.
+<phts/5/png/5.8.png, id=778, 857.2025pt x 493.845pt>
+File: phts/5/png/5.8.png Graphic file (type png)
+<use phts/5/png/5.8.png>
+Package pdftex.def Info: phts/5/png/5.8.png  used on input line 625.
+(pdftex.def)             Requested size: 500.484pt x 288.33676pt.
+ [28 <./phts/5/png/5.6.png> <./phts/5/png/5.7.png>]
+<phts/5/png/5.9.png, id=787, 889.3225pt x 519.9425pt>
+File: phts/5/png/5.9.png Graphic file (type png)
+<use phts/5/png/5.9.png>
+Package pdftex.def Info: phts/5/png/5.9.png  used on input line 639.
+(pdftex.def)             Requested size: 500.484pt x 292.60974pt.
+<phts/5/png/5.10.png, id=788, 834.11626pt x 526.96875pt>
+File: phts/5/png/5.10.png Graphic file (type png)
+<use phts/5/png/5.10.png>
+Package pdftex.def Info: phts/5/png/5.10.png  used on input line 654.
+(pdftex.def)             Requested size: 500.484pt x 316.19173pt.
+ [29 <./phts/5/png/5.8.png> <./phts/5/png/5.9.png>]
+<phts/5/png/5.11.png, id=797, 843.15pt x 483.8075pt>
+File: phts/5/png/5.11.png Graphic file (type png)
+<use phts/5/png/5.11.png>
+Package pdftex.def Info: phts/5/png/5.11.png  used on input line 669.
+(pdftex.def)             Requested size: 500.484pt x 287.18617pt.
+ [30 <./phts/5/png/5.10.png> <./phts/5/png/5.11.png>] [31]
+<phts/6/png/6.1.png, id=820, 803.25093pt x 511.9125pt>
+File: phts/6/png/6.1.png Graphic file (type png)
+<use phts/6/png/6.1.png>
+Package pdftex.def Info: phts/6/png/6.1.png  used on input line 714.
+(pdftex.def)             Requested size: 500.484pt x 318.96814pt.
+<phts/6/png/6.2.png, id=821, 761.09344pt x 503.63156pt>
+File: phts/6/png/6.2.png Graphic file (type png)
+<use phts/6/png/6.2.png>
+Package pdftex.def Info: phts/6/png/6.2.png  used on input line 719.
+(pdftex.def)             Requested size: 500.484pt x 331.19135pt.
+ [32 <./phts/6/png/6.1.png>]
+<phts/6/png/6.3.png, id=829, 731.73375pt x 511.15968pt>
+File: phts/6/png/6.3.png Graphic file (type png)
+<use phts/6/png/6.3.png>
+Package pdftex.def Info: phts/6/png/6.3.png  used on input line 730.
+(pdftex.def)             Requested size: 500.484pt x 349.61969pt.
+<phts/6/png/6.4.png, id=830, 840.89156pt x 508.90125pt>
+File: phts/6/png/6.4.png Graphic file (type png)
+<use phts/6/png/6.4.png>
+Package pdftex.def Info: phts/6/png/6.4.png  used on input line 735.
+(pdftex.def)             Requested size: 500.484pt x 302.8893pt.
+ [33 <./phts/6/png/6.2.png> <./phts/6/png/6.3.png>]
+<phts/6/png/6.5.png, id=839, 542.025pt x 349.305pt>
+File: phts/6/png/6.5.png Graphic file (type png)
+<use phts/6/png/6.5.png>
+Package pdftex.def Info: phts/6/png/6.5.png  used on input line 748.
+(pdftex.def)             Requested size: 500.484pt x 322.54774pt.
+<phts/6/png/6.6.png, id=840, 498.36188pt x 339.51843pt>
+File: phts/6/png/6.6.png Graphic file (type png)
+<use phts/6/png/6.6.png>
+Package pdftex.def Info: phts/6/png/6.6.png  used on input line 753.
+(pdftex.def)             Requested size: 500.484pt x 340.97334pt.
+ [34 <./phts/6/png/6.4.png> <./phts/6/png/6.5.png>]
+<phts/6/png/6.7.png, id=849, 789.70032pt x 697.8572pt>
+File: phts/6/png/6.7.png Graphic file (type png)
+<use phts/6/png/6.7.png>
+Package pdftex.def Info: phts/6/png/6.7.png  used on input line 764.
+(pdftex.def)             Requested size: 500.484pt x 442.28252pt.
+ [35 <./phts/6/png/6.6.png>]
+<phts/6/png/6.8.png, id=856, 793.46437pt x 706.89093pt>
+File: phts/6/png/6.8.png Graphic file (type png)
+<use phts/6/png/6.8.png>
+Package pdftex.def Info: phts/6/png/6.8.png  used on input line 772.
+(pdftex.def)             Requested size: 500.484pt x 445.88295pt.
+ [36 <./phts/6/png/6.7.png>] [37 <./phts/6/png/6.8.png>]
+<phts/6/png/6.9.png, id=870, 995.97093pt x 552.56438pt>
+File: phts/6/png/6.9.png Graphic file (type png)
+<use phts/6/png/6.9.png>
+Package pdftex.def Info: phts/6/png/6.9.png  used on input line 784.
+(pdftex.def)             Requested size: 500.484pt x 277.67268pt.
+ [38 <./phts/6/png/6.9.png>]
+<phts/7/png/7.1.png, id=884, 867.24pt x 505.89pt>
+File: phts/7/png/7.1.png Graphic file (type png)
+<use phts/7/png/7.1.png>
+Package pdftex.def Info: phts/7/png/7.1.png  used on input line 838.
+(pdftex.def)             Requested size: 360.34782pt x 210.20288pt.
+<phts/7/png/7.2.png, id=885, 794.97pt x 505.89pt>
+File: phts/7/png/7.2.png Graphic file (type png)
+<use phts/7/png/7.2.png>
+Package pdftex.def Info: phts/7/png/7.2.png  used on input line 840.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+ [39 <./phts/7/png/7.1.png>]
+<phts/7/png/7.3.png, id=891, 867.24pt x 505.89pt>
+File: phts/7/png/7.3.png Graphic file (type png)
+<use phts/7/png/7.3.png>
+Package pdftex.def Info: phts/7/png/7.3.png  used on input line 842.
+(pdftex.def)             Requested size: 360.34782pt x 210.20288pt.
+<phts/7/png/7.4.png, id=892, 794.97pt x 505.89pt>
+File: phts/7/png/7.4.png Graphic file (type png)
+<use phts/7/png/7.4.png>
+Package pdftex.def Info: phts/7/png/7.4.png  used on input line 844.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+<phts/7/png/7.5.png, id=893, 794.97pt x 505.89pt>
+File: phts/7/png/7.5.png Graphic file (type png)
+<use phts/7/png/7.5.png>
+Package pdftex.def Info: phts/7/png/7.5.png  used on input line 846.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+ [40 <./phts/7/png/7.2.png> <./phts/7/png/7.3.png> <./phts/7/png/7.4.png>]
+<phts/7/png/7.6.png, id=901, 794.97pt x 505.89pt>
+File: phts/7/png/7.6.png Graphic file (type png)
+<use phts/7/png/7.6.png>
+Package pdftex.def Info: phts/7/png/7.6.png  used on input line 848.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+<phts/7/png/7.7.png, id=902, 722.7pt x 505.89pt>
+File: phts/7/png/7.7.png Graphic file (type png)
+<use phts/7/png/7.7.png>
+Package pdftex.def Info: phts/7/png/7.7.png  used on input line 850.
+(pdftex.def)             Requested size: 307.88779pt x 215.52144pt.
+<phts/7/png/7.8.png, id=903, 794.97pt x 505.89pt>
+File: phts/7/png/7.8.png Graphic file (type png)
+<use phts/7/png/7.8.png>
+Package pdftex.def Info: phts/7/png/7.8.png  used on input line 852.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+ [41 <./phts/7/png/7.5.png> <./phts/7/png/7.6.png> <./phts/7/png/7.7.png>]
+<phts/7/png/7.9.png, id=911, 867.24pt x 505.89pt>
+File: phts/7/png/7.9.png Graphic file (type png)
+<use phts/7/png/7.9.png>
+Package pdftex.def Info: phts/7/png/7.9.png  used on input line 857.
+(pdftex.def)             Requested size: 360.34782pt x 210.20288pt.
+<phts/7/png/7.10.png, id=912, 794.97pt x 505.89pt>
+File: phts/7/png/7.10.png Graphic file (type png)
+<use phts/7/png/7.10.png>
+Package pdftex.def Info: phts/7/png/7.10.png  used on input line 859.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+<phts/7/png/7.11.png, id=913, 867.24pt x 505.89pt>
+File: phts/7/png/7.11.png Graphic file (type png)
+<use phts/7/png/7.11.png>
+Package pdftex.def Info: phts/7/png/7.11.png  used on input line 861.
+(pdftex.def)             Requested size: 360.34782pt x 210.20288pt.
+ [42 <./phts/7/png/7.8.png> <./phts/7/png/7.9.png> <./phts/7/png/7.10.png>]
+<phts/7/png/7.12.png, id=921, 794.97pt x 505.89pt>
+File: phts/7/png/7.12.png Graphic file (type png)
+<use phts/7/png/7.12.png>
+Package pdftex.def Info: phts/7/png/7.12.png  used on input line 863.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+<phts/7/png/7.13.png, id=922, 794.97pt x 505.89pt>
+File: phts/7/png/7.13.png Graphic file (type png)
+<use phts/7/png/7.13.png>
+Package pdftex.def Info: phts/7/png/7.13.png  used on input line 865.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+<phts/7/png/7.14.png, id=923, 794.97pt x 505.89pt>
+File: phts/7/png/7.14.png Graphic file (type png)
+<use phts/7/png/7.14.png>
+Package pdftex.def Info: phts/7/png/7.14.png  used on input line 867.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+ [43 <./phts/7/png/7.11.png> <./phts/7/png/7.12.png> <./phts/7/png/7.13.png>]
+<phts/7/png/7.15.png, id=932, 722.7pt x 505.89pt>
+File: phts/7/png/7.15.png Graphic file (type png)
+<use phts/7/png/7.15.png>
+Package pdftex.def Info: phts/7/png/7.15.png  used on input line 869.
+(pdftex.def)             Requested size: 307.88779pt x 215.52144pt.
+<phts/7/png/7.16.png, id=933, 794.97pt x 505.89pt>
+File: phts/7/png/7.16.png Graphic file (type png)
+<use phts/7/png/7.16.png>
+Package pdftex.def Info: phts/7/png/7.16.png  used on input line 871.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+<phts/7/png/7.17.png, id=934, 867.24pt x 505.89pt>
+File: phts/7/png/7.17.png Graphic file (type png)
+<use phts/7/png/7.17.png>
+Package pdftex.def Info: phts/7/png/7.17.png  used on input line 876.
+(pdftex.def)             Requested size: 360.34782pt x 210.20288pt.
+ [44 <./phts/7/png/7.14.png> <./phts/7/png/7.15.png> <./phts/7/png/7.16.png>]
+<phts/7/png/7.18.png, id=942, 794.97pt x 505.89pt>
+File: phts/7/png/7.18.png Graphic file (type png)
+<use phts/7/png/7.18.png>
+Package pdftex.def Info: phts/7/png/7.18.png  used on input line 878.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+<phts/7/png/7.19.png, id=943, 867.24pt x 505.89pt>
+File: phts/7/png/7.19.png Graphic file (type png)
+<use phts/7/png/7.19.png>
+Package pdftex.def Info: phts/7/png/7.19.png  used on input line 880.
+(pdftex.def)             Requested size: 360.34782pt x 210.20288pt.
+<phts/7/png/7.20.png, id=944, 794.97pt x 505.89pt>
+File: phts/7/png/7.20.png Graphic file (type png)
+<use phts/7/png/7.20.png>
+Package pdftex.def Info: phts/7/png/7.20.png  used on input line 882.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+ [45 <./phts/7/png/7.17.png> <./phts/7/png/7.18.png> <./phts/7/png/7.19.png>]
+<phts/7/png/7.21.png, id=952, 794.97pt x 505.89pt>
+File: phts/7/png/7.21.png Graphic file (type png)
+<use phts/7/png/7.21.png>
+Package pdftex.def Info: phts/7/png/7.21.png  used on input line 884.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+<phts/7/png/7.22.png, id=953, 794.97pt x 505.89pt>
+File: phts/7/png/7.22.png Graphic file (type png)
+<use phts/7/png/7.22.png>
+Package pdftex.def Info: phts/7/png/7.22.png  used on input line 886.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+<phts/7/png/7.23.png, id=954, 722.7pt x 505.89pt>
+File: phts/7/png/7.23.png Graphic file (type png)
+<use phts/7/png/7.23.png>
+Package pdftex.def Info: phts/7/png/7.23.png  used on input line 888.
+(pdftex.def)             Requested size: 307.88779pt x 215.52144pt.
+ [46 <./phts/7/png/7.20.png> <./phts/7/png/7.21.png> <./phts/7/png/7.22.png>]
+<phts/7/png/7.24.png, id=962, 794.97pt x 505.89pt>
+File: phts/7/png/7.24.png Graphic file (type png)
+<use phts/7/png/7.24.png>
+Package pdftex.def Info: phts/7/png/7.24.png  used on input line 890.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+<phts/7/png/7.25.png, id=963, 867.24pt x 505.89pt>
+File: phts/7/png/7.25.png Graphic file (type png)
+<use phts/7/png/7.25.png>
+Package pdftex.def Info: phts/7/png/7.25.png  used on input line 895.
+(pdftex.def)             Requested size: 360.34782pt x 210.20288pt.
+<phts/7/png/7.26.png, id=964, 794.97pt x 505.89pt>
+File: phts/7/png/7.26.png Graphic file (type png)
+<use phts/7/png/7.26.png>
+Package pdftex.def Info: phts/7/png/7.26.png  used on input line 897.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+ [47 <./phts/7/png/7.23.png> <./phts/7/png/7.24.png> <./phts/7/png/7.25.png>]
+<phts/7/png/7.27.png, id=972, 867.24pt x 505.89pt>
+File: phts/7/png/7.27.png Graphic file (type png)
+<use phts/7/png/7.27.png>
+Package pdftex.def Info: phts/7/png/7.27.png  used on input line 899.
+(pdftex.def)             Requested size: 360.34782pt x 210.20288pt.
+<phts/7/png/7.28.png, id=973, 794.97pt x 505.89pt>
+File: phts/7/png/7.28.png Graphic file (type png)
+<use phts/7/png/7.28.png>
+Package pdftex.def Info: phts/7/png/7.28.png  used on input line 901.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+<phts/7/png/7.29.png, id=974, 794.97pt x 505.89pt>
+File: phts/7/png/7.29.png Graphic file (type png)
+<use phts/7/png/7.29.png>
+Package pdftex.def Info: phts/7/png/7.29.png  used on input line 903.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+ [48 <./phts/7/png/7.26.png> <./phts/7/png/7.27.png> <./phts/7/png/7.28.png>]
+<phts/7/png/7.30.png, id=982, 794.97pt x 505.89pt>
+File: phts/7/png/7.30.png Graphic file (type png)
+<use phts/7/png/7.30.png>
+Package pdftex.def Info: phts/7/png/7.30.png  used on input line 905.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+<phts/7/png/7.31.png, id=983, 722.7pt x 505.89pt>
+File: phts/7/png/7.31.png Graphic file (type png)
+<use phts/7/png/7.31.png>
+Package pdftex.def Info: phts/7/png/7.31.png  used on input line 907.
+(pdftex.def)             Requested size: 307.88779pt x 215.52144pt.
+<phts/7/png/7.32.png, id=984, 794.97pt x 505.89pt>
+File: phts/7/png/7.32.png Graphic file (type png)
+<use phts/7/png/7.32.png>
+Package pdftex.def Info: phts/7/png/7.32.png  used on input line 909.
+(pdftex.def)             Requested size: 338.67657pt x 215.52144pt.
+ [49 <./phts/7/png/7.29.png> <./phts/7/png/7.30.png> <./phts/7/png/7.31.png>] [50 <./phts/7/png/7.32.png>] (WIP_sprawozdanie.aux)
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-14>
+L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `WIP_sprawozdanie.out' has not changed.
-(rerunfilecheck)             Checksum: CBD5A5C6B23ACE410FF2138E7A652579;9334.
+(rerunfilecheck)             Checksum: 83B6B841DF7A2CD871B4E2B436864500;20142.
  ) 
 Here is how much of TeX's memory you used:
- 14864 strings out of 467538
- 253888 string characters out of 5423724
- 714357 words of memory out of 5000000
- 43382 multiletter control sequences out of 15000+600000
+ 15484 strings out of 467871
+ 272894 string characters out of 5418377
+ 728982 words of memory out of 5000000
+ 43806 multiletter control sequences out of 15000+600000
  635712 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,10n,93p,810b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/pl/plbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/pl/plbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/pl/plr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/pl/plr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/pl/plr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/pl/pltt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on WIP_sprawozdanie.pdf (15 pages, 2061978 bytes).
+ 94i,10n,93p,838b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\papro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/papro/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx10.pfb><C:/Users/papro/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/papro/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Users/papro/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/papro/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/papro/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt10.pfb>
+Output written on WIP_sprawozdanie.pdf (50 pages, 14630430 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 374 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 500000)
- 495 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1093 PDF objects out of 1200 (max. 8388607)
+ 245 named destinations out of 1000 (max. 500000)
+ 1179 words of extra memory for PDF output out of 10000 (max. 10000000)
 
