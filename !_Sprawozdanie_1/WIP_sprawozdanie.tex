@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage[OT4]{fontenc}
 \usepackage[polish]{babel}
 \usepackage[legalpaper, margin=2cm]{geometry}
@@ -273,15 +273,21 @@ te zależności bez obecności Włoch i Chorwacji:
     \includesvg[width=\textwidth]{phts/2/svg/2.11}
     \caption{Wyrkes zmienności liczby placówek noclegowych na przestrzeni lat - bez Włoch i Chorwacji.}
 \end{figure}
-Jak widać, zmiany nie wyglądają tak samo nieznacznie - widać przykładowo, że liczba hoteli stopniowo spada w Niemczech, 
-rośnie w Hiszpanii oraz że w Grecji miała znaczny spadek na początku pandemi Koronawirusa.
-
+Jak widać, zmiany nie wyglądają tak samo nieznacznie jak na wykresie z dominującymi państwami. Przykładowo, 
+liczba hoteli stopniowo spada w Niemczech, rośnie w Hiszpanii a w Grecji miała znaczny spadek na początku pandemii Koronawirusa.
+Warto zauważyć, że nawet po pozbyciu się Włoch i Chorwacji, skala dobrze ilustrująca pozostałe państwa to $ 10^4 $ . 
+Ponownie biorąc Grecję, oznacza to zamknięcie ok. 16000 placówek turystycznych tylko i wyłącznie między 2019 a 2020 rokiem. 
 
 \subsubsection{Indeks wzrostu liczby placówek turystycznych na przestrzeni lat}
 \begin{figure}[H]
     \includesvg[width=\textwidth]{phts/2/svg/2.4}
     \caption{Wykres zmienności indeksu wzrostu liczby placówek turystycznych na przestrzeni lat.}
 \end{figure}
+Jesteśmy w stanie spojrzeć na całkowity wzrost liczby placówek z perspektywy indeksu względem jednej wyznaczonej daty, 
+w celu porównania względnego wzrostu możliwości przyjęcia turystów w wybranych krajach Europy. Biorąc początkowe dane jako 
+dane z roku 2012 i obliczając owy indeks widać, że mimo ogromnej liczby hoteli we Włoszech ich względny wzrost nie był aż tak duży, jak w przypadku Chorwacji oraz, 
+co zaskakujące, Hiszpanii - kraju, który w czasach pandemicznych wystrzelił na szczyt w perspektywie indeksu wzrostu liczby placóek turystycznych. 
+
 
 \subsubsection{Liczba placówek turystycznych w wybranych krajach, z podziałem na stopień urbanizacji}
 \begin{figure}[H]
@@ -289,22 +295,45 @@ rośnie w Hiszpanii oraz że w Grecji miała znaczny spadek na początku pandemi
     \caption{Liczba placówek turystycznych w wybranych krajach, z podziałem na stopień urbanizacji.}
 \end{figure}
 
+Sortując istniejące dane dot. placówek po stopniu urbanizacji lokalizacji, w którym dana placówka się znajduje, jesteśmy w stanie spojrzeć na 
+dominujący stopień urbanizacji dla poszczególnego kraju względem potencjału przyjęcia turystów. Dla wybranych na wykresie krajów widać, 
+że większość z nich posiada najwięcej placówek turystycznych w obszarach wiejskich (w co wchodzą również lasy, oddalone od miast niziny, etc.)
+Państwem odstającym od tego trendu są Włochy, które mają najwięcej placówek w obszarach przedmiejskich.  
+
 \subsubsection{Liczba placówek turystycznych w wybranych krajach, z podziałem na dostęp do morza}
 \begin{figure}[H]
     \includesvg[width=\textwidth]{phts/2/svg/2.6}
     \caption{Liczba placówek turystycznych w wybranych krajach, z podziałem na dostęp do morza.}
 \end{figure}
 
-\subsubsection{Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na województwa}
-\begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/2/svg/2.8}
-    \caption{Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na województwa.}
-\end{figure}
+Dane można również posortować względem tego, czy lokalizacja jest przybrzeżna czy nie jest przybrzeżna. Dzięki temu jesteśmy w stanie zobaczyć
+dla poszczególnych krajów, czy jest ono znane z dostępu do akwenu wodnego czy nie. 
+Jak widać, tutaj podział jest nierównomierny - część krajów, np. Hiszpania, ma znacznie więcej placówek przybrzeżnych, a inne - takie jak Niemcy czy 
+Polska, mają o wiele więcej placówek obecnych z dala od brzegów mórz i oceanów. Co ciekawe, Włochy ponownie odstają od reszty, mając bardzo równomierny 
+podział liczby placówek względem przybrzeżności. Z perspektywy kształu i usytuowania kraju w Europie, ten podział jest prawdopodobny - większość granicy 
+Włoskiej jest przybrzeżna.
 
+
+\subsubsection{Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na województwa}
+Analiza wykresów dla Polski będzie odbywać się na podstawie podziału \textbf{NUTS2}, który różni się od podstawowego podziału Polski na województwa tym,
+że uwzględnia obszar \textit{Warszawski Stołeczny}, w który wchodzi Warszawa oraz okoliczne miasteczka (Pruszków, Falenice, Otwock, etc.). 
+Poniżej znajduje się mapa ilustrująca ten podział: 
 \begin{figure}[H]
     \includesvg[width=\textwidth]{phts/2/svg/2.nuts2}
     \caption{NUTS2 - podział Polski na wybrane jednostki geograficzne, z wyodrębnieniem jednostki 'warszawska stołeczna'.}
 \end{figure}
+
+Poniżej znajduje się wykres przedstawiający zarówno liczbę placówek jak i miejsc do spania w poszczególnych obszarach.
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.8}
+    \caption{Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na województwa.}
+\end{figure}
+Jak widać na powyższym wykresie, mamy klarowne podium w obu kategoriach:
+na pierwszym miejscu jest Zachodniopomorskie, potem Pomorskie a na końcu Małopolskie. Widać, że pomimo niedużego wkładu placówek przybrzeżnych w całości liczby polskich placówek 
+turystycznych, lokalnie najwięcej znajduje się w dwóch województwach z dostępem do Bałtyku. 
+Ciekawym jest fakt, iż mimo relatywnie niskiej liczby placówek turystycznych w obszarze Warszawskim stołecznym, jest on piąty względem liczby miejsc do spania. 
+Oznacza to, że w Warszawie i okolicach jest większe skupienie na hotelach i ośrodkach przeznaczonych dla dużej liczby turystów, niż w innych województwach.
 
 
 \subsubsection{Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na stopień urbanizacji oraz dostęp do morza}
@@ -312,15 +341,29 @@ rośnie w Hiszpanii oraz że w Grecji miała znaczny spadek na początku pandemi
     \includesvg[width=\textwidth]{phts/2/svg/2.9}
     \caption{Liczba placówek turystycznych i miejsc do spania w Polsce, z podziałem na stopień urbanizacji oraz dostęp do morza.}
 \end{figure}
+Patrząc na dane podzielone, widzimy że w Polsce również dominują obszary nieprzybrzeżne i niezurbanizowane. Centralny trend pandemiczny widoczny jest we wszystkich 
+grupach, w jednych bardziej niż w innych - w miastach, o wiele mniej placówek zbankturowało niż w obszarach wiejskich, co pokrywa się z faktem zauwazonym w poprzedniej sekcji.
+Większe placówki, hotele, są bardziej wytrzymałe na ekstremalne sytuacje niż mniejsze, lokalne domki do wynajęcia.
 
 \subsubsection{Dodatkowe wizualizacje dla Polski}
 \begin{figure}[H]
     \includesvg[width=\textwidth]{phts/2/svg/2.10}
     \caption{Dodatkowe wizualizacje dla Polski.}
 \end{figure}
-
+W dodatkowych wizualizacjach charakterystyczny jest spadek liczby placówek turystycznych na początku pandemii COVID-19. Jak widać, niecałe 1500 placówek zostało 
+zamknięte przez występującą wtedy pandemię. Jest to, oczywiście, znany fakt.
 
 \subsection{Wnioski}
+\begin{enumerate}
+    \item Włochy są krajem z największą liczbą placówek turystycznych. Większość z nich prawdopodobnie jest w postaci domków turystycznych,
+     przyjmujące niewielką liczbę gości, jednak są również hotele / ośrodki przyjmujące dużą liczbę turystów;
+    \item Placówka placówce nie równa - to, że dany kraj ma wiele placówek turystycznych nie oznacza, że dany kraj może przyjąć wiele turystów na noc. 
+    Istotne jest spojrzenie na liczbę miejsc do spania. Idealnym przykładem tego jest Chorwacja - drugi kraj względem liczby placówek, a siódmy względem miejsc do spania;
+    \item Lokalizacje o zurbanizowaniu wiejskim - małe miejscowości, obszary leśne, wyżyny i schroniska górskie - posiadają najwięcej placówek turystycznych w państwach Europy. Ponownie należy zauważyć, \
+    że nie oznacza to dużej przepustowości turystów;
+    \item Okres pandemii COVID-19 wpłynął na biznes turystyczny poprzez zamknięcie małych placówek turystycznych. Nie oznacza to jednak znacznego spadku liczby miejsc do spania w Europejskich krajach;
+    \item W Polsce, najwięcej ośrodków znajduje się w obszarach przybrzeżnych (woj. Zachodniopomorskie i Pomorskie). 
+\end{enumerate}
 
 \newpage
 \section{Nie-dominujące wyznania religijne w Polsce (MATLAB)}
