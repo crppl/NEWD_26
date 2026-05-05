@@ -366,24 +366,225 @@ zamknięte przez występującą wtedy pandemię. Jest to, oczywiście, znany fak
 \end{enumerate}
 
 \newpage
-\section{Nie-dominujące wyznania religijne w Polsce (MATLAB)}
+\section{Niedominujące wyznania religijne w PRL i wczesnej III Rzeczypospolitej (MATLAB)}
 
 Przygotowane przez: Jan Machowski
 
 \subsection{Źródło danych}
-% \href{}{}\\
-% \url{}
+\href{https://bdl.stat.gov.pl/bdl/}{GUS - wyznania religijne}\\
+\url{https://bdl.stat.gov.pl/bdl/}
 
 \subsection{Opis zbioru i istotnych pojęć}
 \begin{itemize}
-    \item
+    \item Dane zostały zebrane na przestrzeni lat 1940 - 1998
+    \item Dane dotyczą wyłącznie Polski
+    \item Wiele danych jest brakujących lub bardzo ogólnych, prawdopodobnie ze względu na panujący w tych czasach reżim.
+            Oznacza to, że wizualizacja jest znacznie utrudniona - często nie jesteśmy w stanie pokazać tych samych wartości (np. liczba wiernych) dla różnych wyznań, gdyż nie posiadamy tych danych.
+    
+    \item Główne liczby w zbiorze danych, które zostały wykorzystane do wizualizacji, to:
+    \begin{itemize}
+        \item \textbf{Liczba duchownych} - liczba praktykujących duchownych danego wyznania religijnego. Odnosi się to m.in. do diakonów, kapłanów, biskupów, sióstr zakonnych (Mariawici), rabinów, imamów.
+        \item \textbf{Liczba wiernych} - statystyka podawana przez kościół lub dostępna w powszechnych spisach ludności.
+        \item \textbf{Obiekt kultu / miejsca modlitwy} - miejsca uznawane w danym wyznaniu za istotne dla wiary, dostępne dla wiernych w celach kultywowania wyznania. W to wchodzą kościoły, kaplice, cerkwie,
+                synagogi, meczety. 
+    \end{itemize} 
 \end{itemize}
 
-
 \subsection{Wizualizacje zbioru}
+\subsubsection{PAKP - Liczba duchownych i miejsc modlitwy}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.1.svg}
+    \caption{Polski Autokefaliczny Kościół Prawosławny - liczba duchownych, cerkwii i kaplic na przestrzeni lat.}
+\end{figure}
+Polski Autokefaliczny Kościół Prawosławny -  jeden z autokefalicznych, czyli samodzielnych, kanonicznych Kościołów prawosławnych, obejmujący swoją jurysdykcją wszystkie parafie prawosławne na terenie Polski.
+
+Jak widać na powyższym wykresie, liczba zarówno duchownych jak i miejsc modlitwy (cerkwii i kaplic) powoli wzrasta od końca II Wojny Światowej. Ciekawym aspektem jest wypiętrzenie liczby duchownych 
+w latach ok. 1978 - 1982, oraz ich spadek po tym roku - czyli podczas Stanu Wojennego w Polsce. Aspektem historycznym, który będzie się przewijał podczas tego rozdziału sprawozdania, jest wprowadzenie zapisu 
+o swobodzie wiary i sumienia obywateli Polski z dnia 16 lutego 1976 r. Jest to jedna z prawdopodobnych przyczyn tego skoku.
+
+\subsubsection{PAKP - Liczba duchownych a liczba parafii}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.2.svg}
+    \caption{Polski Autokefaliczny Kościół Prawosławny - liczba duchownych a liczba parafii na przestrzeni lat. Wykres posiada dwie osie Y.}
+\end{figure}
+Jak można było wywnioskować po poprzednim wykresie, liczba parafii i filii PAKP jest dodatnio skorelowana z liczbą miejsc modlitwy. Warto tutaj zauważyć, że te liczby nie są takie same - 
+przykładowo, dana parafia może mieć przypsane pod siebie wiele kaplic. Dlatego została wydzielona oddzielna skala osi Y przeznaczona dla liczby parafii.
+
+
+\subsubsection{Kościoły Starokatolickie - liczba duchownych}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.3.svg}
+    \caption{Kościoły Starokatolickie - porównanie liczby duchownych na przestrzeni lat.}
+\end{figure}
+Kościoły Starokatolickie to kościoły należące do katolicyzmu, które powstały w 1870 roku w wyniku sprzeciwu części Kościoła rzymskokatolickiego wobec ogłoszenia przez sobór watykański I 
+dogmatu o nieomylności i prymacie papieża. Kościoły, które się "oddzieliły" od głownego dogmatu katolickiego uważały, że postanowienia z soboru watykańskiego I - w tym 
+\textit{Pastor aeternus}, \textit{Dei Filius} uniemożliwiają przyszłe zjednoczenie Kościołów chrześcijańskich. Co ciekawe, protest ten nie jest postrzegany jako bunt przez starokatolików, 
+a świadectwo prawdy o Kościele. 
+
+Patrząc na wykres, widać że w początkach PRL wszystkie kościoły mają podobną liczbę duchownych, jednak w początkach lat 60 Kościół Polskokatolicki zyskał znacznie więcej duchownych niż pozostałe 2
+najistotniejsze Kościoły Starokatolickie - polskokatoliccy duchowni podwoili się na przestrzeni 10 lat, i utrzymywali swoją liczebność do końca PRL.
+Prawdopodobne powody tego wzrostu zostaną podane poniżej, w sekcji związanej z Kościołem Polskokatolickim.
+
+
+\subsubsection{Kościół Polskokatolicki - liczba duchownych i miejsc modlitwy}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.4.svg}
+    \caption{Kościół Polskokatolicki - liczba duchownych i miejsc modlitwy na przestrzeni lat.}
+\end{figure}
+Wraz ze wzrostem liczby duchownych, zauważonym na poprzednim wykresie, wzrosła również liczba kościołów i kaplic polskokatolickich - ta również zwiększyła się niemal dwukrotnie.
+Liczby te niestety nie są objawą dobrej woli, lecz systemu w jakim kościół się znajdował. 
+
+15 grudnia 1951 roku Polski Narodowy Kościół Katolicki wydał dekret o odłączeniu się od 
+zachodnich części Kościoła, tworząc niezależny Kościół Polskokatolicki. Wówczas z tym rozpoczęła się czystka wśród kapłanów, którzy nie zgadzali się w pełni z nowym reżimem władz kościoła. 
+Na puste miejsca zostali mianowani nowi, posłuszni kapłani i biskupi - na ten ruch mocno wpływały władze komunistyczne, które w pełni przejęły panowanie nad nowym odłamem kościoła. 
+Rozwój kościołą zwolnił tępo w połowie lat 60 i do końca PRL był względnie stabilny. 
+
+
+\subsubsection{Kościół Katolicki Mariawitów - liczba duchownych i wiernych}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.5.svg}
+    \caption{Kościół Katolicki Mariawitów - liczba duchownych i wiernych na przestrzeni lat. Wykres posiada dwie osie Y.}
+\end{figure}
+Kościół Katolicki Mariawitów, jak większość kościołów w czasach PRL, miał wewnątrz siebie wpływy partii komunistycznej. Niestety niewiele jest wiadomo na temat dokładnej historii kościoła, 
+jednak dane pokazują tendencję spadkową zarówno wiernych jak i duchownych. Jako ciekawostkę warto podać, że w 2024 roku kapłaństwo służebne Kościołu Katolickiego Mariawitów składa się wyłącznie z kobiet - jest to jeden z niewielu odłamów katolickich, które pozwala 
+kobietom sprawować rolę Biskupek.
+
+\subsubsection{Największe wyznania protestanckie - liczba członków}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.6.svg}
+    \caption{Porównanie największych wyznań protestanckich względem liczby członków.}
+\end{figure}
+Przechodząc do wyznań protestanckich widzimy, że z dostępnych danych najbardziej dominującym kościołem jest Kościół Adwentystów Dnia Siódmego, posiadający ponad 9000 członków w roku 1998. W faktycznym stanie 
+rzeczy, jest to prawdopodobnie drugi największy kościół protestancki - po Ewangelicko-Augsburskim (luterańskim), dla którego źródło danych nie posiadało liczb wiernych. 
+Pozostałe znaczne kościoły protestanckie mają śrendio mniej niż połowę liczby członków w ostatnim dostępnym w danych roku. W dalszych częściach skupimy się tylko na wybranych kościołach protestanckich. 
+
+\subsubsection{Kościół Adwentystów D.S. - liczba członków}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.7.svg}
+    \caption{Kościół Adwentystów Dnia Siódmego - liczba członków na przestrzeni lat.}
+\end{figure}
+Kościół Adwentystów Dnia Siódmego jest najbardziej znany z tego, że przestrzegają sobotę jako dzień święty. Wiele osób jednak zapomina o fakcie, iż istotną cechą ich dogmatu jest wiara w bliskie  
+nadejście Chrystusa (oraz potrzeby przygotowania się na nie - stąd Adwentyzm), konceptu sądu śledczego oraz klarownie zdefiniowanych 28 Zasad Wiary.
+
+Jak widać na wykresie, liczba członków Kościoła Adw. D.S. w Polsce stopniowo wzrasta na przestrzeni lat PRL, a zwłaszcza na początku III RP. Podobnie jak w przypadku Mariawitów, nie udostępniona jest dokładna 
+historia kościoła w Polsce, co może wynikać z ograniczeń wolności słowa w czasach komunistycznych.  
+
+\subsubsection{Kościół Chrześcijan Baptystów - analiza wielu wskaźników}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.8.svg}
+    \caption{Kościół Chrześcijan Baptystów - wizualizacja wielu dostępnych wskaźników na przestrzeni lat.}
+\end{figure}
+Kościół Chrześcijan Baptystów jest jednym z niewielu wyznań, które zawierają więcej niż podstawowe dane dot. liczby duchownych. 
+Sam kościół odstaje od innych kościołów protestanckich tym, że akcentuje indywidualizm w relacji do Boga, ogranicza praktykę chrztu tylko i wyłącznie do osób, które są w pełni świadome tego sakramentu, 
+oraz uważa zbawienie za wyłącznie niezasłużony dar łaski Boga na podstawie osobistej, ufnej wiary każdego człowieka.   
+
+Patrząc na dostępne dane można wywnioskować, iż kościół znajdował się w miejscu stabilnym w PRL, z niewielką tendencją wzrostową w połowie lat 60 oraz lekkim spadkiem z początkiem lat 90. 
+Liczby w latach późniejszych nie dorównują tym związanym z Kościołem Adwentystów Dnia Siódmego, jednak są one wzrostowe na przestrzeni lat.
+
+
+\subsubsection{Kościół Ewangelicko-Augsburski - liczba duchownych i miejsc modlitwy}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.9.svg}
+    \caption{Kościół Ewangelicko-Augsburski - liczba duchownych i miejsc modlitwy na przestrzeni lat. Wykres posiada dwie osie Y.}
+\end{figure}
+
+Kościół Ewangelicko-Augsburski, znany również jako luterański, jest najstarszym kościołem protestanckim w Polsce. Jak wiadomo, odłamy luterańskie rozpoczęły swoje istnienie wraz z działaniami Marcina Lutra, 
+opierającymi się na pięciu filarach wiary: "Tylko Pismo", "Tylko Chrystus", "Tylko Wiara", "Tylko Łaska", "Soli Deo Honor et Gloria" (Jedynemu Bogowi cześć i chwała). Najważniejszym z tych filarów, 
+a zarówno centrum reformy luterańskiej, jest "Tylko Chrystus". Filar ten głosi iż Jezus Chrystus jest Prawdziwym Bogiem, jedynym pośrednikiem między człowiekiem a Bogiem, jedynym Zbawicielem i ratunkiem dla 
+grzesznika. Oznacza to m.in., że luteranie odrzucają wszelkie dogmaty, sobory, papieży ustanowionych przez Kościół Katolicki (z wyjątkiem pierwszych czterech soborów powszechnych), a tylko Pismo Święte jest
+źródłem objawienia.
+
+Dane GUS-u jasno wskazują, że liczba duchownych i miejsc modlitwy Kościoła Ewangelicko-Augsburskiego są bardzo chaotyczne - widoczne są kilkukrotne, nagłe spadki i wzrosty, prawdopodobnie spowodowane 
+błędnymi zapisami, oraz brak klarownej tendencji spadkowej dot. liczby kościołów. 
+
+
+\subsubsection{Dynamika liczby członków w czterech wybranych wyznaniach protestanckich}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.10.svg}
+    \caption{Dynamika liczby członków w Kościele Adwentystów Dnia Siódmego, Kościele Chrześcijan Baptystów, Kościele Metodystów oraz Kościele Ewangelicko-Reformowanym (kalwiniści) na przestrzeni lat.}
+\end{figure}
+
+Powyższy wykres klarownie ilustruje tendencje wśród wybranych kościołów protestanckich z dostępnymi danymi dot. liczby wiernych - są to, ogólnie, tendencje monotoniczne, nieopadające. 
+Każdy z kościołów mieści swoją liczbę wiernych w przedziale od 4000 do 9000, z chwilowymi wyjątkami (Ewangelicko-Reformowany i Adwentyści D.S.). Widać natomiast, że żadne z tych wyznań nie jest dominującą
+większością protestancką w Polsce.
+
+
+\subsubsection{Muzułmański Związek Religijny - liczba członków i miejsc modlitwy}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.11.svg}
+    \caption{Muzułmański Związek Religijny - liczba członków i meczetów na przestrzeni lat. Wykres posiada dwie osie Y.}
+\end{figure}
+Odchodząc od religii Katolickich, należy również spojrzeć na religie Bliskiego Wschodu. Muzułmański Związek Religijny, czyli największy w Polsce związek wyznań Sunnizmu (jednego z trzech odłamu Islamu 
+obejmującego ok. 90\% wierzących tego państwa), posiada tendencję wzrostową sięgającą wczesnego PRL wzgledem liczby wiernych - od roku 1947, liczba wiernych spadła tylko raz, w roku 1971, po nagłym wzroście w 1769 roku. 
+Prawdopodobnie jest to błąd zapisowy.
+Dopiero pod koniec okresu PRL, w późnych latach 80, luczby muzułmanów w Polsce zaczęły szybować w górę - wierni zwiększyli się 2.5 razy na przestrzeni 12 lat, oraz wybudowano aż 5 razy więcej meczetów.  
+
+\subsubsection{Związek Gmin Wyznaniowych Żydowskich - liczba członków i miejsc modlitwy}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.12.svg}
+    \caption{Związek Gmin Wyznaniowych Żydowskich - liczba członków, synagog i domów modlitwy na przestrzeni lat. Wykres posiada dwie osie Y.}
+\end{figure}
+Jak powszechnie wiadomo, historia żydów w Polsce jest bardzo długa. Podczas II Wojny Światowej, większość Żydów została zabita w obozach koncentracyjnych, torturowana w gettach lub wyludniona z ziem okupowanych
+przez III Rzeszę. Po wprowadzeniu komunistycznego reżimu w Polsce, spadkowa sytuacja żydów na terenie Rzeczypospolitej Ludowej znacznie się nie poprawiła na papierze - liczba wiernych spadała aż do końca lat 90, 
+wraz z liczbą synagog i domów modlitwy żydów.
+
+Najbardziej charakterystycznym spadkiem widocznym na wykresie jest w latach 1968-1970, która przedstawia drastyczną emigrację żydów w PRL spowodowaną masowymi działaniami Władysława Gomułki
+oraz ówczesnego szefa służb bezpieczeństwa, Mieczysława Moczara, które dotknęły nie tylko aktywnie wyznających poglądy judaistyczne ale również pochodzenia żydowskiego.      
+
+
+\subsubsection{Liczba obiektów kultu w wybranych wyznaniach w roku 1998}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.13.svg}
+    \caption{Liczba obiektów kultu w wybranych wyznaniach religijnych, z podziałem na grupy wyznaniowe oraz specyficzne wyznania, w roku 1998.}
+\end{figure}
+
+Powyższy wykres przedstawia liczbę obiektów kultu / miejsc modlitwy w wybranych, dominujących wyznaniach w najnowszym dostępnym roku. Jasno na nim widać wpływ oraz liczebność poszczególnych 
+niedominujących wyznań religijnych w perspektywie placówek, które do nich należą. 
+
+Największą liczbę miejsc modlitwy ma PAKP, jednak patrząc na skumulowane wartości nurtów - wyznania protestanckie (bez brania pod uwagę nurtu starokatolickiego) przewyższają sumarycznie
+wyznania prawosławne pod względem obiektów kultu. 
+
+Na samym końcu znajdują się wyznania Judaistyczne oraz Muzułmańskie, które dopiero się podnosiły w Polsce pod koniec rządu komunistycznego, nie wspominając o względnym braku rozwoju za tzw. głębokiej komuny. 
+
+
+\subsubsection{Wskaźnik obsadzenia duchownych na obiekt kultu w wybranych wyznaniach religijnych w roku 1998}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.14.svg}
+    \caption{Wskaźnik obsadzenia duchownych na obiekt kultu w wybranych wyznaniach religijnych w roku 1998. Wykres posiada dwie osie Y.}
+\end{figure}
+
+Powyższy wykres został stworzony w celu pokazania stosunku między liczbą duchownych a obiektów kultu w roku 1998 tam, gdzie to możliwe. Pokazuje zarówno twarde liczby dotyczące duchownych i miejsc, 
+jak i wskaźnik będący średnią liczbą duchownych na obiekt kultu.
+
+Z wykresu wynika, iż obraz ten nie jest jednoznaczny dla każdego wyznania - są takie, jak Kościół Polskokatolicki, gdzie mamy średnio więcej niż jednego duchownego na obiekt kultu, a również takie jak
+Kościół Ewangelicko-Augsburski, gdzie jest średnio dwa razy więcej obiektów kultu niż duchownych.  
+
+
+\subsubsection{Wskaźnik członków przypadających na jednego duchownego w roku 1998}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/3/svg/3.15.svg}
+    \caption{Wskaźnik członków przypadających na jednego duchownego w wybranych wyznaniach religijnych w roku 1998.}
+\end{figure}
+
+Analogicznie do poprzedniego wyrkesu, powyższy powstał w celu przedstawienia liczby wiernych przypadających na jednego duchownego w ostatnim zebranym roku. 
+Jak widzimy, w tym przypadku dominują muzułmanie, z uwagi na niską liczbę imamów w religii - aż 836 wyznawców przypada na jednego duchownego, to dwukrotnie więcej niż w przypadku następnego w kolejności kościoła -
+Ewangelickiego-Reformowanego. Co ciekawe, jest to wartość bliska wartości tego wskaźnika dla Rzymskokatolików - dla tego odłamu, estymowany jest stosunek ok. 900 wyznawców na jednego duchownego.
+
+Ciekawą tendencją jest fakt, iż większość wyznań z dostępnymi danymi przedstawionych w ramach tej prezentacji posiada więcej niż 100 wyznawców. Tendencję tą zaburzają Baptyści, którzy mają wskaźnik na poziomie
+48 wiernych na duchownego.
+
 
 \subsection{Wnioski}
-
+\begin{enumerate}
+    \item Większość niedominujących wyznań religijnych poczuła wzrost liczby miejsc modlitwy, duchownych oraz wiernych w okresie upadku Wschodniego Bloku. 
+            Z danych nie wynika, czy jest to spowodowane konstytucyjnym zapisem o swobodzie wiary i sumienia obywateli Polski (z dnia 16 lutego 1976 r.),
+            mniej restrykcyjnym podejściem władz kościołów do udostępniania rekordów czy większym otwarciem państwa Polskiego na wyznania innego nurtu,
+            jednak wszystkie te powody są prawdopodobne.  
+    \item Żadne z niedominujących wyznań religijnych w Polsce (z dostępnymi danymi) dorównuje nurtowi rzymskokatolickiemu w najwyższym dostępnym roku względem 
+            liczby wiernych (~36 000 000), duchownych (~38 000) czy obiektów kultu (~11 000).
+    \item Spośród niedominujących wyznań, największy jest nurt protestancki, który przewyższa pozostałe we wszystkich aspektach. Spośród analizowanych, najmniejsze wpływy ma judaizm.
+    \item Większość wyznań ma co najmniej jednego duchownego na obiekt kultu, jednak nie jest to prawdziwe dla wszystkich wyznań.
+\end{enumerate}
 
 \newpage
 \section{Kwartalny dług publiczny (MATLAB)}
