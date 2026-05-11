@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage[OT4]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[legalpaper, margin=2cm]{geometry}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{svg}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{chngcntr}
+
+\newif\ifpokazsekcjaszesc
+\pokazsekcjaszesctrue
+
+\newcommand{\wykrespngwniosek}[4]{%
+\begin{figure}[H]
+    \centering
+    \ifpokazsekcjaszesc
+        \includegraphics[width=0.72\textwidth,height=0.24\textheight,keepaspectratio]{#1}%
+    \else
+        \fbox{%
+            \parbox[c][0.20\textheight][c]{0.72\textwidth}{%
+                \centering
+                \texttt{#1}\\[0.4em]
+                \small miejsce na wykres
+            }%
+        }%
+    \fi
+    \caption{#2}
+    \label{fig:#3}
+\end{figure}
+\noindent\textbf{Wniosek:} #4
+\par\vspace{0.2cm}
+}
+
+
+\title{Sprawozdanie z drugiej połowy projektu\\
+Przedmiotu "Wizualizacja Danych"}
+\author{Grupa Pon 14:15 - 17:00, \\zespół 4 - Jan Domański, Maciej Kurzydłowski, Jan Machowski}
+\date{sem. 26L}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+% Proponowana struktura rozdziału
+% 1. Źródło danych
+% 2. Opis zbioru i istotnych pojęć - o czym jest, pojęcia z nim związane, kolumny, czy dane są kateg / liczb/
+% 3. Wizualizacja + krótki opis co pokazuje
+% 4. Wnioski
+
+
+% \subsubsection{}
+% \begin{figure}[H]
+%     \includegraphics[width=\textwidth]{phts/}
+%     \caption{}
+% \end{figure}
+
+
+\section{Trzęsienia ziemi na świecie}
+
+Przygotowane przez: Maciej Kurzydłowski
+
+\subsection{Źródło danych}
+\href{}{}\\
+\url{}
+
+\subsection{Opis zbioru i istotnych pojęć}
+\begin{itemize}
+    \item 
+\end{itemize}
+
+
+\subsection{Wizualizacje zbioru}
+\subsubsection{}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/1/svg/}
+    \caption{}
+\end{figure}
+
+\newpage
+\subsection{Wnioski}
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+\end{document}
