@@ -64,8 +64,8 @@ Przedmiotu "Wizualizacja Danych"}
 Przygotowane przez: Maciej Kurzydłowski
 
 \subsection{Źródło danych}
-\href{}{}\\
-\url{}
+% \href{}{}\\
+% \url{}
 
 \subsection{Opis zbioru i istotnych pojęć}
 \begin{itemize}
@@ -76,9 +76,184 @@ Przygotowane przez: Maciej Kurzydłowski
 \subsection{Wizualizacje zbioru}
 \subsubsection{}
 \begin{figure}[H]
-    \includesvg[width=\textwidth]{phts/1/svg/}
+    % \includesvg[width=\textwidth]{phts/1/svg/}
     \caption{}
 \end{figure}
+
+\newpage
+\subsection{Wnioski}
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+
+
+\section{Wybrane statystyki bibliotek radomskich}
+
+Przygotowane przez: Jan Machowski
+
+\subsection{Źródło danych}
+\href{https://bdl.stat.gov.pl/bdl/dane/teryt/tablica}{GUS - Statystyki bibliotek dla jednostki terytorialnej "Powiat m. Radom"}\\
+\url{https://bdl.stat.gov.pl/bdl/dane/teryt/tablica}
+
+\subsection{Opis zbioru i istotnych pojęć}
+\begin{itemize}
+    \item Dane zostały zbierane dla bibliotek publicznych i niepublicznych należących do powiatu miasta Radom;
+    \item Dane zostały zebrane w przedziale 1995 - 2025 roku;
+    \item Ostatnia aktualizacja danych nastąpiła 02.06.2025 roku;
+    \item Część danych została zbierana od wybranych lat, nie od samego początku - występują puste rekordy;
+    \item \textbf{Biblioteka publiczna} - zarejestrowana biblioteka należąca do Miejskiej Biblioteki Publicznej w Radomiu. Stan aktualny – 12 filii;
+    \item \textbf{Biblioteka niepublicznych} - dotyczą placówek pedagogicznych, naukowych, fachowych, fachowo-beletrystycznych, ośrodków informacji naukowej, 
+                                        technicznej i ekonomicznej (INTE), towarzystwa naukowego. Gromadzone corocznie od 2011, wcześniej co 2 lata;
+    \item \textbf{Czytelnik} - indywidualna osoba, która co najmniej raz skorzystała z biblioteki w danym roku;
+    \item Dane dla bibliotek niepublicznych zostały zbierane od 2007 roku włącznie.
+\end{itemize}
+
+
+\subsection{Wizualizacje zbioru}
+
+\subsubsection{Rozkład wybranych wartości dot. bibliotek}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.1.svg}
+    \caption{Podstawowe rozkłady surowych, wybranych wartości dot. bibliotek radomskich na przestrzeni lat.}
+\end{figure}
+
+Na podstawie ogólnych wykresów rozkładu jesteśmy w stanie zauważyć relatywnie niewielkie zróżnicowanie danych poza tymi związanymi 
+z liczbą pracowników. 
+
+Liczba czytelników rocznie wacha się miedzy 24 000 a 27 000, z przechyleniem w kierunku 24 000. 
+Liczba wypożyczeń również jest względnie stabilna, znajdując swój środek przy 370 000 wypożyczeniach rocznie - są jednak lata odstające, 
+gdzie wypożyczenia były rekordowo wysokie lub niskie. Bardzo podobnie jest w przypadku księgozbioru, który ma bardzo podobny rozkład
+do wypożyczeń - mediana ok. 370 000, zamyka się w przedziale 350 000 - 400 000; Najbardziej zmiennym wyznacznikiem jest liczba 
+pracowników bibliotek co roku - tutaj widać, że w zależności od roku, mamy różnicę potencjalnie 30 pracowników zatrudnionych we wszystkich
+bibliotekach publicznych. Oczywiście to ostatnie zależne jest najbardziej od liczby otwartych filii bibliotecznych w Radomiu. 
+
+
+\subsubsection{Dynamika wskaźników bibliotek publicznych}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.5.svg}
+    \caption{Heatmap - dynamika wybranych wskaźników bibliotek publicznych na przestrzeni lat.}
+\end{figure}
+
+Zamiast wykorzystywać wykres liniowy można wstawić znormalizowane wartości wskaźników bibliotek publicznych do heatmapy.
+Dzięki temu możemy intuicyjnie przedstawić tendencje na przestrzeni lat w sposób inny niż standardowy. 
+
+Jak jest napisane na legendzie, niskie wartości są oznaczone ciemnymi kolorami, a wysokie - jasnymi. Normatywne minimum i maksimum 
+są względne rzędami - niewpływają na nie inne wartości niż te, które są z tej samej kategorii. 
+
+Analizując wykres dochodzi się do wniosku, iż większość wyznaczników ma minimum w okresie pandemicznym. Do tego grona zalicza się 
+liczba czytelników, liczba wypożyczeń, ale również - zaskakująco - liczebność księgozbioru oraz zbiorów specjalnych. Natomiast, 
+liczba pracowników nie osiągnęła minimum w czasach COVID-19 - minimum było w latach 1997 - 2006, jednak widać że liczba pracowników 
+bibliotek publicznych zmalała przez wybuch pandemii.
+
+\subsubsection{Liczba czytelników na przestrzeni lat}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.2.svg}
+    \caption{Liczba czytelników bibliotek publicznych w Radomiu na przestrzeni lat.}
+\end{figure}
+
+Liczba aktywnych czytelników najlepiej prezentuje to, jak radzą sobie piony biblioteczne w danym miejscu. Przedstawiając te dane na 
+przestrzeni lat widać, że mimo relatywnie małego zakresu zmienności dane dosyć istotnie się zmieniały przez lata. Zaczynając od stopniowego
+wypiętrzenia w latach 1995 - 2004, po nagły spadek do 2008 roku, powrotny nagły wzrost w 2013 roku i dwa raptowne dołki w latach 2017 
+oraz 2020 - historia ta przedstawia, że istnieje kilkutysięczna grupa mieszkańców Radomia która niezależnie od sytuacji uczęszcza do 
+bibliotek oraz taka, która tak nie robi.
+
+Największy dołek widoczny jest podczas pandemii COVID-19, co nie jest dużym zaskoczeniem - narzucone restrykcje znacznie ograniczyły liczbę
+czytelników odwiedzających biblioteki publiczne.
+
+\subsubsection{Wyrkes porównawczy - liczba czytelników w bibliotekach publicznych a niepublicznych}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.3.svg}
+    \caption{Wyrkes porównawczy - liczba czytelników w bibliotekach publicznych a niepublicznych w Radomiu na przestrzeni lat.}
+\end{figure}
+
+Dołączając do poprzedniego wykresu wizualizację dla danych związanych z bibliotekami niepublicznymi obrazujemy bardziej negatywną sytuację
+dla miejsc niewspieranych przez lokalne jednostki samorządu terytorialnego - od liczby przewyższającej w 2007 roku widzimy spadek 
+podobny do odwrotnego logarytmu, z ponad 30 000 do poniżej 5 000 aktywnych czytelników w 2024 roku. 
+
+% \subsubsection{Histogram - liczba lat gdzie biblioteki miały daną liczbę czytelników}
+% \begin{figure}[H]
+%     \includesvg[width=\textwidth]{phts/2/svg/2.4.svg}
+%     \caption{Histogram - liczba lat gdzie biblioteki miały daną liczbę czytelników z podziałem na przedziały lat.}
+% \end{figure}
+
+
+
+
+\subsubsection{Liczebność księgozbiorów na przestrzeni lat}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.6.svg}
+    \caption{Liczebność księgozbiorów na przestrzeni lat, z podziałem na biblioteki publiczne i niepubliczne.}
+\end{figure}
+
+Wizualizując liczebność księgozbiorów na przestrzeni lat, dla dwóch kategorii bibliotek, widzimy dwa istotne fakty - 
+biblioteki niepubliczne mają sumarycznie większy i stabilniejszy księgozbiór niż w bibliotekach publicznych. 
+
+\subsubsection{Liczba pracowników bibliotek na przestrzeni lat}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.7.svg}
+    \caption{Liczba pracowników bibliotek na przestrzeni lat, z podziałem na biblioteki publiczne i niepubliczne.}
+\end{figure}
+
+\subsubsection{Wskaźniki względne bibliotek publicznych na przestrzeni lat}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.8.svg}
+    \caption{Wskaźniki względne bibliotek publicznych na przestrzeni lat - czytelnicy na 1000 osób, wypożyczenia na czytelnika, 
+    księgozbiór na 1000 osób.}
+\end{figure}
+
+\subsubsection{Wskaźniki względne aktywności czytelniczej w bibliotekach publicznych}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.9.svg}
+    \caption{Wskaźniki względne aktywności czytelniczej w bibliotekach publicznych na przestrzeni lat
+     - czytelnicy na 1000 osób, wypożyczenia na 1 czytelnika.}
+\end{figure}
+
+\subsubsection{Liczba wypożyczeń zewnętrznych w bibliotekach publicznych}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.10.svg}
+    \caption{Liczba wypożyczeń zewnętrznych w bibliotekach publicznych na przestrzeni lat.}
+\end{figure}
+
+\subsubsection{Liczba wypożyczeń w bibliotekach niepublicznych z podziałem na rodzaj wypożyczenia}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.11.svg}
+    \caption{Wykres skumulowany - liczba wypożyczeń w bibliotekach niepublicznych z podziałem na rodzaj wypożyczenia
+    na przestrzeni lat.}
+\end{figure}
+
+\subsubsection{Zależność wypożyczeń od liczby czytelników w bibliotekach publicznych}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.12.svg}
+    \caption{Wykres hybrydowy - zależność wypożyczeń woluminów w zależności od liczby czytelników w bibliotekach publicznych.}
+\end{figure}
+
+\subsubsection{Komputeryzacja bibliotek publicznych}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.13.svg}
+    \caption{Komputeryzacja bibliotek publicznych na przestrzeni lat.}
+\end{figure}
+
+\subsubsection{Porównanie komputeryzacji bibliotek publicznych a niepublicznych}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.14.svg}
+    \caption{Porównanie komputeryzacji bibliotek publicznych a niepublicznych na przestrzeni lat.}
+\end{figure}
+
+\subsubsection{Liczba woluminów zbiorów specjalnych w bibliotekach radomskich}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.15.svg}
+    \caption{Liczba woluminów zbiorów specjalnych w bibliotekach radomskich na przestrzeni lat.}
+\end{figure}
+
+\subsubsection{Liczba i wskaźnik dostępności bibliotek dla osób niepełnosprawnych}
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/2/svg/2.16.svg}
+    \caption{Liczba i wskaźnik dostępności bibliotek dla osób niepełnosprawnych. Wskaźnik obecny jest wyłącznie 
+    dla bibliotek publicznych}
+\end{figure}
+
+
 
 \newpage
 \subsection{Wnioski}
