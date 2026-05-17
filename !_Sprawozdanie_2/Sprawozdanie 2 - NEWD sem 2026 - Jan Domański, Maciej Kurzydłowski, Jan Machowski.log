@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.11)  11 MAY 2026 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.11)  11 MAY 2026 17:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -533,7 +533,7 @@ File: ./svg-inkscape/2.3_svg-tex.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./svg-inkscape/2.3_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 300.28984pt.
 )
-Package svg Info: Last page of `./svg-inkscape/2.6_svg-tex.pdf' is 1 on input line 185.
+Package svg Info: Last page of `./svg-inkscape/2.6_svg-tex.pdf' is 1 on input line 183.
  (./svg-inkscape/2.6_svg-tex.pdf_tex
 <./svg-inkscape/2.6_svg-tex.pdf, id=194, page=1, 722.7pt x 433.62pt>
 File: ./svg-inkscape/2.6_svg-tex.pdf Graphic file (type pdf)
@@ -548,94 +548,94 @@ File: ./svg-inkscape/2.7_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.7_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.7_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 300.28984pt.
-)
-Package svg Info: Last page of `./svg-inkscape/2.8_svg-tex.pdf' is 1 on input line 200.
- (./svg-inkscape/2.8_svg-tex.pdf_tex
-<./svg-inkscape/2.8_svg-tex.pdf, id=207, page=1, 722.7pt x 578.16pt>
-File: ./svg-inkscape/2.8_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/2.8_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/2.8_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 500.484pt x 400.38646pt.
 ) [7 <./svg-inkscape/2.6_svg-tex.pdf> <./svg-inkscape/2.7_svg-tex.pdf
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.7_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/2.9_svg-tex.pdf' is 1 on input line 207.
+Package svg Info: Last page of `./svg-inkscape/2.8_svg-tex.pdf' is 1 on input line 209.
+ (./svg-inkscape/2.8_svg-tex.pdf_tex
+<./svg-inkscape/2.8_svg-tex.pdf, id=221, page=1, 722.7pt x 578.16pt>
+File: ./svg-inkscape/2.8_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/2.8_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/2.8_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 500.484pt x 400.38646pt.
+)
+Package svg Info: Last page of `./svg-inkscape/2.9_svg-tex.pdf' is 1 on input line 225.
  (./svg-inkscape/2.9_svg-tex.pdf_tex
 <./svg-inkscape/2.9_svg-tex.pdf, id=223, page=1, 722.7pt x 433.62pt>
 File: ./svg-inkscape/2.9_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.9_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.9_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 300.28984pt.
-)
-Package svg Info: Last page of `./svg-inkscape/2.10_svg-tex.pdf' is 1 on input line 214.
+) [8 <./svg-inkscape/2.8_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/2.10_svg-tex.pdf' is 1 on input line 232.
  (./svg-inkscape/2.10_svg-tex.pdf_tex
-<./svg-inkscape/2.10_svg-tex.pdf, id=225, page=1, 722.7pt x 433.62pt>
+<./svg-inkscape/2.10_svg-tex.pdf, id=234, page=1, 722.7pt x 433.62pt>
 File: ./svg-inkscape/2.10_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.10_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.10_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 300.28984pt.
-) [8 <./svg-inkscape/2.8_svg-tex.pdf> <./svg-inkscape/2.9_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.9_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Package svg Info: Last page of `./svg-inkscape/2.11_svg-tex.pdf' is 1 on input line 220.
+)
+Package svg Info: Last page of `./svg-inkscape/2.11_svg-tex.pdf' is 1 on input line 238.
  (./svg-inkscape/2.11_svg-tex.pdf_tex
-<./svg-inkscape/2.11_svg-tex.pdf, id=240, page=1, 722.7pt x 433.62pt>
+<./svg-inkscape/2.11_svg-tex.pdf, id=236, page=1, 722.7pt x 433.62pt>
 File: ./svg-inkscape/2.11_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.11_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.11_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 300.28984pt.
-)
-Package svg Info: Last page of `./svg-inkscape/2.12_svg-tex.pdf' is 1 on input line 227.
+) [9 <./svg-inkscape/2.9_svg-tex.pdf> <./svg-inkscape/2.10_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.10_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Package svg Info: Last page of `./svg-inkscape/2.12_svg-tex.pdf' is 1 on input line 245.
  (./svg-inkscape/2.12_svg-tex.pdf_tex
-<./svg-inkscape/2.12_svg-tex.pdf, id=242, page=1, 722.7pt x 433.62pt>
+<./svg-inkscape/2.12_svg-tex.pdf, id=251, page=1, 722.7pt x 433.62pt>
 File: ./svg-inkscape/2.12_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.12_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.12_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 300.28984pt.
-) [9 <./svg-inkscape/2.10_svg-tex.pdf> <./svg-inkscape/2.11_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.11_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Package svg Info: Last page of `./svg-inkscape/2.13_svg-tex.pdf' is 1 on input line 233.
+)
+Package svg Info: Last page of `./svg-inkscape/2.13_svg-tex.pdf' is 1 on input line 251.
  (./svg-inkscape/2.13_svg-tex.pdf_tex
-<./svg-inkscape/2.13_svg-tex.pdf, id=257, page=1, 722.7pt x 433.62pt>
+<./svg-inkscape/2.13_svg-tex.pdf, id=253, page=1, 722.7pt x 433.62pt>
 File: ./svg-inkscape/2.13_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.13_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.13_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 300.28984pt.
-)
-Package svg Info: Last page of `./svg-inkscape/2.14_svg-tex.pdf' is 1 on input line 239.
+) [10 <./svg-inkscape/2.11_svg-tex.pdf> <./svg-inkscape/2.12_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.12_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Package svg Info: Last page of `./svg-inkscape/2.14_svg-tex.pdf' is 1 on input line 257.
  (./svg-inkscape/2.14_svg-tex.pdf_tex
-<./svg-inkscape/2.14_svg-tex.pdf, id=259, page=1, 722.7pt x 433.62pt>
+<./svg-inkscape/2.14_svg-tex.pdf, id=268, page=1, 722.7pt x 433.62pt>
 File: ./svg-inkscape/2.14_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.14_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.14_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 300.28984pt.
-) [10 <./svg-inkscape/2.12_svg-tex.pdf> <./svg-inkscape/2.13_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.13_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Package svg Info: Last page of `./svg-inkscape/2.15_svg-tex.pdf' is 1 on input line 245.
+)
+Package svg Info: Last page of `./svg-inkscape/2.15_svg-tex.pdf' is 1 on input line 263.
  (./svg-inkscape/2.15_svg-tex.pdf_tex
-<./svg-inkscape/2.15_svg-tex.pdf, id=274, page=1, 722.7pt x 433.62pt>
+<./svg-inkscape/2.15_svg-tex.pdf, id=270, page=1, 722.7pt x 433.62pt>
 File: ./svg-inkscape/2.15_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.15_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.15_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 300.28984pt.
-)
-Package svg Info: Last page of `./svg-inkscape/2.16_svg-tex.pdf' is 1 on input line 251.
+) [11 <./svg-inkscape/2.13_svg-tex.pdf> <./svg-inkscape/2.14_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.14_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Package svg Info: Last page of `./svg-inkscape/2.16_svg-tex.pdf' is 1 on input line 269.
  (./svg-inkscape/2.16_svg-tex.pdf_tex
-<./svg-inkscape/2.16_svg-tex.pdf, id=276, page=1, 867.24pt x 505.89pt>
+<./svg-inkscape/2.16_svg-tex.pdf, id=285, page=1, 867.24pt x 505.89pt>
 File: ./svg-inkscape/2.16_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2.16_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/2.16_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 500.484pt x 291.94974pt.
-) [11 <./svg-inkscape/2.14_svg-tex.pdf> <./svg-inkscape/2.15_svg-tex.pdf
+) [12 <./svg-inkscape/2.15_svg-tex.pdf> <./svg-inkscape/2.16_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.15_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [12 <./svg-inkscape/2.16_svg-tex.pdf>] [13] (./Sprawozdanie 2 - NEWD sem 2026 - Jan Domański, Maciej Kurzydłowski, Jan Machowski.aux)
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/2.16_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [13] (./Sprawozdanie 2 - NEWD sem 2026 - Jan Domański, Maciej Kurzydłowski, Jan Machowski.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
@@ -644,18 +644,18 @@ Package rerunfilecheck Info: File `"Sprawozdanie 2 - NEWD sem 2026 - Jan Domańs
 (rerunfilecheck)             Checksum: B36FBE64700F6188A49DFA42DE4E5862;7369.
  ) 
 Here is how much of TeX's memory you used:
- 14791 strings out of 467538
- 253284 string characters out of 5423724
+ 14794 strings out of 467538
+ 253302 string characters out of 5423724
  711367 words of memory out of 5000000
  43337 multiletter control sequences out of 15000+600000
  636623 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,9n,93p,697b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/pl/plbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/pl/plr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/pl/plr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/pl/pltt12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Sprawozdanie 2 - NEWD sem 2026 - Jan Domański, Maciej Kurzydłowski, Jan Machowski.pdf" (13 pages, 759304 bytes).
+Output written on "Sprawozdanie 2 - NEWD sem 2026 - Jan Domański, Maciej Kurzydłowski, Jan Machowski.pdf" (13 pages, 761088 bytes).
 PDF statistics:
- 347 PDF objects out of 1000 (max. 8388607)
- 274 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 351 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
  371 words of extra memory for PDF output out of 10000 (max. 10000000)
 

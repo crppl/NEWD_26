@@ -16,12 +16,12 @@
 \contentsline {subsubsection}{\numberline {2.3.5}Liczebność księgozbiorów na przestrzeni lat}{7}{subsubsection.2.3.5}%
 \contentsline {subsubsection}{\numberline {2.3.6}Liczba pracowników bibliotek na przestrzeni lat}{7}{subsubsection.2.3.6}%
 \contentsline {subsubsection}{\numberline {2.3.7}Wskaźniki względne bibliotek publicznych na przestrzeni lat}{8}{subsubsection.2.3.7}%
-\contentsline {subsubsection}{\numberline {2.3.8}Wskaźniki względne aktywności czytelniczej w bibliotekach publicznych}{8}{subsubsection.2.3.8}%
+\contentsline {subsubsection}{\numberline {2.3.8}Wskaźniki względne aktywności czytelniczej w bibliotekach publicznych}{9}{subsubsection.2.3.8}%
 \contentsline {subsubsection}{\numberline {2.3.9}Liczba wypożyczeń zewnętrznych w bibliotekach publicznych}{9}{subsubsection.2.3.9}%
-\contentsline {subsubsection}{\numberline {2.3.10}Liczba wypożyczeń w bibliotekach niepublicznych z podziałem na rodzaj wypożyczenia}{9}{subsubsection.2.3.10}%
+\contentsline {subsubsection}{\numberline {2.3.10}Liczba wypożyczeń w bibliotekach niepublicznych z podziałem na rodzaj wypożyczenia}{10}{subsubsection.2.3.10}%
 \contentsline {subsubsection}{\numberline {2.3.11}Zależność wypożyczeń od liczby czytelników w bibliotekach publicznych}{10}{subsubsection.2.3.11}%
-\contentsline {subsubsection}{\numberline {2.3.12}Komputeryzacja bibliotek publicznych}{10}{subsubsection.2.3.12}%
+\contentsline {subsubsection}{\numberline {2.3.12}Komputeryzacja bibliotek publicznych}{11}{subsubsection.2.3.12}%
 \contentsline {subsubsection}{\numberline {2.3.13}Porównanie komputeryzacji bibliotek publicznych a niepublicznych}{11}{subsubsection.2.3.13}%
-\contentsline {subsubsection}{\numberline {2.3.14}Liczba woluminów zbiorów specjalnych w bibliotekach radomskich}{11}{subsubsection.2.3.14}%
+\contentsline {subsubsection}{\numberline {2.3.14}Liczba woluminów zbiorów specjalnych w bibliotekach radomskich}{12}{subsubsection.2.3.14}%
 \contentsline {subsubsection}{\numberline {2.3.15}Liczba i wskaźnik dostępności bibliotek dla osób niepełnosprawnych}{12}{subsubsection.2.3.15}%
 \contentsline {subsection}{\numberline {2.4}Wnioski}{13}{subsection.2.4}%
