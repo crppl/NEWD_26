@@ -178,6 +178,7 @@ podobny do odwrotnego logarytmu, z ponad 30 000 do poniżej 5 000 aktywnych czyt
 % \end{figure}
 
 
+
 \subsubsection{Liczebność księgozbiorów na przestrzeni lat}
 \begin{figure}[H]
     \includesvg[width=\textwidth]{phts/2/svg/2.6.svg}
@@ -218,7 +219,22 @@ Wsaźniki relatywne wykorzystane w tym projekcie to:
     \item Liczebność księgozbioru na 1000 osób - podział liczby książek na liczbę tysięcy mieszkańców powiadu m. Radom.
 \end{itemize}
 
-Przedstawiając te wartości względnych wskaźników na przestrzeni lat widzimy jak zmienia się dynamika specyficznych 
+\textbf{Uwaga: oś Y na wykresach nie rozpoczyna się w zerze, z uwagi na zmieszczenie wykresów w figurze.}
+
+Przedstawiając te wartości względnych wskaźników na przestrzeni lat widzimy jak zmienia się dynamika specyficznych wskaźników 
+wyznaczających popularność bibliotek. Jak widać, liczba rocznych aktywnych czytelników na 1000 osób oscyluje w granicach 10\% - 13\%, 
+co jest względnie niskim wskaźnikiem. Oczywistym jest to, że tendencje tego wykresu są takie same, co poprzednich wykresów związanych z liczbą czytelników - 
+przeskalowanie wartości zmiennej nie zmienia jej względnych wzrostów i spadków.
+
+Ciekawą różnicą jest liczba wypożyczeń na jednego aktywnego czytelnika - wykres ten stopniowo wzrasta, co pokazuje że mimo zmieniającej się liczby czytelników
+liczba wypożyczeń książek wzrastała. Na tej podstawie można wyciągnąć wniosek, iż czytelnicy "niestali" - tj. ci, którzy wpływali na wzrosty i spadki 
+poprzedniego wykresu, nie wypożyczali dużo książek. Stali czytelnicy bibliotek radomskich prawdopodobnie wypożyczali wiele książek, więc przy zmniejszeniu
+liczby rzadziej korzystających osób wskaźnik wzrósł, co obserwujemy w latach 2020.
+
+Na ostatnim wykresie widzimy ciekawą tendencję "harmonijkową" - liczba książek na 1000 osób systematycznie wzrasta i maleje w przedziałach 3-4 lat. 
+Nie znany jest powód tych zmian. Niewykluczone, że część woluminu stała się niezdatna przez nieodpowiednie użytkowanie czytelników, 
+część mogła zostać zawieruszona / ukradziona, w międzyczasie mogła przyjść nowa seria książek przyjętych do biblioteki. Faktem jest, iż liczebność 
+księgozbioru była zmienna inaczej, niż poprzednio przedstawione dane.
 
 \subsubsection{Wskaźniki względne aktywności czytelniczej w bibliotekach publicznych}
 \begin{figure}[H]
@@ -227,11 +243,30 @@ Przedstawiając te wartości względnych wskaźników na przestrzeni lat widzimy
      - czytelnicy na 1000 osób, wypożyczenia na 1 czytelnika.}
 \end{figure}
 
+\textbf{Uwaga: na wykresie znajdują się dwie osie Y.}
+
+Wskaźniki względne można, oczywiście, zwizualizować za pomocą wykresu słupkowego. Pokazuje nam to dokładniej skale zmienności, biorąc pod uwagę 
+całkowitą liczbę (bez ucięcia osi). Dzięki temu widać większą stabilność liczby czytelników, niż było to przedstawione w poprzednim wykresie. 
+Widać jak łatwo można zmienić interpretację danych na podstawie sposobu i detali wizualizacji - zwłaszcza przy początkowej wartości osi.
+
+
+
 \subsubsection{Liczba wypożyczeń zewnętrznych w bibliotekach publicznych}
 \begin{figure}[H]
     \includesvg[width=\textwidth]{phts/2/svg/2.10.svg}
     \caption{Liczba wypożyczeń zewnętrznych w bibliotekach publicznych na przestrzeni lat.}
 \end{figure}
+
+Będąc w bibliotece, czytelnicy są w stanie wypożyczyć książki na jeden z dwóch sposobów - wewnętrznie i zewnętrznie. Wypozyczenie wewnętrzne oznacza wypożyczenie, 
+wykorzystanie i zwrócenie książki bez wychodzenia z biblioteki, natomiast wypożyczenie zewnętrzne oznacza czasowe wypożyczenie z możliwością wyjścia z biblioteki 
+z wybraną książką. 
+
+Analizując wypożyczenia publicznych bibliotek radomskich w pespektywie czasu widzimy, że były one zmienne - większość lat oscyluje dookoła 350 000 wypożyczeń, 
+poza rekordowymi latami 2013 oraz 2020 - pierwsze mające maksymalną liczbę, ~440 000 wypożyczeń, a drugie minimalną, z uwagi na pandemię COVID-19. 
+
+Wykres ten ponownie przedstawia zależność związaną z odpowiednim ustawieniem początku osi - gdy początek jest przesunięty blisko 300 000, wygląda to jakby 
+wypożyczenia w okresie COVID spadły do liczby bliskiej zero. Nic bardziej mylnego - osiągnęły one minimum globalne, ale nie były one zerowe. 
+
 
 \subsubsection{Liczba wypożyczeń w bibliotekach niepublicznych z podziałem na rodzaj wypożyczenia}
 \begin{figure}[H]
@@ -240,17 +275,41 @@ Przedstawiając te wartości względnych wskaźników na przestrzeni lat widzimy
     na przestrzeni lat.}
 \end{figure}
 
+Z perspektywy bibliotek niepublicznych, widać ciekawą zależność spadkową wypożyczeń. Całkowita liczba wypożyczeń znacznie zmalała, od 2007 do 2024 aż czterokrotnie, 
+jednak interesującym jest fakt iż liczba wypożyczeń na zewnątrz zmieniła się nieznacznie - "wysokość" niebieskiego pola pozostaje względnie taka sama, 
+natomiast wypożyczenia na miejscu doświadczyły ogromnego spadku - z ok. 260 000 w 2007 do 40 000 w 2024, spadek o całe 85\%.  
+
 \subsubsection{Zależność wypożyczeń od liczby czytelników w bibliotekach publicznych}
 \begin{figure}[H]
     \includesvg[width=\textwidth]{phts/2/svg/2.12.svg}
     \caption{Wykres hybrydowy - zależność wypożyczeń woluminów w zależności od liczby czytelników w bibliotekach publicznych.}
 \end{figure}
 
+Powyższy wykres powstał w wyniku przekształcenia wymiaru istniejących danych dotyczących wypożyczeń i liczby czytelników - zamiast zatrzymywać się w wymiarze czasu, 
+postanowiono wyznaczyć tendencję liczby wypożyczeń względem liczby aktywnych czytelników. Dodatkowo, zachowano wzmiankę o czasie poprzez odpowiednie zaznaczenie punktów 
+na wykresie.
+
+Efekt tego zabiegu jest spodziewany, jednak istotny do zauważenia - większa liczba aktywnych, rocznych czytelników jednoznacznie oznacze zwiększenie liczby wypożyczanych 
+książek. Oczywiście ma to sens - przedziwna byłaby sytuacja odwrotna.
+
 \subsubsection{Komputeryzacja bibliotek publicznych}
 \begin{figure}[H]
     \includesvg[width=\textwidth]{phts/2/svg/2.13.svg}
     \caption{Komputeryzacja bibliotek publicznych na przestrzeni lat.}
 \end{figure}
+Jednym z aspektów danych dostępnych w źródle jest stopień komputeryzacji danej filii - przejawia się on liczbą dostępnych maszyn, zarówno dla czytelników jak i 
+wewnętrznych, dla pracowników. Należy pamiętać o fakcie, iż jeden komputer nie posiada wyłącznie jednego przeznaczenia - liczba komputerów z dostępem do internetu może 
+zawierać w sobie komputery zaliczające się do grupy "dla czytelników".
+
+Mankamentem zbioru jest fakt, iż dane dotyczące przeznaczenia komputerów kończą się na 2013 roku. Po tym czasie mamy wyłącznie dostęp do całkowitej liczby komputerów i 
+liczby komputerów używanych przez pracowników. 
+
+Na wykresie przedstawiającym dynamikę komputeryzacji widać, iż liczba komputerów utrzymuje się na stałym poziomie. Z roku na rok zmienia się o garstkę sztuk, 
+w nieznaczny sposób. 
+Jedynym ciekawym kawałkiem danych jest spadek komputerów z dostępem do internetu między rokiem 2010 a 2011 - liczba spadła o całe 50 maszyn, czyli połowę liczby z 
+poprzedniego roku. Patrząc na ogólną liczbę komputerów widać jednak, iż nie jest to spowodowane pozbyciem się komputerów - liczba całkowita nie zaczęła spadać do 2014 roku.
+Wniosek jest prosty - parę komputerów po prostu odłączono od sieci.
+
 
 \subsubsection{Porównanie komputeryzacji bibliotek publicznych a niepublicznych}
 \begin{figure}[H]
@@ -258,11 +317,28 @@ Przedstawiając te wartości względnych wskaźników na przestrzeni lat widzimy
     \caption{Porównanie komputeryzacji bibliotek publicznych a niepublicznych na przestrzeni lat.}
 \end{figure}
 
+W porónaniu z bibliotekami publicznymi, placówki niepubliczne dominują stanem komputeryzacji - średnio, na przestrzeni lat, biblioteki niepubliczne mają od półtora do dwóch 
+raza więcej maszyn do dyspozycji.
+
+Należy mieć na względzie, iż nie oznacza to wysokiego zaawansowania każdej placówki niepublicznej - nie znając liczby placówek niepublicznych w tym czasie 
+nie jesteśmy w stanie dowiedzieć się, czy liczba ta wynika z dużej liczby placówek z jednym czy dwoma komputerami, czy z niewielkiej liczby placówek z dużymi 
+zasobami komputerowymi.
+
 \subsubsection{Liczba woluminów zbiorów specjalnych w bibliotekach radomskich}
 \begin{figure}[H]
     \includesvg[width=\textwidth]{phts/2/svg/2.15.svg}
     \caption{Liczba woluminów zbiorów specjalnych w bibliotekach radomskich na przestrzeni lat.}
 \end{figure}
+
+Do zbiorów specjalnych klasyfikują się te zasoby, które mają wartość przewyższającą standardowe kopie drukarskie książek, w tym unikatową formę, wartość historyczną, 
+posiadają szczególne zasady przechowywania i wypożyczania, i inne.
+
+Dane dla bibliotek publicznych niestety są ucięte - nie wiadomo, czy to przez brak istnienia zbiorów specjalnych przed 2019 rokiem, czy brak odpowiedniego zanotowania
+istnienia tych zbiorów. Niezależnie od tego, liczby w bibliotekach niepublicznych znacznie przewyższają biblioteki publiczne, co intuicyjnie wydaje się być prawdopodobne.
+
+Bardzo interesującym rokiem w tym wymiarze danych jest 2016 - jest to rok, w którym jest zarówno bardzo wysoka liczebność zbioru, ale również jest ona otoczona z obu stron 
+znacznie mniejszymi wartościami - o ponad połowę mniejszymi. Ten nagły wzrost i spadek jest ciężki do wyjaśnienia - z dostępnych publicznie informacji ciężko stwierdzić, 
+czy jest to kwestia zniknięcia, sprzedania czy kupna zasobów, nagłego otwarcia i zamknięcia placówek, czy prostego błędu w danych GUSu.   
 
 \subsubsection{Liczba i wskaźnik dostępności bibliotek dla osób niepełnosprawnych}
 \begin{figure}[H]
@@ -270,6 +346,18 @@ Przedstawiając te wartości względnych wskaźników na przestrzeni lat widzimy
     \caption{Liczba i wskaźnik dostępności bibliotek dla osób niepełnosprawnych. Wskaźnik obecny jest wyłącznie 
     dla bibliotek publicznych}
 \end{figure}
+
+Ostatnim dostępnym wymiarem danych, specyficznym dla bibliotek publicznych, jest wskaźnik dostępności dla osób niepełnosprawnych. Na wykresie zaznaczony został
+typ udogodnienia, między wejściem do budynku oraz charakterystycznych udogodnieniach wewnętrznych. Niestety, te dane dostępne są tylko od 2010 
+do 2019 roku, niemniej jednak jesteśmy w stanie wyciągnąć wnioski z ograniczonego zasobu.
+
+Od 2010 roku widać, iż mniej niż połowa filii biblioteki publicznej była przystosowana dla osób z niepełnosprawnościami. Natomiast w 2012 roku liczba znacznie się poprawiła, 
+i utrzymała się przez następne 4 lata. W 2016 nastąpił skok o jeden budynek, który cofnął się w następnym roku i do końca zbioru danych utrzymał się na poziomie 9 filii.
+Z uwagi na ograniczoną liczbę budynków biblioteki publicznej w Radomiu można stwierdzić, iż jest to dobry stopień przystosowania.
+
+Należy zaznaczyć, iż wyznacznik procentowy na wykresie dotyczy wyłącznie kategorii wejścia do budynku. W 2017 roku, ten wyznacznik wzrósł mimo zmniejszonej liczby obiektów 
+spełniających udogodnienia na wejściu. Wydarzyło się tak z uwagi, iż w 2017 roku zamknięto dwie filie biblioteki publicznej - jedną z udogodnieniami, drugą bez. Wówczas, 
+mimo zmniejszonej liczby odpowiednich budynków, indeks wzrósł.
 
 
 
@@ -282,7 +370,13 @@ Przedstawiając te wartości względnych wskaźników na przestrzeni lat widzimy
     \item Liczebność księgozbiorów bibliotek niepublicznych jest większa niż publicznych, mimo większej specyficzności tematyki. 
             Jest to prawdziwe mimo prawdopodobnego posiadania przez biblioteki publiczne większej liczby kopii tytułów niż 
             w przypadku bibliotek niepublicznych;
-    \item  
+    \item Liczebność księgozbioru bibliotek publicznych systematycznie wzrastał i spadał na przestrzeni lat, w interwale 
+            ok. 3-4 lat;
+    \item Wypożyczenia zasobów bibliotecznych między placówkami publicznymi a niepublicznymi są znacznie inne. W placówkach publicznych 
+            liczba jest zmienna, ale utrzymuje się na relatywnie podobnym poziomie. Natomiast, w bibliotekach niepublicznych, 
+            wypożyczenia bardzo znacząco spadły. Oczywiście wydarzenia takie jak pandemia COVID wpłynęła na oba rodzaje placówek;
+    \item Dane potwierdzają oczywistą prawidłowość, iż im więcej czytelników tym więcej wypożyczeń zasobów bibliotecznych;
+    \item Biblioteki publiczne w Radomiu są dobrze przystosowane dla osób niepełnosprawnych.
 \end{enumerate}
 
 \end{document}
