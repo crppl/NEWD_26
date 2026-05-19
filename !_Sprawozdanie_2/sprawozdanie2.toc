@@ -1,0 +1,48 @@
+\babel@toc {polish}{}\relax 
+\contentsline {section}{\numberline {1}Trzęsienia ziemi na świecie}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Źródło danych}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Opis zbioru i istotnych pojęć}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Wizualizacje zbioru}{3}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}}{3}{subsubsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.4}Wnioski}{4}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Wybrane statystyki bibliotek radomskich}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Źródło danych}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Opis zbioru i istotnych pojęć}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Wizualizacje zbioru}{5}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Rozkład wybranych wartości dot. bibliotek}{5}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Dynamika wskaźników bibliotek publicznych}{6}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Liczba czytelników na przestrzeni lat}{6}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Wyrkes porównawczy - liczba czytelników w bibliotekach publicznych a niepublicznych}{7}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Liczebność księgozbiorów na przestrzeni lat}{8}{subsubsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}Liczba pracowników bibliotek na przestrzeni lat}{8}{subsubsection.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.7}Wskaźniki względne bibliotek publicznych na przestrzeni lat}{9}{subsubsection.2.3.7}%
+\contentsline {subsubsection}{\numberline {2.3.8}Wskaźniki względne aktywności czytelniczej w bibliotekach publicznych}{10}{subsubsection.2.3.8}%
+\contentsline {subsubsection}{\numberline {2.3.9}Liczba wypożyczeń zewnętrznych w bibliotekach publicznych}{11}{subsubsection.2.3.9}%
+\contentsline {subsubsection}{\numberline {2.3.10}Liczba wypożyczeń w bibliotekach niepublicznych z podziałem na rodzaj wypożyczenia}{12}{subsubsection.2.3.10}%
+\contentsline {subsubsection}{\numberline {2.3.11}Zależność wypożyczeń od liczby czytelników w bibliotekach publicznych}{12}{subsubsection.2.3.11}%
+\contentsline {subsubsection}{\numberline {2.3.12}Komputeryzacja bibliotek publicznych}{13}{subsubsection.2.3.12}%
+\contentsline {subsubsection}{\numberline {2.3.13}Porównanie komputeryzacji bibliotek publicznych a niepublicznych}{14}{subsubsection.2.3.13}%
+\contentsline {subsubsection}{\numberline {2.3.14}Liczba woluminów zbiorów specjalnych w bibliotekach radomskich}{14}{subsubsection.2.3.14}%
+\contentsline {subsubsection}{\numberline {2.3.15}Liczba i wskaźnik dostępności bibliotek dla osób niepełnosprawnych}{15}{subsubsection.2.3.15}%
+\contentsline {subsection}{\numberline {2.4}Wnioski}{16}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Wypadki kolejowe}{17}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Źródło danych}{17}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Opis zbioru i istotnych pojęć}{17}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Wizualizacje zbioru}{18}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Liczba zdarzeń kolejowych w krajach europejskich (2002-2026)}{18}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Czołówka 12 krajów europejskich pod względem liczby zdarzeń kolejowych (2002-2026)}{19}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Odsetek zdarzeń kolejowych z poszkodowanymi w krajach europejskich (2002-2026)}{20}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Liczba poważnie poszkodowanych w zdarzeniach kolejowych w krajach europejskich (2002-2026)}{21}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}Poważnie poszkodowani na 100 zdarzeń kolejowych w krajach europejskich (2002-2026)}{22}{subsubsection.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.6}Trend liczby zdarzeń kolejowych w czasie (2006-2025)}{23}{subsubsection.3.3.6}%
+\contentsline {subsubsection}{\numberline {3.3.7}Skutki zdarzeń kolejowych w czasie (2006-2025)}{23}{subsubsection.3.3.7}%
+\contentsline {subsubsection}{\numberline {3.3.8}Najczęstsze typy zdarzeń kolejowych (2002-2026)}{24}{subsubsection.3.3.8}%
+\contentsline {subsubsection}{\numberline {3.3.9}Typy zdarzeń kolejowych według liczby poszkodowanych (2002-2026)}{24}{subsubsection.3.3.9}%
+\contentsline {subsubsection}{\numberline {3.3.10}Zdarzenia według typu ruchu szynowego (2002-2026)}{25}{subsubsection.3.3.10}%
+\contentsline {subsubsection}{\numberline {3.3.11}Zdarzenia według typu lokalizacji (2002-2026)}{25}{subsubsection.3.3.11}%
+\contentsline {subsubsection}{\numberline {3.3.12}Odsetek zdarzeń z poszkodowanymi według typu ruchu (2002-2026)}{26}{subsubsection.3.3.12}%
+\contentsline {subsubsection}{\numberline {3.3.13}Trend liczby rekordów w krajach z największą liczbą zdarzeń (2006-2025)}{26}{subsubsection.3.3.13}%
+\contentsline {subsubsection}{\numberline {3.3.14}Sezonowość zdarzeń kolejowych (2002-2026)}{27}{subsubsection.3.3.14}%
+\contentsline {subsubsection}{\numberline {3.3.15}Zdarzenia kolejowe według dnia tygodnia (2002-2026)}{28}{subsubsection.3.3.15}%
+\contentsline {subsubsection}{\numberline {3.3.16}Struktura typów zdarzeń według lokalizacji (2002-2026)}{28}{subsubsection.3.3.16}%
+\contentsline {subsection}{\numberline {3.4}Wnioski}{29}{subsection.3.4}%

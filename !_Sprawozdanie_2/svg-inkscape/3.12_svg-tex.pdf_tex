@@ -1,0 +1,88 @@
+%% Creator: Inkscape 1.4.4 (dcaf3e7, 2026-05-05), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file '3.12_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{720bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.6)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{3.12_svg-tex.pdf}}%
+    \put(0.67902777,0.27527777){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}29\%  (n=176)\end{tabular}}}}%
+    \put(0.65481945,0.22390277){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}27.3\%  (n=88)\end{tabular}}}}%
+    \put(0.82111113,0.48079166){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}38.8\%  (n=183)\end{tabular}}}}%
+    \put(0.63374998,0.17251388){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}25.8\%  (n=31)\end{tabular}}}}%
+    \put(0.85218057,0.53216667){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}41\%  (n=1879)\end{tabular}}}}%
+    \put(0.76505559,0.42941667){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}34.9\%  (n=83)\end{tabular}}}}%
+    \put(0.7164861,0.37804167){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}31.5\%  (n=111)\end{tabular}}}}%
+    \put(0.43812502,0.0697639){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}12.1\%  (n=1271)\end{tabular}}}}%
+    \put(0.70509724,0.32665278){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}30.8\%  (n=78)\end{tabular}}}}%
+    \put(0.61030557,0.12113889){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}24.2\%  (n=91)\end{tabular}}}}%
+    \put(0.24911112,0.07019446){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Pociąg towarowy\end{tabular}}}}%
+    \put(0.24911111,0.12156944){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Tramwaj / lekka kolej\end{tabular}}}}%
+    \put(0.24911111,0.17295833){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Metro\end{tabular}}}}%
+    \put(0.24911111,0.22433332){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Lokomotywa bez wagonów\end{tabular}}}}%
+    \put(0.24911111,0.27570833){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Inne / nieokreślone\end{tabular}}}}%
+    \put(0.24911111,0.32709721){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Ruch mieszany\end{tabular}}}}%
+    \put(0.24911111,0.37847222){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Pociąg techniczny\end{tabular}}}}%
+    \put(0.24911111,0.42984722){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Pociąg podmiejski\end{tabular}}}}%
+    \put(0.24911111,0.48122223){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Manewry kolejowe\end{tabular}}}}%
+    \put(0.24911112,0.53261111){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Pociąg pasażerski\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{3.12_svg-tex.pdf}}%
+    \put(0.25595832,0.0281389){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\%\end{tabular}}}}%
+    \put(0.3997222,0.0281389){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}10\%\end{tabular}}}}%
+    \put(0.54348611,0.0281389){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}20\%\end{tabular}}}}%
+    \put(0.68726387,0.0281389){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}30\%\end{tabular}}}}%
+    \put(0.83102781,0.0281389){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}40\%\end{tabular}}}}%
+    \put(0.97479163,0.0281389){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}50\%\end{tabular}}}}%
+    \put(0.62416666,0.01083332){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Zdarzenia z ofiarą śmiertelną lub ciężko rannym\end{tabular}}}}%
+    \put(0.04116667,0.30030556){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Typ ruchu\end{tabular}}}}%
+    \put(0.25595832,0.57926389){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Odsetek zdarzeń z poszkodowanymi według typu ruchu\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
