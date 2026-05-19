@@ -379,4 +379,255 @@ mimo zmniejszonej liczby odpowiednich budynków, indeks wzrósł.
     \item Biblioteki publiczne w Radomiu są dobrze przystosowane dla osób niepełnosprawnych.
 \end{enumerate}
 
+
+\newpage
+
+
+\section{Wypadki kolejowe}
+
+Przygotowane przez: \textbf{Jan Domański}
+
+\subsection{Źródło danych}
+\href{https://www.era.europa.eu/era-folder/accident-investigation}{European Union Agency for Railways (ERA) – ERAIL}\\
+\url{https://www.era.europa.eu/era-folder/accident-investigation}
+
+\subsection{Opis zbioru i istotnych pojęć}
+\begin{itemize}
+    \item Dane pochodzą z bazy ERAIL prowadzonej przez European Union Agency for Railways (Agencja Unii Europejskiej do spraw Kolejnictwa).
+    
+    \item Zbiór obejmuje zdarzenia kolejowe zgłoszone przez kraje europejskie (Unii Europejskiej) w latach około \textbf{2002 - 2026} (wykres trendu ograniczono do lat \textbf{2006 - 2025}, aby uniknąć niepełnych/skrajnych lat).
+    
+    \item Dane dotyczą m. in.:
+    \begin{itemize}
+        \item wykolejeń
+        \item zderzeń pociągów
+        \item wypadków na przejazdach kolejowo-drogowych
+        \item potrąceń osób
+        \item pożarów taboru
+        \item incydentów związanych z infrastrukturą kolejową
+    \end{itemize}
+    
+    \item Każdy rekord zawiera informacje m.in. o:
+    \begin{itemize}
+        \item kraju zdarzenia
+        \item typie zdarzenia
+        \item rodzaju ruchu kolejowego
+        \item liczbie ofiar śmiertelnych
+        \item liczbie ciężko rannych osób
+    \end{itemize}
+    
+    \item \textbf{Ofiara śmiertelna} - osoba, która zmarła w wyniku zdarzenia kolejowego.
+    
+    \item \textbf{Ciężko ranny} - osoba, która odniosła poważne obrażenia wymagające długotrwałego leczenia.
+    
+    \item \textbf{Przejazd kolejowo-drogowy} - miejsce przecięcia infrastruktury kolejowej z drogą publiczną.
+    
+    \item \textbf{SPAD (Signal Passed At Danger)} - minięcie sygnału zabraniającego jazdy przez pociąg (równoważność przejechania na czerwonym świetle w ruchu drogowym).
+    
+    \item W zbiorze występują braki danych oraz \textbf{różnice w sposobie raportowania pomiędzy krajami}.
+\end{itemize}
+
+\newpage
+\subsection{Wizualizacje zbioru}
+
+%Wykres 1 - Liczba zdarzeń kolejowych w krajach europejskich (2002-2026) - mapa choropletyczna
+\subsubsection{Liczba zdarzeń kolejowych w krajach europejskich (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.1}
+    \caption{Liczba zdarzeń kolejowych w krajach europejskich (2002-2026).}
+\end{figure}
+
+Na mapie dobrze widać, że liczba zgłoszonych zdarzeń kolejowych różni się pomiędzy poszczególnymi krajami Europy. Najwięcej rekordów znajduje się dla Czech, Rumunii oraz Węgier, natomiast w części państw Europy Zachodniej liczba zgłoszeń jest wyraźnie mniejsza. Nie oznacza to jednak automatycznie niższego poziomu bezpieczeństwa kolei w tych krajach. \\\\Na liczbę rekordów wpływa również skala ruchu kolejowego, długość sieci kolejowej oraz sposób raportowania zdarzeń do bazy ERAIL. Warto także zwrócić uwagę, że nie wszystkie państwa raportują dane z jednakową szczegółowością, co może wpływać na końcowy obraz statystyk.
+
+
+%Wykres 2 - czołówka 12 krajów europejskich pod względem liczby zdarzeń kolejowych (2002-2026) - wykres słupkowy
+\subsubsection{Czołówka 12 krajów europejskich pod względem liczby zdarzeń kolejowych (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.2}
+    \caption{Czołówka 12 krajów europejskich pod względem liczby zdarzeń kolejowych (2002-2026).}
+\end{figure}
+
+Wykres potwierdza, że największą liczbę rekordów w bazie mają Czechy, Rumunia i Węgry. Widoczna jest duża różnica między pierwszą trójką a pozostałymi krajami. Może to świadczyć o większej liczbie zgłoszeń, większej szczegółowości raportowania albo większej liczbie zdarzeń kwalifikowanych do bazy ERAIL.
+
+
+
+%Wykres 3 - Odsetek zdarzeń kolejowych z poszkodowanymi w krajach europejskich (2002-2026) - mapa choropletyczna
+\subsubsection{Odsetek zdarzeń kolejowych z poszkodowanymi w krajach europejskich (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.3}
+    \caption{Odsetek zdarzeń kolejowych z poszkodowanymi w krajach europejskich (2002-2026).}
+\end{figure}
+
+Odsetek zdarzeń z poszkodowanymi jest zróżnicowany przestrzennie i nie pokrywa się w pełni z samą liczbą zdarzeń. Niektóre kraje o mniejszej liczbie rekordów mogą mieć relatywnie wysoki udział zdarzeń skutkujących ofiarami lub ciężko rannymi. Wskaźnik ten lepiej pokazuje ciężkość zdarzeń niż sama liczba wpisów w bazie.
+
+
+%Wykres 4 - Liczba poważnie poszkodowanych w zdarzeniach kolejowych w krajach europejskich (2002-2026) - mapa choropletyczna
+\subsubsection{Liczba poważnie poszkodowanych w zdarzeniach kolejowych w krajach europejskich (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.4}
+    \caption{Liczba poważnie poszkodowanych w zdarzeniach kolejowych w krajach europejskich (2002-2026).}
+\end{figure}
+
+Mapa wskazuje, że liczba poważnie poszkodowanych jest skoncentrowana w wybranych krajach. Największe wartości nie zawsze występują tam, gdzie liczba zdarzeń jest największa, co oznacza, że część krajów ma mniej zdarzeń, ale o poważniejszych skutkach. Szczególnie istotne jest porównanie tej mapy z mapą liczby zdarzeń.
+
+
+
+%Wykres 5 - Poważnie poszkodowani na 100 zdarzeń kolejowych w krajach europejskich (2002-2026) - mapa choropletyczna
+\subsubsection{Poważnie poszkodowani na 100 zdarzeń kolejowych w krajach europejskich (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.5}
+    \caption{Poważnie poszkodowani na 100 zdarzeń kolejowych w krajach europejskich (2002-2026).}
+\end{figure}
+
+Wskaźnik liczby poszkodowanych na 100 zdarzeń pozwala porównać kraje niezależnie od samej liczby rekordów. Najwyższe wartości oznaczają, że przeciętne zdarzenie w danym kraju wiązało się z większą liczbą ofiar śmiertelnych lub ciężko rannych. Wykres pokazuje więc nie częstotliwość zdarzeń, lecz ich przeciętną dotkliwość.
+
+%Wykres 6 - Trend liczby zdarzeń kolejowych w czasie (2006-2025) - wykres słupkowo-liniowy
+\subsubsection{Trend liczby zdarzeń kolejowych w czasie (2006-2025)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.6}
+    \caption{Trend liczby zdarzeń kolejowych w czasie (2006-2025).}
+\end{figure}
+
+
+Trend roczny wskazuje, że liczba zdarzeń wzrastała do około początku drugiej dekady badanego okresu, a następnie zaczęła stopniowo spadać. Linia średniej ruchomej wygładza krótkookresowe wahania i pokazuje ogólną tendencję spadkową w ostatnich latach. Spadek może wynikać zarówno ze zmian bezpieczeństwa, jak i różnic w kompletności danych dla najnowszych lat.
+
+%Wykres 7 - Skutki zdarzeń kolejowych w czasie (2006-2025) - wykres liniowy
+\subsubsection{Skutki zdarzeń kolejowych w czasie (2006-2025)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.7}
+    \caption{Skutki zdarzeń kolejowych w czasie (2006-2025).}
+\end{figure}
+
+
+Liczba ofiar śmiertelnych i ciężko rannych zmienia się silnie w czasie, a pojedyncze lata wyróżniają się bardzo wysokimi wartościami. Oznacza to, że skutki zdarzeń kolejowych są w dużym stopniu zależne od pojedynczych poważnych wypadków. W ostatnich latach widoczna jest większa zmienność niż stabilny trend.
+
+%Wykres 8 - Najczęstsze typy zdarzeń kolejowych (2002-2026) - wykres słupkowy
+\subsubsection{Najczęstsze typy zdarzeń kolejowych (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.8}
+    \caption{Najczęstsze typy zdarzeń kolejowych (2002-2026).}
+\end{figure}
+
+Najczęściej raportowanym typem zdarzenia są wykolejenia. Wysoko znajdują się również wypadki na przejazdach kolejowo-drogowych oraz zderzenia pociągów. Struktura ta pokazuje, że znaczną część problemów bezpieczeństwa stanowią zarówno zdarzenia związane z ruchem pociągów, jak i zdarzenia na styku kolei z ruchem drogowym.
+
+%Wykres 9 - Typy zdarzeń według liczby poszkodowanych (2002-2026) - wykres słupkowy skumulowany
+\subsubsection{Typy zdarzeń kolejowych według liczby poszkodowanych (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.9}
+    \caption{Typy zdarzeń kolejowych według liczby poszkodowanych (2002-2026).}
+\end{figure}
+
+Największą liczbę poszkodowanych generują wypadki na przejazdach oraz zderzenia pociągów. Wykolejenia są najczęstsze, ale nie zawsze prowadzą do największej liczby ofiar w przeliczeniu na zdarzenie. Wykres pokazuje, że częstotliwość danego typu zdarzenia nie musi być równoznaczna z jego ciężkością.
+
+%Wykres 10 - Zdarzenia według typu ruchu szynowego (2002-2026) - wykres słupkowy
+\subsubsection{Zdarzenia według typu ruchu szynowego (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.10}
+    \caption{Zdarzenia według typu ruchu szynowego (2002-2026).}
+\end{figure}
+
+
+Najwięcej zdarzeń dotyczy pociągów pasażerskich oraz towarowych. Wynika to z dominującej roli tych rodzajów ruchu w systemie kolejowym. Pozostałe kategorie, takie jak manewry, metro czy ruch techniczny, mają znacznie mniejszy udział w całkowitej liczbie rekordów.
+
+%Wykres 11 - Zdarzenia według typu lokalizacji (2002-2026) - wykres słupkowy
+\subsubsection{Zdarzenia według typu lokalizacji (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.11}
+    \caption{Zdarzenia według typu lokalizacji (2002-2026).}
+\end{figure}
+
+Najwięcej zdarzeń występuje na liniach kolejowych oraz stacjach. Oznacza to, że główna infrastruktura eksploatacyjna generuje największą liczbę raportowanych zdarzeń. Pozostałe lokalizacje, takie jak bocznice czy stacje rozrządowe, mają znacznie mniejszy udział.
+
+%Wykres 12 - Odsetek zdarzeń z poszkodowanymi według typu ruchu (2002-2026) - wykres słupkowy
+\subsubsection{Odsetek zdarzeń z poszkodowanymi według typu ruchu (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.12}
+    \caption{Odsetek zdarzeń z poszkodowanymi według typu ruchu (2002-2026).}
+\end{figure}
+
+
+Najwyższy odsetek zdarzeń z poszkodowanymi występuje w ruchu pasażerskim oraz podczas manewrów kolejowych. Ruch towarowy ma dużą liczbę zdarzeń, ale relatywnie niższy udział przypadków z ofiarami lub ciężko rannymi. Wskazuje to, że rodzaj ruchu wpływa nie tylko na liczbę zdarzeń, lecz także na ich skutki.
+
+%Wykres 13 - Trend liczby rekordów w krajach z największą liczbą zdarzeń (2006-2025) - wykres panelowy
+\subsubsection{Trend liczby rekordów w krajach z największą liczbą zdarzeń (2006-2025)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.13}
+    \caption{Trend liczby rekordów w krajach z największą liczbą zdarzeń (2006-2025).}
+\end{figure}
+
+
+W krajach z największą liczbą rekordów trendy czasowe są zróżnicowane. Niektóre państwa wykazują spadek liczby zdarzeń w ostatnich latach, podczas gdy w innych widoczne są okresowe wzrosty. Porównanie panelowe pozwala zauważyć, iż w różnych krajach obserwuje się różne trendy.
+
+%Wykres 14 - Sezonowość zdarzeń kolejowych (2002-2026) - wykres radialny
+\subsubsection{Sezonowość zdarzeń kolejowych (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=0.85\textwidth, inkscapelatex=false]{phts/3/svg/3.14}
+    \caption{Sezonowość zdarzeń kolejowych (2002-2026).}
+\end{figure}
+
+Wykres sezonowości wskazuje, że liczba zdarzeń różni się pomiędzy miesiącami. Największe wartości pojawiają się w miesiącach letnich, szczególnie w lipcu. Może to wynikać z większej intensywności ruchu, prac infrastrukturalnych lub warunków eksploatacyjnych w tym okresie.
+
+%Wykres 15 - Zdarzenia kolejowe według dnia tygodnia (2002-2026) - wykres słupkowy
+\subsubsection{Zdarzenia kolejowe według dnia tygodnia (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.15}
+    \caption{Zdarzenia kolejowe według dnia tygodnia (2002-2026).}
+\end{figure}
+
+Zdarzenia kolejowe występują najczęściej w dni robocze, zwłaszcza od wtorku do czwartku. W weekendy liczba rekordów jest wyraźnie niższa. Może to być związane z mniejszą intensywnością ruchu kolejowego, szczególnie towarowego i technicznego, w soboty i niedziele.
+
+%Wykres 16 - Struktura typów zdarzeń według lokalizacji (2002-2026) - wykres skumulowany
+\subsubsection{Struktura typów zdarzeń według lokalizacji (2002-2026)}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth, inkscapelatex=false]{phts/3/svg/3.16}
+    \caption{Struktura typów zdarzeń według lokalizacji (2002-2026).}
+\end{figure}
+
+
+Struktura typów zdarzeń różni się w zależności od lokalizacji. Na liniach kolejowych większy udział mają wypadki na przejazdach oraz wykolejenia, natomiast na stacjach i bocznicach widoczne są inne proporcje typów zdarzeń. Oznacza to, że charakter zagrożeń zależy od miejsca wystąpienia zdarzenia.
+
+
+\newpage
+\subsection{Wnioski}
+\begin{enumerate}
+    \item Liczba zdarzeń kolejowych różni się pomiędzy krajami Europy. Najwięcej rekordów w bazie ERAIL pojawiło się dla Czech, Rumunii i Węgier.
+    
+    \item Duża liczba zgłoszeń nie musi od razu oznaczać gorszego poziomu bezpieczeństwa kolei. Wpływ ma również natężenie ruchu kolejowego, wielkość sieci czy sposób raportowania danych.
+    
+    \item Wśród najczęściej występujących zdarzeń dominowały wykolejenia, wypadki na przejazdach kolejowo-drogowych oraz zderzenia pociągów.
+    
+    \item Najwięcej ofiar śmiertelnych i ciężko rannych było związanych przede wszystkim z wypadkami na przejazdach oraz zderzeniami pociągów.
+    
+    \item Większość zdarzeń miała miejsce na liniach kolejowych i stacjach, czyli - w miejscach o największym natężeniu ruchu.
+    
+    \item Zdarzenia najczęściej dotyczyły ruchu pasażerskiego i towarowego, co jest zgodne z tym, że są to podstawowe rodzaje transportu kolejowego w Europie.
+    
+    \item Analiza zmian w czasie pokazuje, że w ostatnich latach liczba zdarzeń stopniowo malała, choć w niektórych okresach pojawiały się chwilowe wzrosty.
+    
+    \item Liczba ofiar i ciężko rannych osób była mocno zależna od pojedynczych poważnych wypadków, dlatego pomiędzy latami występowały duże różnice.
+    
+    \item W danych można zauważyć pewną sezonowość - więcej zdarzeń występowało w miesiącach letnich oraz w dni robocze.
+\end{enumerate}
+
+
+
+
+
+
 \end{document}

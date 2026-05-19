@@ -1,0 +1,90 @@
+%% Creator: Inkscape 1.4.4 (dcaf3e7, 2026-05-05), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file '3.2_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{720bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.6)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{3.2_svg-tex.pdf}}%
+    \put(0.90488892,0.53708333){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}585\end{tabular}}}}%
+    \put(0.8383611,0.494125){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}533\end{tabular}}}}%
+    \put(0.78718058,0.45116666){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}493\end{tabular}}}}%
+    \put(0.62981945,0.40822222){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}370\end{tabular}}}}%
+    \put(0.61319444,0.3652639){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}357\end{tabular}}}}%
+    \put(0.48652776,0.32230555){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}258\end{tabular}}}}%
+    \put(0.36115278,0.27934723){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}160\end{tabular}}}}%
+    \put(0.35859723,0.23638891){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}158\end{tabular}}}}%
+    \put(0.31126389,0.19343054){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}121\end{tabular}}}}%
+    \put(0.29206944,0.15048612){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}106\end{tabular}}}}%
+    \put(0.28568056,0.1075278){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}101\end{tabular}}}}%
+    \put(0.27851389,0.06456943){\color[rgb]{0.2,0.2,0.2}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}96\end{tabular}}}}%
+    \put(0.14730555,0.06513888){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Włochy\end{tabular}}}}%
+    \put(0.14730555,0.1080972){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Finlandia\end{tabular}}}}%
+    \put(0.14730555,0.15105557){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Francja\end{tabular}}}}%
+    \put(0.14730555,0.19401389){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Dania\end{tabular}}}}%
+    \put(0.14730555,0.23697222){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Austria\end{tabular}}}}%
+    \put(0.14730555,0.27993056){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Norwegia\end{tabular}}}}%
+    \put(0.14730555,0.322875){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Niemcy\end{tabular}}}}%
+    \put(0.14730555,0.36583332){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Hiszpania\end{tabular}}}}%
+    \put(0.14730555,0.40879167){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Wielka Brytania\end{tabular}}}}%
+    \put(0.14730555,0.45175){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Węgry\end{tabular}}}}%
+    \put(0.14730555,0.49470834){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Rumunia\end{tabular}}}}%
+    \put(0.14730555,0.53766667){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Czechy\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{3.2_svg-tex.pdf}}%
+    \put(0.15415277,0.0281389){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.41002778,0.0281389){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.6659028,0.0281389){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.92176387,0.0281389){\color[rgb]{0.30196078,0.30196078,0.30196078}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0.57327779,0.01083332){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Liczba rekordów w bazie\end{tabular}}}}%
+    \put(0.02119444,0.30030556){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Kraj\end{tabular}}}}%
+    \put(0.15415277,0.57926389){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Top 12 krajów według liczby rekordów w bazie ERAIL\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
