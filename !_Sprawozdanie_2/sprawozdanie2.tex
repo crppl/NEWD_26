@@ -64,27 +64,107 @@ Przedmiotu "Wizualizacja Danych"}
 Przygotowane przez: Maciej Kurzydłowski
 
 \subsection{Źródło danych}
-% \href{}{}\\
-% \url{}
+\href{https://www.usgs.gov/programs/earthquake-hazards}{USGS - Earthquake Hazards - API}\\
+\url{https://www.usgs.gov/programs/earthquake-hazards}
 
 \subsection{Opis zbioru i istotnych pojęć}
 \begin{itemize}
-    \item 
+    \item Dane zostały pobrane przez API. W ramach wizualizacji zostało pobranych 3240855 rekordów trzęsień ziemi z całego świata;
+    \item Dane zostały zebrane w przedziale 2000 - 2026 roku;
+    \item Dane zawierały informacje o czasie, miejscu, głębokości, magnitudzie, etc. dla każdego trzęsienia ziemi;
+    \item Wielkość pliku z danymi wynosiła około 500 MB, co może być problematyczne przy odtwarzaniu wizualizacji.
 \end{itemize}
 
+\newpage
+
+
+\subsubsection{Trzęsienia ziemi wokół świata}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/1/png/1.png}
+    \caption{Rozmieszczenie trzęsień ziemi na mapie świata.}
+\end{figure}
+
+Mapa światowa pokazuje, że trzęsienia ziemi koncentrują się głównie wzdłuż granic płyt tektonicznych. Największe skupiska widać wokół Pacyfiku, ale podobne pasma aktywności pojawiają się także w rejonie Alp, Indonezji i Ameryki Południowej.
+
+\subsubsection{Wizualizacja sejsmiczności w czasie}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/1/png/2.png}
+    \caption{Animacja sejsmiczności na mapie świata dla kolejnych lat. (Tylko pierwsza klatka)}
+\end{figure}
+
+Animacja pokazuje w miarę równe rozłożenie trzęsień ziemi w czasie, bez znacznych zauważalnych zdarzeń.
+
+\subsubsection{Gęstość trzęsień ziemi o wysokiej magnitudzie}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/1/png/3.png}
+    \caption{Mapa gęstości trzęsień ziemi o magnitudzie powyżej 5.}
+\end{figure}
+
+Mapa pokazuje znaczącą przewagę ilości trzęsień ziemi w rejonach Pacyfiku, w porównaniu do innych płyt tektonicznych.
+
+\subsubsection{Liczba trzęsień ziemi w czasie}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/1/png/4.png}
+    \caption{Liczba trzęsień ziemi w czasie.}
+\end{figure}
+
+Liczba trzęsień ziemi jest mało stabilna w czasie, z zauważalnymi okresami wzrostów aktywności sejsmicznej. Spadek liczby trzesień na końcu wykresu jest spowodowany dzieleniem przedziału na kubki o długości 1 miesiąca - ostatni miesiąc nie jest w pełni udokumentowany.
 
 \subsection{Wizualizacje zbioru}
-\subsubsection{}
+\subsubsection{Rozkład magnitud trzęsień ziemi}
 \begin{figure}[H]
-    % \includesvg[width=\textwidth]{phts/1/svg/}
-    \caption{}
+    \centering
+    \includegraphics[width=\textwidth]{phts/1/png/5.png}
+    \caption{Rozkład magnitud trzęsień ziemi.}
 \end{figure}
+
+Zdecydowana większość zarejestrowanych trzęsień ziemi miała niewielką magnitudę, a bardzo silne zdarzenia występują znacznie rzadziej. Poniżej 1 magnitudy trzęsienia ziemi są coraz trudniej mierzalne, co powoduje zmniejszenie ilości wykrytych tych trzęsień.
+
+\subsubsection{Zależność głębokości od magnitudy}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/1/png/6.png}
+    \caption{Zależność głębokości od magnitudy trzęsień ziemi.}
+\end{figure}
+
+Zauważalna jest liniowa zależność magnitudy do głębokości do magnitudy równej około 3. Jest to spowodowane trudnością w wykryciu mniejszych magnitud na większych głębokościach. Większe magnitudy nie wykazują tej zależności.
+
+\subsubsection{Rozkład magnitud według regionu}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/1/png/7.png}
+    \caption{Rozkład magnitud trzęsień ziemi według regionu.}
+\end{figure}
+
+Indonezja ma znacznie większe magnitudy od pozostałych krajów, gdzie mediana magnitudy wynosi blisko 5. Sugeruje to dużą aktywność sejsmiczną w tym regionie, co jest zgodne z jego położeniem na styku kilku płyt tektonicznych.
+
+\subsubsection{Top 10 najsilniejszych trzęsień ziemi}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/1/png/8.png}
+    \caption{Top 10 najsilniejszych trzęsień ziemi.}
+\end{figure}
+
+Największe trzęsienie w okresie 2000-2026 miało magnitudę około 9 i wystąpiło w Japoni na granicy płyty pacyficznej i eurazjatyckiej. Wywołało ono Tsunami na około 40m i spowodowało śmierć około 16 tysięcy w Japonii. Drugie najsilniejsze trzęsienie ziemi miało również magnitudę około 9, powodując śmierć około 230000 osób w 14 krajach.
 
 \newpage
 \subsection{Wnioski}
 \begin{enumerate}
-    \item 
+    \item Trzęsienia ziemi skupiają się głównie wzdłuż granic płyt tektonicznych;
+    \item Większość zarejestrowanych zdarzeń ma niską magnitudę. Silne trzęsienia są rzadkie, lecz mają znaczące lokalne skutki;
+    \item Silniejsze zdarzenia koncentrują się w określonych regionach (m.in. Indonezja, Japonia, etc.);
+    \item Widać zależność między głębokością a magnitudą dla mniejszych trzęsień, co jest spowodowane trudnością w wykryciu słabszych zdarzeń na większych głębokościach;
+    \item Ogólna zależność między głębokością a magnitudą jest nieobecna;
+    \item Największe trzęsienia występują na złączeniu płyt tektonicznych: pacyficznej i euroazjatyckiej oraz pacyficznej i australijskiej.
 \end{enumerate}
+
+\newpage
+
+
 
 
 
@@ -626,8 +706,150 @@ Struktura typów zdarzeń różni się w zależności od lokalizacji. Na liniach
 \end{enumerate}
 
 
+\newpage
+
+
+\section{Energia odnawialna}
+
+Przygotowane przez: \textbf{Maciej Kurzydłowski}
+
+\subsection{Źródło danych}
+\href{https://www.kaggle.com/datasets/anshtanwar/global-data-on-sustainable-energy}{(Kaggle) Złączone dane z artykułu: Ensure access to affordable, reliable, sustainable and modern energy for all}\\
+\href{https://ourworldindata.org/sdgs/affordable-clean-energy}{Artykuł na stronie Our World in Data}\\
+\url{https://ourworldindata.org/sdgs/affordable-clean-energy}
+
+\subsection{Opis zbioru i istotnych pojęć}
+\begin{itemize}
+    \item Dane pochodzą w większości z artukułu na stronie \textbf{Our World in Data}. Dane zostały zebrane przez zespół \textbf{Our World in Data}.
+    
+    \item Zbiór obejmuje dane z lat \textbf{2000 - 2020}.
+    
+    \item Każdy rekord zawiera informacje m.in. o:
+    \begin{itemize}
+        \item kraju
+        \item roku
+        \item Procentowym dostępie do energii elektrycznej
+        \item Generowanie energii elektrycznej z odnawialnych źródeł per capita
+        \item Procent używanyej odnawialnej energii elektrycznej
+        \item Energia z paliw kopalnych (Twh)
+        \item Energia nuklearna (Twh)
+        \item Energia odnawialna (Twh)
+        \item Emisje CO2 (Kt)
+    \end{itemize}
+\end{itemize}
+
+\newpage
+\subsection{Wizualizacje zbioru}
 
 
 
+
+\subsubsection{Emicje dla świata}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/4/png/1.png}
+    \caption{Globalne emisje CO2 (sumarycznie).}
+\end{figure}
+
+Zauważalny jest znaczący wzrost globalnych emisji CO2 od 2000 do 2020 roku. Mimo większego udziału OZE, zapotrzebowanie na energię elektryczną rośnie, co prowadzi do zwiększenia emisji.
+
+\subsubsection{Top 10 emitentów CO2}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/4/png/2.png}
+    \caption{Top 10 emitentów CO2 (sumarycznie).}
+\end{figure}
+
+Największymi emitentami CO2 są Chiny, USA i Indie. Te trzy kraje odpowiadają za znaczną część globalnych emisji, co wynika z ich dużej populacji i intensywnego rozwoju przemysłowego.
+
+\subsubsection{Emisje CO2 per capita}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/4/png/3.png}
+    \caption{Top 10 krajów według emisji CO2 per capita.}
+\end{figure}
+
+Największymi emitentami CO2 per capita są kraje takie jak Katar, Kuwejt i Zjednoczone Emiraty Arabskie. Wysokie emisje per capita często wynikają z dużego zużycia energii na osobę, co jest charakterystyczne dla krajów bogatych w zasoby energetyczne, o niskiej gęstości zaludnienia. Mniejsze użycie energii odnawialnej może też przyczyniać się do wysokich emisji.
+
+\subsubsection{Udział OZE a emisje CO2}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/4/png/4.png}
+    \caption{Udział OZE vs emisje CO2 (skala logarytmiczna).}
+\end{figure}
+
+Z zwiększeniem udziału OZE, trend emisji CO2 znacząco się zmniejsza. Wskazuje to na pozytywny wpływ OZE na redukcję emisji.
+
+\subsubsection{Dostęp do energii elektrycznej - wybrane kraje}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/4/png/5.png}
+    \caption{Dostęp do elektryczności — wybrane kraje (2000--2020).}
+\end{figure}
+
+Kraje wysoko rozwinięte, takie jak Polska czy Chiny mają niemal 100\% dostępu do elektryczności. W krajach rozwijających się, takich jak Indie czy Nigeria, dostęp jest znacznie niższy, choć widać poprawę w czasie. W Indii szczególnie widać wzrost dostępu do elektryczności, który jest równy blisko 100\% w 2020 roku. Do tej wizualizacji wykorzystana jest skala kolorów - virdis.
+
+\subsubsection{Średni i medianowy dostęp do elektryczności}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/4/png/6.png}
+    \caption{Średnia i mediana dostępu do elektryczności (wszystkie kraje).}
+\end{figure}
+
+Na świecie jest trend wzrostowy w dostępie do elektryczności. Mediana jest blisko 100\%, co wskazuje, że większość krajów ma niemal pełny dostęp, ale istnieją kraje odstające z niskim dostępem, które obniżają średnią.
+
+\subsubsection{Zużycie energii na osobę}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/4/png/7.png}
+    \caption{Zużycie energii per capita — średnia i mediana.}
+\end{figure}
+
+Średnie zużycie energii per capita utrzymuje się na tym samym poziomie, gdy mediana wzrasta. Oznacza to, zwiększanie żużycia energii w krajach o niskim zużyciu, podczas gdy kraje o wysokim zużyciu utrzymują swoje poziomy.
+
+\subsubsection{Kraje o najwyższym udziale OZE}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/4/png/8.png}
+    \caption{Top 10 krajów według udziału OZE.}
+\end{figure}
+
+Kraje o najwyższym udziale OZE, są raczej mniej rozwinięte, mają one słabo rozwinięty sektor paliw kpalnianych i często bardziej opłaca im się inwestować w źródła energii odnawialnej.
+
+\subsubsection{Kraje o najniższym udziale OZE}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/4/png/9.png}
+    \caption{10 krajów o najniższym udziale OZE.}
+\end{figure}
+
+W większości są to kraje z wysokimi emisjami CO2 per capita, które korzystają z własnych źródeł paliw kopalnianych, więc inwestycja w OZe jest dla nich mniej opłacalna.
+
+\subsubsection{Globalna produkcja energii nuklearnej}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/4/png/10.png}
+    \caption{Globalna produkcja energii nuklearnej (TWh).}
+\end{figure}
+
+Po wybuchu reaktora jądrowego w Fukushimie w 2011 roku, produkcja energii nuklearnej spadła przez wyłączenie części reaktorów aby przeprowadzić dodatkowe kontrole bezpieczeństwa. Od tego czasu produkcja wzrostła do poziomu sprzed katastrofy.
+
+\subsubsection{Top 10 państw według udziału energii nuklearnej}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/4/png/11.png}
+    \caption{Udział energii nuklearnej (top 10).}
+\end{figure}
+
+Największy udział energii nuklearnej mają kraje takie jak Francja, Słowacja i Ukraina. Te kraje zainwestowały znaczne środki w rozwój energetyki jądrowej.
+
+\subsection{Wnioski}
+\begin{enumerate}
+    \item W latach 2000--2020 globalne emisje CO2 wzrosły pomimo rosnącego udziału odnawialnych źródeł energii (OZE). Oznacza to, że rozwój OZE nie nadążył za wzrostem zapotrzebowania energetycznego.
+    \item Wyższy udział OZE koreluje ze zmniejszonymi emisjami CO2 w przeliczeniu na produkcję energii, co sugeruje, że dalsze inwestycje w OZE mogą skutecznie obniżać emisje.
+    \item Produkcja energii nuklearnej spadła po awarii w Fukushimie (2011), lecz później wróciła do poziomów sprzed zdarzenia. Możliwe są też dalsze inwestycje w energię jądrową.
+    \item Wiele państw o bogatych zasobach paliw kopalnych wciąż ma niski udział OZE i wysokie emisje per capita.
+    \item Wsparcie polityczne i inwestycyjne jest kluczowe, aby skalować OZE i zredukować emisje w przyszłości.
+\end{enumerate}
 
 \end{document}
