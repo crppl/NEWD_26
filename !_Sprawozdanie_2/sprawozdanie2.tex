@@ -852,4 +852,159 @@ Największy udział energii nuklearnej mają kraje takie jak Francja, Słowacja 
     \item Wsparcie polityczne i inwestycyjne jest kluczowe, aby skalować OZE i zredukować emisje w przyszłości.
 \end{enumerate}
 
+
+
+
+
+
+\newpage
+\section{Kosmiczne śmieci - co krąży nad naszymi głowami?}
+
+Przygotowane przez: \textbf{Jan Domański}
+
+\subsection{Źródło danych}
+\href{https://celestrak.org/pub/satcat.csv}{CelesTrak - SATCAT - Satellite Catalog}\\
+\url{https://celestrak.org/pub/satcat.csv}
+
+\href{https://celestrak.org/satcat/satcat-format.php}{Dokumentacja formatu SATCAT}\\
+\url{https://celestrak.org/satcat/satcat-format.php}
+
+\subsection{Opis zbioru i istotnych pojęć}
+\begin{itemize}
+    \item Dane pochodzą z katalogu SATCAT prowadzonego przez CelesTrak.
+    \item Analizowany plik zawierał \textbf{69 124 rekordy} obiektów z okresu od \textbf{1957} do \textbf{2026} roku.
+    \item W wizualizacjach pominięto kategorię \texttt{UNK}, czyli obiekty o nieznanym typie, ponieważ nie wnosiła żadnej informacji interpretacyjnej.
+    \item Każdy rekord opisuje pojedynczy obiekt znajdujący się w katalogu, np. satelitę, człon rakiety albo fragment powstały po rozpadzie lub kolizji (po ang. debris).
+    \item Najważniejsze kolumny wykorzystane w analizie to:
+    \begin{itemize}
+        \item \texttt{OBJECT\_NAME} - nazwa obiektu,
+        \item \texttt{OBJECT\_TYPE} - typ obiektu,
+        \item \texttt{OWNER} - właściciel, kraj lub organizacja odpowiedzialna za obiekt,
+        \item \texttt{LAUNCH\_DATE} - data startu,
+        \item \texttt{LAUNCH\_SITE} - miejsce startu,
+        \item \texttt{DECAY\_DATE} - data zejścia z orbity, jeżeli obiekt już zdeorbitował,
+        \item \texttt{PERIGEE} i \texttt{APOGEE} - najniższa i najwyższa wysokość orbity,
+        \item \texttt{OPS\_STATUS\_CODE} - kod statusu operacyjnego.
+    \end{itemize}
+    \item \textbf{Satelita / payload} - ładunek wyniesiony na orbitę, np. satelita telekomunikacyjny, obserwacyjny lub naukowy.
+    \item \textbf{Człon rakiety} - część rakiety, która po wyniesieniu ładunku może pozostać na orbicie.
+    \item \textbf{Fragment / debris} - odłamek/pozostałość po rozpadzie, eksplozji czy kolizji czy innym zdarzeniu związanym z obiektem orbitalnym.
+    \item \textbf{Obiekt nadal na orbicie} - obiekt, dla którego w danych nie występuje data zejścia z orbity.
+    \item \textbf{LEO, MEO, GEO/GSO, HEO} - uproszczone klasy orbit według średniej wysokości obiektu nad ziemia.
+\end{itemize}
+
+\newpage
+\subsection{Wizualizacje zbioru}
+
+\subsubsection{Typy obiektów wysyłanych w kolejnych latach}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/5/png/5.1.png}
+    \caption{Liczba obiektów wysłanych w kolejnych latach według typu obiektu.}
+\end{figure}
+
+Wykres pokazuje, że przez wiele dekad liczba wynoszonych satelitów była w miarę stabilna, a po 2020 roku nastąpił bardzo silny wzrost liczby obiektów typu payload/satelita. Fragmenty orbitalne / debris maja bardziej nieregularny przebieg, ponieważ ich liczba często rośnie skokowo po pojedynczych zdarzeniach (rozpady/kolizje na przykład) Człony rakiet występują bardziej systematycznie, ale ich liczba w jest znacznie mniejsza niż liczba satelitów i fragmentów.
+
+\subsubsection{Narastanie katalogu obiektów orbitalnych}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/5/png/5.2.png}
+    \caption{Narastanie liczby obiektów w katalogu SATCAT oraz liczby obiektów nadal pozostających na orbicie.}
+\end{figure}
+
+Wykres przedstawia różnicę między liczbą wszystkich obiektów a liczbą obiektów, które według danych wciąż są na orbicie. Obie wartości rosną w czasie, lecz całkowita liczba obiektów w katalogu jest znacznie większa, ponieważ obejmuje też te obiekty, które już zeszły z orbity. Szczególnie szybki wzrost po 2015/2020 roku pokazuje, że orbita ziemska jest coraz intensywniej wykorzystywana, a problem kosmicznych śmieci staje się coraz bardziej poważny.
+
+\subsubsection{Struktura obiektów w katalogu SATCAT}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/5/png/5.3.png}
+    \caption{Liczba i udział podstawowych typów obiektów w katalogu SATCAT.}
+\end{figure}
+
+\newpage
+
+Największą grupę w katalogu stanowią fragmenty (debris). Odpowiadają one za ponad połowę rekordów w bazie danych. Satelity i inne ładunki użytkowe są drugą największą kategorią, a człony rakiet stanowią mniejszy, lecz wciąż istotny udział. Wykres pokazuje, że omawiany problem nie dotyczy jedynie aktywnych satelitów, lecz także dużej liczby pozostałości po wcześniejszych misjach.
+
+\subsubsection{Kraje i organizacje z największą liczbą obiektów w katalogu}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/5/png/5.4.png}
+    \caption{Właściciele, kraje i organizacje z największą liczbą obiektów w katalogu SATCAT.}
+\end{figure}
+
+Największą liczbę obiektów w katalogu mają Stany Zjednoczone, Rosja / ZSRR / WNP oraz Chiny. Wynika to z ich długiej historii aktywności kosmicznej i bardzo dużej liczby startów. Należy pamiętać, że wykres obejmuje wszystkie obiekty w zbiorze, a więc zarówno obiekty nadal znajdujące się na orbicie, jak i te, których już nie ma na orbicie.
+
+\subsubsection{Kraje i organizacje z największą liczbą obiektów nadal na orbicie}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/5/png/5.5.png}
+    \caption{Właściciele, kraje i organizacje z największą liczbą obiektów nadal pozostających na orbicie Ziemi.}
+\end{figure}
+
+Po ograniczeniu danych do obiektów nadal pozostających na orbicie zmienia się struktura rankingu. Stany Zjednoczone mają teraz największą liczbę takich obiektów (i to zdecydowanie), a Chiny i Wielka Brytania znajdują się też wysoko w rankingu. Różnica względem poprzedniego wykresu pokazuje, że historyczna liczba obiektów w zbiorze danych i aktualne obciążenie orbity nie są tym samym wskaźnikiem i się od siebie zdecydowanie różnią.
+
+\subsubsection{Status operacyjny obiektów nadal na orbicie}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/5/png/5.6.png}
+    \caption{Status operacyjny obiektów nadal pozostających na orbicie.}
+\end{figure}
+
+\newpage
+
+Wykres pokazuje jak większość obiektów z dostępnym statusem operacyjnym jest oznaczona jako operacyjna. Widoczna jest grupa obiektów nieoperacyjnych i częściowo operacyjnych. Oznacza to, że sama obecność obiektu na orbicie nie mówi jeszcze, czy pełni funkcję użyteczną. Z punktu widzenia problemu kosmicznych śmieci ważne są głównie obiekty nieaktywne, ponieważ nadal zajmują przestrzeń na orbicie i mogą zwiększać ryzyko potencjalnych kolizji.
+
+\subsubsection{Rozmieszczenie typów obiektów według klas orbit}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/5/png/5.7.png}
+    \caption{Liczba obiektów według typu i klasy orbity.}
+\end{figure}
+
+Największa koncentracja obiektów znajduje się na niskiej orbicie okołoziemskiej czyli LEO. Dotyczy to satelitów, jak i fragmentów. MEO i GEO/GSO mają mniejsze liczby obiektów, lecz też są ważne, ponieważ pełnią istotne funkcje nawigacyjne czy komunikacyjne. Wysokie orbity HEO zawierają znacznie mniej obiektów w porównaniu np. do LEO.
+
+\subsubsection{Ranking przedziałów wysokości orbit}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/5/png/5.8.png}
+    \caption{Ranking przedziałów średniej wysokości orbity według liczby obiektów.}
+\end{figure}
+
+\newpage
+
+Wykres jest uporządkowany według liczby obiektów, dlatego nie pokazuje naturalnej kolejności wysokości, lecz ranking tych przedziałów orbiatalnych, które sa najbardziej zatłoczone. Najwięcej obiektów znajduje się poniżej 500 km oraz w przedziale 500-800 km. Wysoko znajduje się także zakres 33 000-38 000 km, który odpowiadają obszarowi orbit geostacjonarnych. To wszystko łatwo pokazuje, które wysokości są najbardziej obciążone na orbicie.
+
+\subsubsection{Kosmodromy z największą liczbą obiektów w katalogu}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/5/png/5.9.png}
+    \caption{Kosmodromy i miejsca startu, z których pochodzi najwięcej obiektów w katalogu.}
+\end{figure}
+
+Najwięcej obiektów w katalogu powiązanych jest z największymi historycznie miejscami startu: Cape Canaveral, Plesieckiem, Vandenbergiem i Bajkonurem. Wartości na wykresie nie oznaczają liczby samych startów, tylko liczbę obiektów przypisanych do danego miejsca startu w bazie. Jeden start może bowiem wygenerować wiele obiektów.
+
+\subsubsection{Zejścia obiektów z orbity według dekad}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{phts/5/png/5.10.png}
+    \caption{Liczba obiektów schodzących z orbity według dekady i typu obiektu.}
+\end{figure}
+
+Wykres pokazuje, w których dekadach obiekty najczęściej schodziły z orbity. Fragmenty dominują w wielu okresach. Dla satelitów szczególnie widoczny jest wzrost w latach 2020., co może być związane z większą liczbą obiektów na niskich orbitach, jak i z krótszym czasem życia części współczesnych satelitów. Człony rakiet mają bardziej stabilny rozkład.
+
+\newpage
+\subsection{Wnioski}
+\begin{enumerate}
+    \item Katalog SATCAT pokazuje, że liczba obiektów związanych z działalnością kosmiczną systematycznie rosła od 1957 roku, a po 2020 roku wzrost znacznie przyspieszył.
+    \item Największą część katalogu stanowią fragmenty, czyli debris. Oznacza to, że kosmiczne śmieci są ilościowo większym problemem niż aktywne satelity same w sobie.
+    \item Największy historyczny udział w liczbie obiektów mają Stany Zjednoczone, Rosja / ZSRR / WNP oraz Chiny, czyli państwa o największej aktywności kosmicznej.
+    \item Ranking obiektów znajdujących się na orbicie nadal różni się od rankingu historycznego. Trzeba odróżniać całkowitą aktywność kosmiczną od aktualnego obciążenia orbity.
+    \item Największe zagęszczenie obiektów występuje na niskiej orbicie okołoziemskiej LEO - głównie poniżej 800 km.
+    \item Orbita geostacjonarna również jest istotnym obszarem koncentracji obiektów, pomimo tego iż znajduje się znacznie wyżej niż LEO.
+    \item Duże kosmodromy, np. jak Cape Canaveral, odpowiadają za największą liczbę obiektów wg miejsca startu.
+    \item Obiekty nieoperacyjne i częściowo operacyjne są szczególnie ważne z punktu widzenia bezpieczeństwa na orbicie, gdyż wciąż mogą zwiększać ryzyko kolizji.
+    \item Problem kosmicznych śmieci nie polega tylko na liczbie satelitów, lecz także na pozostałościach po startach, członach rakiet, fragmentach powstałych po wcześniejszych zdarzeniach na orbicie.
+\end{enumerate}
+
+
 \end{document}

@@ -69,3 +69,18 @@
 \contentsline {subsubsection}{\numberline {4.3.10}Globalna produkcja energii nuklearnej}{40}{subsubsection.4.3.10}%
 \contentsline {subsubsection}{\numberline {4.3.11}Top 10 państw według udziału energii nuklearnej}{41}{subsubsection.4.3.11}%
 \contentsline {subsection}{\numberline {4.4}Wnioski}{41}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Kosmiczne śmieci - co krąży nad naszymi głowami?}{42}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Źródło danych}{42}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Opis zbioru i istotnych pojęć}{42}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Wizualizacje zbioru}{43}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Typy obiektów wysyłanych w kolejnych latach}{43}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Narastanie katalogu obiektów orbitalnych}{44}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Struktura obiektów w katalogu SATCAT}{44}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Kraje i organizacje z największą liczbą obiektów w katalogu}{45}{subsubsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.5}Kraje i organizacje z największą liczbą obiektów nadal na orbicie}{46}{subsubsection.5.3.5}%
+\contentsline {subsubsection}{\numberline {5.3.6}Status operacyjny obiektów nadal na orbicie}{46}{subsubsection.5.3.6}%
+\contentsline {subsubsection}{\numberline {5.3.7}Rozmieszczenie typów obiektów według klas orbit}{47}{subsubsection.5.3.7}%
+\contentsline {subsubsection}{\numberline {5.3.8}Ranking przedziałów wysokości orbit}{47}{subsubsection.5.3.8}%
+\contentsline {subsubsection}{\numberline {5.3.9}Kosmodromy z największą liczbą obiektów w katalogu}{48}{subsubsection.5.3.9}%
+\contentsline {subsubsection}{\numberline {5.3.10}Zejścia obiektów z orbity według dekad}{49}{subsubsection.5.3.10}%
+\contentsline {subsection}{\numberline {5.4}Wnioski}{50}{subsection.5.4}%
