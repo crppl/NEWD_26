@@ -13,28 +13,6 @@
 \newif\ifpokazsekcjaszesc
 \pokazsekcjaszesctrue
 
-\newcommand{\wykrespngwniosek}[4]{%
-\begin{figure}[H]
-    \centering
-    \ifpokazsekcjaszesc
-        \includegraphics[width=0.72\textwidth,height=0.24\textheight,keepaspectratio]{#1}%
-    \else
-        \fbox{%
-            \parbox[c][0.20\textheight][c]{0.72\textwidth}{%
-                \centering
-                \texttt{#1}\\[0.4em]
-                \small miejsce na wykres
-            }%
-        }%
-    \fi
-    \caption{#2}
-    \label{fig:#3}
-\end{figure}
-\noindent\textbf{Wniosek:} #4
-\par\vspace{0.2cm}
-}
-
-
 \title{Sprawozdanie z drugiej połowy projektu\\
 Przedmiotu "Wizualizacja Danych"}
 \author{Grupa Pon 14:15 - 17:00, \\zespół 4 - Jan Domański, Maciej Kurzydłowski, Jan Machowski}
@@ -1004,6 +982,344 @@ Wykres pokazuje, w których dekadach obiekty najczęściej schodziły z orbity. 
     \item Duże kosmodromy, np. jak Cape Canaveral, odpowiadają za największą liczbę obiektów wg miejsca startu.
     \item Obiekty nieoperacyjne i częściowo operacyjne są szczególnie ważne z punktu widzenia bezpieczeństwa na orbicie, gdyż wciąż mogą zwiększać ryzyko kolizji.
     \item Problem kosmicznych śmieci nie polega tylko na liczbie satelitów, lecz także na pozostałościach po startach, członach rakiet, fragmentach powstałych po wcześniejszych zdarzeniach na orbicie.
+\end{enumerate}
+
+
+\section{Korzystanie z internetu w krajach UE-27}
+
+Przygotowane przez: \textbf{Jan Machowski}
+
+\subsection{Źródło danych}
+
+\url{https://ec.europa.eu/eurostat/web/digital-economy-and-society/indicators/main-tables}
+Tabelki - tin00028, tin00094, tin00095, tin00099, tin00101, tin00102, tin00127, tin00129.
+
+
+\subsection{Opis zbioru i istotnych pojęć}
+
+\begin{itemize}
+    \item Dane pochodzą z corocznych badań Eurostatu w ramach modułu \textbf{ICT Usage in Households and by Individuals}, 
+    prowadzonych w 27 krajach Unii Europejskiej;
+    \item Zbiór obejmuje lata 2014-2025. Dla niektórych kategorii (bankowość internetowa, informacje zdrowotne, poszukiwanie pracy) dostępne są 
+    dane od wcześniejszych edycji, jednak niniejsza analiza ogranicza się do wspólnego okna czasowego;
+    \item Jednostka obserwacji – odsetek osób w wieku 16--74 lata, które korzystały z internetu w ciągu ostatnich 3 miesięcy 
+    (lub podkategorie tej aktywności).
+
+    \item W ramach wizualizacji zebrane zostały tabelki będące podzbiorami głównej metryki. Poniżej opisane są natury tych podzbiorów:
+    \begin{itemize}
+        \item \textbf{Ogólne korzystanie z internetu} – jakakolwiek aktywność online w ciągu ostatnich 3 miesięcy;
+        \item \textbf{Wysyłanie/odbiór e-maili} – korzystanie z poczty elektronicznej;
+        \item \textbf{Wyszukiwanie towarów i usług} – przeglądanie ofert zakupowych online;
+        \item \textbf{Bankowość internetowa} – zarządzanie finansami przez internet oraz aplikacje komórkowe wykorzystujące internet;
+        \item \textbf{Media społecznościowe} – korzystanie z portali społecznościowych;
+        \item \textbf{Informacje zdrowotne} – szukanie informacji o zdrowiu oraz wykrozystywanie portali zdrowotnych online;
+        \item \textbf{Poszukiwanie pracy} – używanie internetu do szukania zatrudnienia lub przeglądania otwartych pozycji;
+        \item \textbf{Konsultacje / głosowanie online} – udział w konsultacjach społecznych lub e-głosowaniach, w krajach w których jest to dostępne.
+    \end{itemize}
+
+    \item Jedynym brakiem danych w całym zbiorze jest Francja w roku 2020.
+\end{itemize}
+
+
+
+
+\newpage
+\subsection{Wizualizacje zbioru}
+
+\subsubsection{Ogólny trend korzystania z internetu}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.1.svg}
+    \caption{Odsetek osób (16-74 lata) korzystających z internetu w ciągu ostatnich 3 miesięcy – średnia UE-27 w latach 2014-2025.}
+\end{figure}
+
+Ogólne korzystanie z internetu w krajach Unii Europejskiej rośnie stabilnie, co przedstawia powyższy wykres liniowy. 
+Tendencja jest znaczna - na przestrzeni 11 lat, procent użytkowników zmienił się z 76,9\% do 94\% - o niecałe 20\%, przy obiektywnie 
+wysokim odsetku w roku początkowym. Wzrost jest względnie równomierny – bez nagłych skoków ani wyraźnych efektów związanych z odpowiednim rokiem.
+Świadczy to o dojrzałości procesu cyfryzacji: w krajach już wysoce skomunikowanych nasycenie zbliża się do maksimum, natomiast kraje
+doganiające podnoszą średnią wraz ze swoim wzrostem.
+
+
+
+
+\subsubsection{Mapa cieplna intensywności korzystania z internetu}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.2.svg}
+    \caption{Intensywność korzystania z internetu w UE-27 na przestrzeni lat.}
+\end{figure}
+
+Mapa cieplna porządkuje kraje według poziomu cyfryzacji: Skandynawia, Luksemburg i Holandia od pierwszego roku analizy oscylują przy granicy 100\%, 
+natomiast Bułgaria i Rumunia zaczynają od poziomów poniżej 60\%. Wyraźne jest też, że dolna część rankingu zmienia kolor znacznie szybciej niż górna 
+– kraje doganiające przyspieszają, co prowadzi do stopniowego wyrównywania się rozkładu w całej UE. 
+
+Biała komórka, będąca wynikeim Francji w 2020 roku, jest jedynym brakiem w zbiorze. Nie wpływa to jednak na interpretację wyników.
+
+
+
+\subsubsection{Ranking krajów według korzystania z internetu (2025)}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.3.svg}
+    \caption{Ranking krajów UE-27 pod względem odsetka osób korzystających z internetu w 2025r.}
+\end{figure}
+
+W 2025 r. czołują Irlandia (99,8\%), Holandia i Dania (po 99,7\%), potem Luksemburg i inne kraje nienależące do bloku wschodniego w XX wieku. 
+Kraje niegdyś należące do Związku Radzieckiego pojawiają się dopiero w połowie z Litwą na poziomie 94,5\%. 
+
+Polska z wynikiem 89,7\% zajmuje 22. miejsce spośród 27 krajów. Ciekawym jest fakt, iż dystans między Polską a unijną czołówką wynosi blisko 10 pp., 
+lecz, jak zobaczymy na późniejszych wykresach, widać że Polska systematycznie nadrabia zaległości sprzed lat.
+
+Kraje na końcu stawki (Chorwacja 85,9\%, Bułgaria 86,8\%) wykazują jednak, że mimo ogólnego postępu znaczne różnice wewnątrz Unii wciąż istnieją.
+
+
+
+
+\subsubsection{Przyrost korzystania z internetu 2014 - 2025}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.4.svg}
+    \caption{Przyrost korzystania z internetu w latach 2014-2025 w poszczególnych krajach wyrażona w punktach procentowych.}
+\end{figure}
+
+Dynamikę wzrostu odwraca ówczesny ranking: kraje o najniższym punkcie startowym, takie jak Rumunia, Bułgaria czy Włochy,
+mają największy wzrost - odpowiednio +39,1 pp., +31,4 pp., +28,4 pp. Potwierdza to teorię "efektu doganiania" krajów do standardów 
+cyfryzacji pozostałej części Europy. Natomiast kraje od lat wysoce cyfrowe - Dania, Finlandia, Luksemburg, 
+notują zasadniczo niskie wzrosty z prostego powodu - nie mają już praktycznie gdzie rosnąć. 
+
+Polska z wynikiem +23,1 pp. mieści się nieco powyżej mediany. 
+
+
+\subsubsection{Rozkład korzystania z internetu w UE-27}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.5.svg}
+    \caption{Rozkład odsetka użytkowników internetu w 27 krajach UE na przestrzeni lat.}
+\end{figure}
+
+Wykres pudełkowy potwierdza dwie wspomniane wcześniej tendencje jednocześnie: Po pierwsze, cały rozkład przesuwa się w górę rok do roku, pokazując
+całkowity wzrost wykazany na wcześniejszych wykresach. Po drugie, rozstęp międzykwartylowy systematycznie maleje, co oznacza zbieżność
+krajów Unii do stałego poziomu cyfryzacji: W 2014 r. środkowa połowa krajów mieściła się w przedziale ok. 68-84\%, a w 2025 r. ten sam przedział 
+zawęził się do ok. 91-97\%. 
+
+
+\subsubsection{Rozkład korzystania z internetu – wykres skrzypcowy dla wybranych lat.}
+
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.6.svg}
+    \caption{Rozkład skrzypcowy korzystania z internetu w krajach, w latach 2015, 2019 i 2025.}
+\end{figure}
+
+Rozszerzając poprzednie pudełka dla wybranych lat na poczatku, w środku i na końcu osi lat o rozkład procentowy krajów ponownie ilustrowana jest
+znaczna tendencja nagłego przyrostu większej liczby krajów do wysokiego stanu cyfryzacji - kraje „starodawne" i „nowożytnie" technologicznie UE 
+znacznie zmieniły swoją liczbę, od bardziej wydłużonego, chudego wykresu do krótszego, ale szerszego rozkładu.
+Wskazuje to na niemal zakończony proces powszechnej cyfryzacji w obszarze podstawowego dostępu do, oraz wykorzystania, internetu.
+
+
+
+\subsubsection{Porównanie kategorii użycia internetu dla krajów, rok 2023}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.7.svg}
+    \caption{Rozkład odsetka użytkowników poszczególnych kategorii internetu w badanych krajach w 2023r.}
+\end{figure}
+
+Kategorie aktywności internetowej różnią się dramatycznie zarówno poziomem, jak i rozproszeniem. Ogólne korzystanie z internetu i 
+poczta elektroniczna mają medianę powyżej 80\% i wąski rozstęp – są one powszechne i jednorodne. 
+Bankowość internetowa charakteryzuje się największym rozstępem międzykwartylowym spośród wszystkich kategorii, co świadczy o dużym 
+zróżnicowaniu kulturowym i infrastrukturalnym podejścia do finansów online w Europie - niektóre kraje, w 2023 roku, nie miały wielkiej popularności 
+dla bankowości internetowej. Konsultacje i głosowanie online utrzymują się poniżej 15\% we wszystkich krajach – klarownie, jest to usługa niszowa.
+
+\newpage
+
+
+
+
+\subsubsection{Polska – trend korzystania z internetu wg kategorii}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.8.svg}
+    \caption{Polska – odsetek osób 16-74 lata korzystających z internetu w poszczególnych kategoriach na przestrzeni lat.}
+\end{figure}
+
+W Polsce wszystkie kategorie za wyjątkiem poszukiwania pracy i konsultacji online wykazują trend wzrostowy. Ogólne korzystanie z internetu 
+wzrosło z ok.~67\% do 90\% - najbardziej zauważalny wzrost zanotowały media społecznościowe, wzrastając z ok. 41\% do 69\%, oraz 
+wyszukiwanie towarów i usług które wzrosły z 50\% do 66\%. 
+
+Ciekawym spostrzeżeniem jest dołek wielu kategorii w latach 2020-2021. Powodem nich może być świat pandemiczny COVID-19 lub rzeczywista zmiania 
+zachowań polaków - najbardziej widocznym spadkiem jest wyszukiwanie towarów i usług, które faktycznie nie były najpopularniejszym tematem 
+w czasie globalnego lock-down'u.
+
+
+
+
+\subsubsection{Niemcy – trend korzystania z internetu wg kategorii}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.9.svg}
+    \caption{Niemcy – odsetek osób (16--74 lata) korzystających z internetu w poszczególnych kategoriach na przestrzeni lat.}
+\end{figure}
+
+Profil kategorii w Niemczech różni się od polskiego w kilku istotnych aspektach. Po pierwsze, ogólne korzystanie z internetu i poczta elektroniczna
+od lat utrzymują się powyżej 85\%. Po drugie, wyszukiwanie towarów i usług oraz informacje zdrowotne wykazują gwałtowne spadki i odbicia w
+latach 2021-2023, co jest bardziej charakterystycznym znacznikiem zmian przyzwyczajeń i wprowadzonych obostrzeń podczas pandemii.
+
+Bankowość internetowa wzrosła z ok.~49\% do 71\%, a media społecznościowe – mimo wcześniejszej rezerwy – osiągnęły w 2025 r. 
+poziom zbliżony do polskiego (ok.~60\%).
+
+
+
+
+\subsubsection{Polska vs Niemcy – ogólne korzystanie z internetu}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.10.svg}
+    \caption{Porównanie trendu ogólnego korzystania z internetu w Polsce i Niemczech na przestrzeni lat.}
+\end{figure}
+
+Jak widać na wykresie, Niemcy na przestrzeni całego zbioru danych korzystają z internetu więcej, niż Polacy.
+Dystans między Polską a Niemcami wynosił w 2014~r. blisko 20\%.
+
+Natomiast, systematyczne nadrabianie zaległości przez Polskę, prawdopodobnie spowodowane dzięki inwestycjom infrastrukturalnym 
+i rosnącej roli smartfonów, skróciło tę lukę do 5\% w 2025 r. Niemcy, mimo wyższego punktu startowego, kilkukrotnie doświadczyły 
+krótkotrwałych spadków, co zanotowała również Polska.
+Przy utrzymaniu obecnego tempa wzrostu Polska prawdopodobnie zrówna się z Niemcami w perspektywie 3-5 lat.
+
+
+
+
+\subsubsection{Porównanie wybranych krajów wg kategorii - 2025 rok}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.11.svg}
+    \caption{Porównanie 8 wybranych krajów - Polska, Niemcy, Francja, Szwecja, Bułgaria,
+   Dania, Włochy, Rumunia - względem korzystania z internetu w poszczególnych kategoriach w 2025r.}
+\end{figure}
+  
+Wykres słupkowy ujawnia wyraźne narodowe wzorce korzystania z internetu. Na najwyższych poziomach w każdej kategorii jest Dania - jej bankowość
+internetowa jest ponad półtora raza wyższa niż w Polsce czy Rumunii.
+
+Bułgaria i Rumunia odstają, w negatywny sposób, w dwóch charakterystycznych kategoriach - bankowości i wyszukiwaniu towarów. 
+Widać, że ludzie w tych krajach nadal są przyzwyczajeni do starodawnych metod - sklepów lub targów / marketów naziemnych, natomiast 
+w kategorii mediów społecznościowych są bardzo blisko pozostałych krajów.
+
+Polska wyróżnia się relatywnie niskim wskaźnikiem poszukiwania pracy online - niecałe 9\%, poza czym jest 
+bardzo bliska medianie.
+
+Obiektywnie najgorsza integracyjnie kategoria to konsultacje/głosowanie online - jest to kategoria o zarówno najmniejszym zróżnicowaniu krajowym
+i najniższych bezwzględnych wartościach (2--14\%) w całej próbie.
+
+\newpage
+
+
+
+
+\subsubsection{Bankowość vs Media społecznościowe – wybrane kraje}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.12.svg}
+    \caption{Porównanie trendów bankowości internetowej i mediów społecznościowych dla 8 wybranych krajów na przestrzeni lat.}
+\end{figure}
+
+Zestawienie dwóch oddzielnych ideowo kategorii - bankowości i mediów społecznościowych - ujawnia ciekawy przykład różnicy różnorodności wartości, 
+ale tej samej tendencji kategorycznej dla krajów Unii Europejskiej.
+Obie z tych kategorii stopniowo rosną, lecz zróżnicowanie między krajami w bankowości internetowej jest ogromne i utrzymuje się przez cały badany okres:
+Dania oscyluje najwyżej, podczas gdy Bułgaria i Rumunia startowały praktycznie przy zerze i doszły do ok. 30\%. W przeciwieństwie, media społecznościowe 
+przedstawiają historię gdzie kraje "doganiające" rosły szybciej, co doprowadziło do znacznego wyrównania poziomu: w 2025~r. większość krajów znajduje się
+w przedziale 60-90\%. Polaryzacja jest zatem wyraźniejsza w bankowości niż w mediach społecznościowych, jednak tendencja wzrostowa utrzymuje się 
+niezależnie od kategorii.
+
+
+
+
+\subsubsection{Bankowość internetowa vs Media społecznościowe w UE-27 (2025) – scatter}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.13.svg}
+    \caption{Wykres rozrzutu: bankowość internetowa a media społecznościowe w 27 krajach UE w 2025~r.}
+\end{figure}
+
+Korzystając z porónania poprzednich aspektów wykorzystania internetu, współzależność między bankowością a mediami społecznościowymi jest
+umiarkowanie dodatnia - oznacza to, ze obie z tych kategorii wzrastają, podtrzymując hipotezę z poprzedniego podrozdziału.
+Istnieją jednak wyraźne, wczesniej wspomniane wyjątki. Rumunia i Bułgaria posiadają relatywnie wysoki udział mediów społecznościowych
+przy bardzo niskiej bankowości internetowej – sugeruje to, że dostęp do smartfona i portali społecznościowych wyprzedza dojrzałość cyfrową
+w zakresie e-finansów.
+Niemcy i Włochy leżą poniżej linii trendu: wysoka bankowość przy niższych niż spodziewane wynikach mediów społecznościowych związane są
+prawdopodobnie z kulturową rezerwą wobec portali społecznościowych wśród większości populacji tych krajów. Polska plasuje się przy linii trendu,
+bez wyraźnych odchyleń.
+
+\newpage
+
+
+
+\subsubsection{Polska – korzystanie z internetu wg kategorii w wybranych latach}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.15.svg}
+    \caption{Polska – korzystanie z internetu wg kategorii w czterech latach - 2015, 2018, 2021 i 2025.}
+\end{figure}
+
+Cztery przekroje czasowe dla Polski pokazują nierównomierność tempa wzrostu w odpowiednich kategoriach. Ogólne korzystanie z internetu wzrosło, 
+co zostało przekazane w większości poprzednich wykresów, i jest dominującą wartością - co ma sens, gdyż korzystanie z internetu w dowolnym 
+celu należy do korzystania z internetu. Najmniejszymi wykorzystaniami na przestrzeni lat są wyszukiwanie pracy oraz konsultacje / głosowanie online.
+Ciekawą tendencją jest fakt, iż konsultacje wzrastają od początkowego roku - popularność i przydatność telewizyt w Polsce widocznie wzrasta, i mimo 
+większościowej tendencji do korzystania ze starodawnych metod zaczyna się widać falę przejściową.
+
+
+
+
+\subsubsection{Poszukiwanie pracy online – wybrane kraje}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.16.svg}
+    \caption{Odsetek osób poszukujących pracy przez internet w 8 wybranych krajach - Polska, Niemcy, Francja, Szwecja, Bułgaria, Dania, Włochy, Rumunia -
+                na przestrzeni lat.}
+\end{figure}
+
+Korzystając z jednej z najmniej popularnych usług wykorzystywanych w internecie, mianowicie poszukiwania pracy online, jesteśmy w stanie zwizualizować
+nie tylko najniższy ale i najbardziej zmienny trendów spośród badanych kategorii. Dania i Szwecja konsekwentnie prowadzą, co może wynikać z 
+elastyczności tamtejszych rynków pracy i popularności dedykowanych platform rekrutacyjnych w porównaniu z klasycznymi metodami.
+Polska i Rumunia należą do najmniej aktywnych krajów w tej kategorii, mimo że ich ogólny poziom cyfryzacji jest porównywalny z resztą Unii Europejskiej
+w roku 2025 - widać, że w sektorze prac, w tych krajach dalej szanuje się najprostsze sposoby rozmowy o pracę i składania papierowych CV.
+
+
+
+
+
+\subsubsection{Wzrost bankowości internetowej}
+
+\begin{figure}[H]
+    \includesvg[width=\textwidth]{phts/6/svg/6.18.svg}
+    \caption{Przyrost odsetka użytkowników bankowości internetowej na przestzeni lat w badanych krajach.}
+\end{figure}
+
+
+Bankowość internetowa to kategoria o największej bezwzględnej dynamice wzrostu w całej analizie. Liderami przyrostu są, zaskakująco, Cypr, Grecja
+Irlandia oraz Chorwacja. Są to kraje, które jeszcze w 2014 r. miały bardzo niski punkt startowy i w następnej dekadzie nadrabiały zaległości,
+napędzane rozwojem bankowości mobilnej. Polska znajduje się poniżej mediany wzrostu, co może wydawać się zaskakujące biorąc pod uwagę dynamiczny
+rozwój polskiego sektora fintech z technologiami takimi jak BLIK czy aplikacjami mobilnymi banków. Wynika to jednak z faktu, że w Polsce poziom
+bazowy z 2014 r. był wyższy niż we wcześniej wspomnainych krajach. Szwecja była od początku niemal w pełni nasycona, więc jej najniższy wzrost jest 
+spodziewany.
+
+
+\newpage
+\subsection{Wnioski}
+
+\begin{enumerate}
+    \item Korzystanie z internetu w Unii Europejskiej wzrosło między 2014 a 2025 r. z 76,9\% do 94\% – niemal monotonicznie i bez skokowych 
+    efektów pandemicznych na poziomie średniej unijnej;
+    \item Konwergencja cyfrowa postępuje: rozstęp między krajami maleje rok do roku, co potwierdzają zarówno analiza wykresu pudełkowego,
+    jak i zmiana kształtu skrzypiec z bimodalnego (2015) na skupiony (2025);
+    \item Polska z wynikiem 89,7\% w 2025~r. zajmuje 22. pozycję spośród 27 krajów, lecz jej wzrost o 23,1\%. od 2014~r. klasyfikuje ją w górnej
+    połowie stawki pod względem dynamiki. Polacy wyraźnie doganianiają resztę europejczyków;
+    \item Dystans między Polską a Niemcami skurczył się z ok.~20\%. w 2014 r. do ok. 5\% w 2025~r., co wskazuje na możliwe wyrównanie w
+    perspektywie kilku następnych lat;
+    \item Kategorie aktywności internetowej różnią się dramatycznie: poczta e-mail i bankowość mają powyżej 80\% mediany w UE,
+    natomiast konsultacje i głosowanie online nie przekraczają 15\% w żadnym kraju, co świadczy o słabości e-demokracji w Europie.
+    \item Bankowość internetowa to kategoria o największej bezwzględnej dynamice wzrostu (+29,3\%. średnia wzrostu, lider Cypr +53,9 \%);
+    \item Podziały kulturowe i ekonomiczne wewnątrz UE są wyraźniejsze w bankowości internetowej i poszukiwaniu pracy online niż w 
+    mediach społecznościowych, które wykazują szybsze zbliżenie się między krajami.
 \end{enumerate}
 
 
